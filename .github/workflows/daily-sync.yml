@@ -1,0 +1,62 @@
+name: Daily Pinecone Sync
+
+on:
+  schedule:
+    # Run every day at 2 AM UTC (9 PM EST / 6 PM PST)
+    - cron: '0 2 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120 # 2 hour timeout
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Create Google credentials file
+        run: |
+          echo '${{ secrets.GOOGLE_CREDENTIALS_JSON }}' > google-credentials.json
+
+      - name: Create .env file
+        run: |
+          cat > .env << EOF
+          PINECONE_API_KEY=${{ secrets.PINECONE_API_KEY }}
+          PINECONE_INDEX_NAME=${{ secrets.PINECONE_INDEX_NAME }}
+          OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}
+          GOOGLE_CREDENTIALS_PATH=./google-credentials.json
+          GOOGLE_DRIVE_FOLDER_ID=${{ secrets.GOOGLE_DRIVE_FOLDER_ID }}
+          EOF
+
+      - name: Run sync
+        id: sync
+        run: npm run sync-full 2>&1 | tee sync-output.log
+
+      - name: Upload sync log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sync-log-${{ github.run_number }}
+          path: sync-output.log
+          retention-days: 30
+
+      - name: Cleanup credentials
+        if: always()
+        run: |
+          rm -f google-credentials.json
+          rm -f .env
+
+      - name: Notify on failure
+        if: failure()
+        run: |
+          echo "::error::Sync job failed. Check the logs for details."

@@ -1,0 +1,52 @@
+{
+  "name": "sally-sales-enablement",
+  "version": "1.0.0",
+  "description": "Sally - Sales Enablement Agent with Strict RAG",
+  "type": "module",
+  "main": "slack-bot/server.js",
+  "scripts": {
+    "start": "node slack-bot/server.js",
+    "api": "node api/catalog-api.js",
+    "index": "node scripts/initial-index.js",
+    "cleanup": "node scripts/cleanup-index.js",
+    "test-query": "node scripts/test-query.js",
+    "test-pinecone": "node scripts/test-existing-pinecone.js",
+    "list-files": "node scripts/list-indexed-files.js",
+    "delete-file": "node scripts/delete-file.js",
+    "move-to-archive": "node scripts/move-to-archive.js",
+    "build-catalog": "node scripts/build-catalog.js",
+    "build-mini-catalog": "node scripts/build-mini-catalog.js",
+    "build-enhanced-catalog": "node scripts/build-enhanced-catalog.js",
+    "build-identity-catalog": "node scripts/build-identity-focused-catalog.js",
+    "export-catalog-csv": "node scripts/export-catalog-csv.js",
+    "export-indexed-csv": "node scripts/export-indexed-docs-csv.js",
+    "compare-pinecone-drive": "node scripts/compare-pinecone-drive.js",
+    "test-google-creds": "node scripts/test-google-credentials.js",
+    "test-single-index": "node scripts/test-single-file-index.js",
+    "index-missing-files": "node scripts/index-missing-files.js",
+    "indexing-status": "node scripts/indexing-status-report.js",
+    "smart-query": "node scripts/smart-query.js",
+    "sync": "node scripts/sync-pinecone-catalog.js",
+    "sync-dry-run": "node scripts/sync-pinecone-catalog.js --dry-run",
+    "sync-test": "node scripts/sync-dry-run-detailed.js",
+    "sync-full": "node scripts/sync-pinecone-drive.js",
+    "add-sync-date": "node scripts/add-sync-date-metadata.js",
+    "index-single": "node scripts/index-single-file.js"
+  },
+  "dependencies": {
+    "@pinecone-database/pinecone": "^2.0.1",
+    "@slack/bolt": "^3.17.1",
+    "dotenv": "^16.4.1",
+    "express": "^4.22.1",
+    "googleapis": "^131.0.0",
+    "mammoth": "^1.6.0",
+    "openai": "^4.26.0",
+    "pdf-parse": "^1.1.1",
+    "pdf-to-png-converter": "^3.11.0",
+    "tesseract.js": "^7.0.0",
+    "uuid": "^9.0.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
