@@ -24,8 +24,19 @@ jobs:
         run: npm install
 
       - name: Create Google credentials file
+        run: echo "$GOOGLE_CREDS" > google-credentials.json
+        env:
+          GOOGLE_CREDS: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
+
+      - name: Verify credentials file
         run: |
-          echo '${{ secrets.GOOGLE_CREDENTIALS_JSON }}' > google-credentials.json
+          if [ -f google-credentials.json ]; then
+            echo "✓ Credentials file created"
+            echo "File size: $(wc -c < google-credentials.json) bytes"
+          else
+            echo "✗ Credentials file not found"
+            exit 1
+          fi
 
       - name: Create .env file
         run: |
@@ -39,7 +50,26 @@ jobs:
 
       - name: Run sync
         id: sync
-        run: npm run sync-full 2>&1 | tee sync-output.log
+        run: |
+          echo "Starting intelligent sync..."
+          npm run sync-full 2>&1 | tee sync-output.log
+          SYNC_EXIT=$?
+          echo "exit_code=$SYNC_EXIT" >> $GITHUB_OUTPUT
+          exit $SYNC_EXIT
+
+      - name: Generate summary
+        if: always()
+        run: |
+          echo "## Sync Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ -f sync-output.log ]; then
+            echo "### Output Log" >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
+            tail -50 sync-output.log >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
+          fi
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Full logs available in artifacts" >> $GITHUB_STEP_SUMMARY
 
       - name: Upload sync log
         if: always()
