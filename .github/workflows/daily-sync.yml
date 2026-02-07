@@ -24,7 +24,7 @@ jobs:
         run: npm install
 
       - name: Create Google credentials file
-        run: echo "$GOOGLE_CREDS" > google-credentials.json
+        run: printf '%s' "$GOOGLE_CREDS" > google-credentials.json
         env:
           GOOGLE_CREDS: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
 
@@ -33,6 +33,14 @@ jobs:
           if [ -f google-credentials.json ]; then
             echo "✓ Credentials file created"
             echo "File size: $(wc -c < google-credentials.json) bytes"
+            # Validate JSON structure
+            if node -e "JSON.parse(require('fs').readFileSync('google-credentials.json', 'utf8'))" 2>/dev/null; then
+              echo "✓ Credentials file is valid JSON"
+              echo "✓ Has 'private_key' field: $(node -e "console.log(!!JSON.parse(require('fs').readFileSync('google-credentials.json', 'utf8')).private_key)")"
+            else
+              echo "✗ Credentials file is not valid JSON"
+              exit 1
+            fi
           else
             echo "✗ Credentials file not found"
             exit 1
@@ -60,16 +68,42 @@ jobs:
       - name: Generate summary
         if: always()
         run: |
-          echo "## Sync Results" >> $GITHUB_STEP_SUMMARY
+          echo "## 📊 Sync Results" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
+
           if [ -f sync-output.log ]; then
-            echo "### Output Log" >> $GITHUB_STEP_SUMMARY
+            # Extract key metrics from log
+            NEW_COUNT=$(grep -oP 'NEW files: \K\d+' sync-output.log 2>/dev/null || echo "?")
+            MOD_COUNT=$(grep -oP 'MODIFIED files: \K\d+' sync-output.log 2>/dev/null || echo "?")
+            UNCHANGED_COUNT=$(grep -oP 'UNCHANGED files: \K\d+' sync-output.log 2>/dev/null || echo "?")
+
+            echo "### Summary" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+
+            if [ "$NEW_COUNT" = "0" ]; then
+              echo "- ✅ **$NEW_COUNT NEW files** - All files already indexed" >> $GITHUB_STEP_SUMMARY
+            else
+              echo "- 📝 **$NEW_COUNT NEW files** - Indexed successfully" >> $GITHUB_STEP_SUMMARY
+            fi
+
+            if [ "$MOD_COUNT" != "0" ] && [ "$MOD_COUNT" != "?" ]; then
+              echo "- 🔄 **$MOD_COUNT MODIFIED files** - Updated since last sync" >> $GITHUB_STEP_SUMMARY
+            else
+              echo "- ✅ **$MOD_COUNT MODIFIED files** - No updates needed" >> $GITHUB_STEP_SUMMARY
+            fi
+
+            echo "- ⏭️  **$UNCHANGED_COUNT UNCHANGED files** - Skipped" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+
+            # Show last 30 lines of detailed log
+            echo "### Detailed Log (Last 30 lines)" >> $GITHUB_STEP_SUMMARY
             echo '```' >> $GITHUB_STEP_SUMMARY
-            tail -50 sync-output.log >> $GITHUB_STEP_SUMMARY
+            tail -30 sync-output.log >> $GITHUB_STEP_SUMMARY
             echo '```' >> $GITHUB_STEP_SUMMARY
           fi
+
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "Full logs available in artifacts" >> $GITHUB_STEP_SUMMARY
+          echo "📦 Full logs available in artifacts" >> $GITHUB_STEP_SUMMARY
 
       - name: Upload sync log
         if: always()
