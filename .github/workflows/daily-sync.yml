@@ -146,36 +146,88 @@ jobs:
             echo "failed_count=0" >> $GITHUB_OUTPUT
           fi
 
-      - name: Send email notification
+      - name: Generate HTML report
         if: always()
-        uses: dawidd6/action-send-mail@v3
+        run: |
+          STATUS_COLOR="#28a745"
+          STATUS_ICON="✅"
+          if [ "${{ job.status }}" = "failure" ]; then
+            STATUS_COLOR="#dc3545"
+            STATUS_ICON="❌"
+          fi
+
+          cat > sync-report.html << 'HTMLEOF'
+          <!DOCTYPE html>
+          <html>
+          <head>
+            <meta charset="UTF-8">
+            <style>
+              body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; background: #f5f5f5; }
+              .container { background: white; border-radius: 8px; padding: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+              h1 { color: #333; margin-bottom: 10px; }
+              .status { display: inline-block; padding: 8px 16px; border-radius: 4px; color: white; font-weight: bold; margin-bottom: 20px; }
+              .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 30px 0; }
+              .metric { background: #f8f9fa; padding: 20px; border-radius: 6px; border-left: 4px solid #007bff; }
+              .metric-value { font-size: 32px; font-weight: bold; color: #333; }
+              .metric-label { color: #666; font-size: 14px; margin-top: 5px; }
+              .footer { margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee; color: #666; font-size: 14px; }
+              .link { color: #007bff; text-decoration: none; }
+              .link:hover { text-decoration: underline; }
+            </style>
+          </head>
+          <body>
+            <div class="container">
+              <h1>📊 Sally Sales Enablement - Sync Report</h1>
+              <div class="status" style="background-color: STATUS_COLOR;">STATUS_ICON Status: JOB_STATUS</div>
+
+              <p><strong>Run Date:</strong> RUN_DATE UTC</p>
+
+              <div class="metrics">
+                <div class="metric">
+                  <div class="metric-value">NEW_COUNT</div>
+                  <div class="metric-label">✅ NEW files indexed</div>
+                </div>
+                <div class="metric">
+                  <div class="metric-value">MOD_COUNT</div>
+                  <div class="metric-label">🔄 MODIFIED files re-indexed</div>
+                </div>
+                <div class="metric">
+                  <div class="metric-value">SUCCESS_COUNT</div>
+                  <div class="metric-label">✅ Total successful</div>
+                </div>
+                <div class="metric">
+                  <div class="metric-value">FAILED_COUNT</div>
+                  <div class="metric-label">❌ Total failed</div>
+                </div>
+              </div>
+
+              <div class="footer">
+                <p><a class="link" href="LOGS_URL">View full logs on GitHub →</a></p>
+                <p>This is an automated report from Sally Sync Bot</p>
+              </div>
+            </div>
+          </body>
+          </html>
+          HTMLEOF
+
+          # Replace placeholders
+          sed -i "s|STATUS_COLOR|$STATUS_COLOR|g" sync-report.html
+          sed -i "s|STATUS_ICON|$STATUS_ICON|g" sync-report.html
+          sed -i "s|JOB_STATUS|${{ job.status }}|g" sync-report.html
+          sed -i "s|RUN_DATE|$(date -u '+%Y-%m-%d %H:%M:%S')|g" sync-report.html
+          sed -i "s|NEW_COUNT|${{ steps.metrics.outputs.new_count }}|g" sync-report.html
+          sed -i "s|MOD_COUNT|${{ steps.metrics.outputs.mod_count }}|g" sync-report.html
+          sed -i "s|SUCCESS_COUNT|${{ steps.metrics.outputs.success_count }}|g" sync-report.html
+          sed -i "s|FAILED_COUNT|${{ steps.metrics.outputs.failed_count }}|g" sync-report.html
+          sed -i "s|LOGS_URL|${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|g" sync-report.html
+
+      - name: Upload HTML report
+        if: always()
+        uses: actions/upload-artifact@v4
         with:
-          server_address: smtp.gmail.com
-          server_port: 587
-          username: ${{ secrets.SMTP_USERNAME }}
-          password: ${{ secrets.SMTP_PASSWORD }}
-          subject: "📊 Sally Sync Report - ${{ steps.metrics.outputs.success_count }} files synced"
-          to: jobanjeet.s@commerceiq.ai
-          from: Sally Sync Bot <${{ secrets.SMTP_USERNAME }}>
-          body: |
-            Sally Sales Enablement - Sync Report
-            =====================================
-
-            Run Date: ${{ github.event.head_commit.timestamp }}
-            Status: ${{ job.status }}
-
-            📊 SYNC RESULTS:
-
-            ✅ NEW files indexed: ${{ steps.metrics.outputs.new_count }}
-            🔄 MODIFIED files re-indexed: ${{ steps.metrics.outputs.mod_count }}
-            ✅ Total successful: ${{ steps.metrics.outputs.success_count }}
-            ❌ Total failed: ${{ steps.metrics.outputs.failed_count }}
-
-            ---
-
-            View full logs: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-
-            This is an automated message from Sally Sync Bot.
+          name: sync-report-${{ github.run_number }}
+          path: sync-report.html
+          retention-days: 30
 
       - name: Notify on failure
         if: failure()
