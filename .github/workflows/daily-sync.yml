@@ -121,6 +121,62 @@ jobs:
           rm -f google-credentials.json
           rm -f .env
 
+      - name: Extract sync metrics
+        if: always()
+        id: metrics
+        run: |
+          if [ -f sync-output.log ]; then
+            NEW_COUNT=$(grep -oP 'NEW files: \K\d+' sync-output.log 2>/dev/null || echo "0")
+            MOD_COUNT=$(grep -oP 'MODIFIED files: \K\d+' sync-output.log 2>/dev/null || echo "0")
+            SUCCESS_COUNT=$(grep -oP 'Success: \K\d+' sync-output.log 2>/dev/null || echo "0")
+            FAILED_COUNT=$(grep -oP 'Failed: \K\d+' sync-output.log 2>/dev/null || echo "0")
+
+            echo "new_count=$NEW_COUNT" >> $GITHUB_OUTPUT
+            echo "mod_count=$MOD_COUNT" >> $GITHUB_OUTPUT
+            echo "success_count=$SUCCESS_COUNT" >> $GITHUB_OUTPUT
+            echo "failed_count=$FAILED_COUNT" >> $GITHUB_OUTPUT
+
+            # Extract file list
+            grep -A 1000 "NEW FILES TO INDEX" sync-output.log 2>/dev/null | head -50 > /tmp/new_files.txt || echo "None" > /tmp/new_files.txt
+            grep -A 1000 "MODIFIED FILES TO RE-INDEX" sync-output.log 2>/dev/null | head -50 > /tmp/mod_files.txt || echo "None" > /tmp/mod_files.txt
+          else
+            echo "new_count=0" >> $GITHUB_OUTPUT
+            echo "mod_count=0" >> $GITHUB_OUTPUT
+            echo "success_count=0" >> $GITHUB_OUTPUT
+            echo "failed_count=0" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Send email notification
+        if: always()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 587
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          subject: "📊 Sally Sync Report - ${{ steps.metrics.outputs.success_count }} files synced"
+          to: jobanjeet.s@commerceiq.ai
+          from: Sally Sync Bot <${{ secrets.SMTP_USERNAME }}>
+          body: |
+            Sally Sales Enablement - Sync Report
+            =====================================
+
+            Run Date: ${{ github.event.head_commit.timestamp }}
+            Status: ${{ job.status }}
+
+            📊 SYNC RESULTS:
+
+            ✅ NEW files indexed: ${{ steps.metrics.outputs.new_count }}
+            🔄 MODIFIED files re-indexed: ${{ steps.metrics.outputs.mod_count }}
+            ✅ Total successful: ${{ steps.metrics.outputs.success_count }}
+            ❌ Total failed: ${{ steps.metrics.outputs.failed_count }}
+
+            ---
+
+            View full logs: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+            This is an automated message from Sally Sync Bot.
+
       - name: Notify on failure
         if: failure()
         run: |
