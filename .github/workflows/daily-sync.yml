@@ -24,10 +24,10 @@ jobs:
         run: npm install
 
       - name: Create Google credentials file
+        env:
+          GOOGLE_CREDS: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
         run: |
-          cat << 'EOF' > google-credentials.json
-          ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
-          EOF
+          printf '%s\n' "$GOOGLE_CREDS" > google-credentials.json
 
       - name: Verify credentials file
         run: |
