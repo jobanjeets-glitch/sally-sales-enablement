@@ -711,8 +711,25 @@ class IntelligentSync {
         console.log(`   ✅ Success: ${results.newIndexed + results.modifiedReIndexed}`);
         console.log(`   ❌ Failed: ${results.newFailed + results.modifiedFailed}`);
         console.log('═══════════════════════════════════════════════════════════\n');
+
+        // Return proper exit code
+        const totalFailed = results.newFailed + results.modifiedFailed;
+        if (totalFailed > 0) {
+            console.log(`⚠️  Exiting with code 1 due to ${totalFailed} failed file(s)\n`);
+            return 1;
+        }
+
+        console.log('✅ All files synced successfully!\n');
+        return 0;
     }
 }
 
 const sync = new IntelligentSync();
-sync.run().catch(console.error);
+sync.run()
+    .then((exitCode) => {
+        process.exit(exitCode);
+    })
+    .catch((error) => {
+        console.error('\n❌ FATAL ERROR:', error);
+        process.exit(1);
+    });
