@@ -17,7 +17,7 @@ dotenv.config();
 /**
  * Full Sync Script - Indexes NEW and MODIFIED files
  */
-class IntelligentSync {
+export class IntelligentSync {
     constructor() {
         const credPath = process.env.GOOGLE_CREDENTIALS_PATH || './google-credentials.json';
         this.auth = new google.auth.GoogleAuth({
@@ -55,6 +55,10 @@ class IntelligentSync {
             for (const item of response.data.files) {
                 if (item.mimeType === 'application/vnd.google-apps.folder') {
                     const folderPath = path ? `${path}/${item.name}` : item.name;
+                    if (/archive/i.test(item.name)) {
+                        console.log(`⏭️  Skipping archive folder: ${folderPath}`);
+                        continue;
+                    }
                     this.folderTree.set(item.id, { id: item.id, name: item.name, path: folderPath });
                     await scanFolder(item.id, folderPath);
                 } else {
@@ -130,7 +134,7 @@ class IntelligentSync {
     filterFiles(files) {
         const shouldSkipFile = (file) => {
             const nameFilters = [
-                { pattern: /archived/i, reason: 'Contains "archived"' },
+                { pattern: /archive/i, reason: 'Contains "archive" or "archived"' },
                 { pattern: /\(old\)/i, reason: 'Contains "(old)"' },
                 { pattern: /deprecated/i, reason: 'Contains "deprecated"' },
                 { pattern: /^Copy of/i, reason: 'Copy of another file' },
@@ -267,6 +271,7 @@ class IntelligentSync {
         const newFiles = [];
         const modifiedFiles = [];
         const unchangedFiles = [];
+        const staleFiles = [];
 
         // Use the latest sync date from Pinecone, or default to 30 days ago if none exists
         const cutoffDate = latestSyncDate
@@ -343,7 +348,15 @@ class IntelligentSync {
             }
         }
 
-        return { newFiles, modifiedFiles, unchangedFiles };
+        // Detect stale files: in Pinecone with a File.id but not in the current filtered Drive list
+        const driveFileIds = new Set(driveFiles.map(f => f.id));
+        for (const [fileId, data] of pineconeFiles) {
+            if (data.hasFileId && !driveFileIds.has(fileId)) {
+                staleFiles.push(data);
+            }
+        }
+
+        return { newFiles, modifiedFiles, unchangedFiles, staleFiles };
     }
 
     // === INDEXING METHODS ===
@@ -640,21 +653,23 @@ class IntelligentSync {
         const deduplicated = this.detectDuplicates(filtered);
         console.log(`✓ Deduplicated to ${deduplicated.length} files`);
 
-        const { newFiles, modifiedFiles } = this.classifyChanges(deduplicated, pineconeState);
+        const { newFiles, modifiedFiles, staleFiles } = this.classifyChanges(deduplicated, pineconeState);
 
         console.log('\n═══════════════════════════════════════════════════════════');
         console.log(`📊 Analysis Results:`);
         console.log(`   Last sync: ${pineconeState.latestSyncDate || 'Never (30-day lookback)'}`);
         console.log(`   NEW files: ${newFiles.length}`);
         console.log(`   MODIFIED files: ${modifiedFiles.length}`);
-        console.log(`   TOTAL to process: ${newFiles.length + modifiedFiles.length}`);
+        console.log(`   STALE files (archived/deleted): ${staleFiles.length}`);
+        console.log(`   TOTAL to process: ${newFiles.length + modifiedFiles.length + staleFiles.length}`);
         console.log('═══════════════════════════════════════════════════════════\n');
 
         const results = {
             newIndexed: 0,
             newFailed: 0,
             modifiedReIndexed: 0,
-            modifiedFailed: 0
+            modifiedFailed: 0,
+            staleRemoved: 0
         };
 
         // Index NEW files
@@ -698,6 +713,22 @@ class IntelligentSync {
             }
         }
 
+        // Remove STALE files (archived or deleted from Drive)
+        if (staleFiles.length > 0) {
+            console.log('\n🗑️  Phase 6: Removing STALE Files (archived or deleted from Drive)\n');
+
+            for (let i = 0; i < staleFiles.length; i++) {
+                const staleFile = staleFiles[i];
+                const name = staleFile['File.name'] || '(unknown)';
+                const fileId = staleFile['File.id'];
+                console.log(`[${i + 1}/${staleFiles.length}] Removing: ${name}`);
+
+                const deleted = await this.deleteFileVectors(fileId);
+                console.log(`   🗑️  Deleted ${deleted} vectors`);
+                results.staleRemoved++;
+            }
+        }
+
         console.log('\n═══════════════════════════════════════════════════════════');
         console.log('                    FINAL SUMMARY');
         console.log('═══════════════════════════════════════════════════════════');
@@ -707,8 +738,11 @@ class IntelligentSync {
         console.log(`\nMODIFIED files:`);
         console.log(`   ✅ Re-indexed: ${results.modifiedReIndexed}`);
         console.log(`   ❌ Failed: ${results.modifiedFailed}`);
+        console.log(`\nSTALE files (archived/deleted):`);
+        console.log(`   🗑️  Removed: ${results.staleRemoved}`);
         console.log(`\nTOTAL:`);
         console.log(`   ✅ Success: ${results.newIndexed + results.modifiedReIndexed}`);
+        console.log(`   🗑️  Cleaned up: ${results.staleRemoved}`);
         console.log(`   ❌ Failed: ${results.newFailed + results.modifiedFailed}`);
         console.log('═══════════════════════════════════════════════════════════\n');
 

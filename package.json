@@ -6,6 +6,8 @@
   "main": "slack-bot/server.js",
   "scripts": {
     "start": "node slack-bot/server.js",
+    "dev": "nodemon slack-bot/server.js",
+    "agent-test": "node agent/test-agent.js",
     "api": "node api/catalog-api.js",
     "index": "node scripts/initial-index.js",
     "cleanup": "node scripts/cleanup-index.js",
@@ -34,6 +36,8 @@
     "index-single": "node scripts/index-single-file.js"
   },
   "dependencies": {
+    "@anthropic-ai/claude-agent-sdk": "latest",
+    "@anthropic-ai/sdk": "^0.80.0",
     "@pinecone-database/pinecone": "^2.0.1",
     "@slack/bolt": "^3.17.1",
     "dotenv": "^16.4.1",
@@ -44,7 +48,11 @@
     "pdf-parse": "^1.1.1",
     "pdf-to-png-converter": "^3.11.0",
     "tesseract.js": "^7.0.0",
-    "uuid": "^9.0.1"
+    "uuid": "^9.0.1",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   },
   "engines": {
     "node": ">=18.0.0"

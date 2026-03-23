@@ -1,0 +1,581 @@
+{
+  "lastUpdated": "2026-01-15T13:49:02.439Z",
+  "totalDocuments": 10,
+  "documents": [
+    {
+      "name": "CommerceIQ Copilot for Amazon - Product Hub August 25 Internal",
+      "url": "https://docs.google.com/document/d/1j42nVLn0IoNNWB4ytPAlKxaxt7qiO05J0r1NXF3ajpc/edit?usp=drivesdk",
+      "fileId": "1j42nVLn0IoNNWB4ytPAlKxaxt7qiO05J0r1NXF3ajpc",
+      "type": "product-documentation",
+      "detailedDescription": "The CommerceIQ Copilot for Amazon - Product Hub August 25 Internal document is a comprehensive guide designed to enhance the productivity of Ecommerce leaders by providing a unified view of their Amazon business. It features AI-driven recommendations and powerful automations to optimize media spend, content, and merchandising. Key components include the AllyAI Sales Teammate, which reduces the time spent on report generation, and the CommerceIQ Copilot Quick Start Guide, which offers foundational knowledge and links to tutorials and videos. The document also outlines the product's pricing template as of August 8, 2025, and includes internal training materials and messaging frameworks to support sales and marketing efforts.",
+      "specificKeywords": [
+        "CommerceIQ Copilot for Amazon",
+        "AllyAI Sales Teammate",
+        "Product Pricing Template",
+        "Copilot Business Cases",
+        "Sales Teammate II",
+        "General Availability",
+        "Command Center",
+        "Case Study Slide Library",
+        "CommerceIQ Copilot Quick Start Guide",
+        "Ally Teammates Messaging Framework",
+        "Product Box August 25",
+        "Second Call Deck",
+        "Training Deck",
+        "GTM motion",
+        "Demo"
+      ],
+      "searchableTerms": [
+        "commerceiq copilot amazon",
+        "allyai sales teammate",
+        "copilot pricing template",
+        "sales teammate training",
+        "commerceiq quick start guide"
+      ],
+      "keyFeatures": [
+        "AllyAI Sales Teammate",
+        "CommerceIQ Copilot Quick Start Guide",
+        "Product Pricing Template",
+        "Case Study Slide Library",
+        "Command Center"
+      ],
+      "metrics": [],
+      "products": [
+        "CommerceIQ Copilot for Amazon",
+        "AllyAI Sales Teammate"
+      ],
+      "competitors": [],
+      "category": "product-info",
+      "targetAudience": "Ecommerce leaders, Sales and Marketing teams",
+      "doesSupport": [
+        "Unified view of Amazon business",
+        "AI recommendations",
+        "Automations for media spend optimization",
+        "Training and GTM motion"
+      ],
+      "doesNotSupport": []
+    },
+    {
+      "name": "Product Success Plan + Training Deck Internal WIP",
+      "url": "https://docs.google.com/presentation/d/1OLdvvxuSFyc2eeBgmazj8dpf13yogTtqkzPnfOP8hmg/edit?usp=drivesdk",
+      "fileId": "1OLdvvxuSFyc2eeBgmazj8dpf13yogTtqkzPnfOP8hmg",
+      "type": "product-documentation",
+      "detailedDescription": "The Product Success Plan + Training Deck Internal WIP is a comprehensive internal document designed to guide sales and product success teams through the collaborative selling process of the Success Plan+. It outlines the roles and responsibilities of the Sales and Product Success teams in various stages such as Prospecting, Solutioning, and Customer Engagement. Key features include ExpertIQ Insights & Advisory, which provides advanced analytics and advisory services, and Success Plan+ packages that focus on team enablement through training and workshops. The document also details the use of collateral and sales tools, and the process for customer onboarding and engagement.",
+      "specificKeywords": [
+        "Success Plan+",
+        "ExpertIQ Insights & Advisory",
+        "Sales ProcessDescription",
+        "Product Success Package",
+        "Discovery & Solution Design",
+        "Proposal, Negotiation & Closing",
+        "Customer Engagement",
+        "EXPERTIQ INSIGHTS & ADVISORY",
+        "Order Form Example",
+        "annual credit subscription",
+        "ExpertIQ Services",
+        "NPD review",
+        "tentpole events",
+        "competitor benchmarking",
+        "Prospecting / Intro Calls",
+        "Solution Discovery",
+        "Advanced Training",
+        "Business Review",
+        "Action Planning / Optimizations",
+        "Office Hours"
+      ],
+      "searchableTerms": [
+        "product success plan training",
+        "success plan plus sales process",
+        "expertiq insights advisory",
+        "sales collateral tools",
+        "customer engagement process"
+      ],
+      "keyFeatures": [
+        "ExpertIQ Insights & Advisory",
+        "Success Plan+ packages",
+        "Product Success Package",
+        "Discovery & Solution Design",
+        "Customer Engagement"
+      ],
+      "metrics": [
+        "annual credit subscription"
+      ],
+      "products": [
+        "Success Plan+",
+        "ExpertIQ"
+      ],
+      "competitors": [],
+      "category": "sales-enablement",
+      "targetAudience": "Sales Teams, Product Success Teams",
+      "doesSupport": [
+        "collaborative selling process",
+        "advanced analytics and advisory services",
+        "team enablement and upskilling",
+        "customer onboarding and engagement"
+      ],
+      "doesNotSupport": []
+    },
+    {
+      "name": "AllyAI Product Hub",
+      "url": "https://docs.google.com/document/d/1MAP6MkhW7IZrAGWFLrFZHCSIT4B2E3cRj4DUscZyrMw/edit?usp=drivesdk",
+      "fileId": null,
+      "type": "product-documentation",
+      "detailedDescription": "The AllyAI Product Hub is a comprehensive internal resource designed to equip sales and customer success teams with the necessary tools to effectively market and sell AllyAI's suite of AI-powered teammates. It includes detailed training materials, internal recordings, and presentation decks for Teammate I and II, focusing on enhancing sales performance and media optimization. Key features include the 'Goal Optimization for iROAS' and 'Gap to Plan Recommendations' for Teammate II, as well as 'Embedded Insights' and '1-click Exec. Reports' for Teammate I. The document also outlines the rollout plans for Sales Teammate II and the upcoming general availability for major retailers like Walmart and Target.",
+      "specificKeywords": [
+        "AllyAI Product Hub",
+        "Teammate I",
+        "Teammate II",
+        "Goal Optimization for iROAS",
+        "Gap to Plan Recommendations",
+        "Embedded Insights",
+        "1-click Exec. Reports",
+        "Sales Teammate II",
+        "General Availability",
+        "Walmart",
+        "Target",
+        "Case Study Slide Library",
+        "Command Center",
+        "GTM motion",
+        "Pricing & Packaging"
+      ],
+      "searchableTerms": [
+        "allyai product hub",
+        "teammate ii training",
+        "sales teammate walmart",
+        "goal optimization iroas",
+        "embedded insights reports"
+      ],
+      "keyFeatures": [
+        "Goal Optimization for iROAS",
+        "Gap to Plan Recommendations",
+        "Embedded Insights",
+        "1-click Exec. Reports",
+        "Case Study Slide Library"
+      ],
+      "metrics": [
+        "2x sales performance",
+        "cut reporting time in half"
+      ],
+      "products": [
+        "AllyAI",
+        "Category Teammate",
+        "Media Teammate",
+        "Sales Teammate"
+      ],
+      "competitors": [],
+      "category": "sales-enablement",
+      "targetAudience": "sales teams, customer success teams",
+      "doesSupport": [
+        "sales performance enhancement",
+        "media optimization",
+        "training and rollout for AI teammates",
+        "general availability for major retailers"
+      ],
+      "doesNotSupport": []
+    },
+    {
+      "name": "8/3 Ally 2 Training Deckv2",
+      "url": "https://docs.google.com/presentation/d/1OE9r6Mzj-Zf_YmoBlF_j5E1-PEszixzoZ4d0Z2Zm3Gs/edit?usp=drivesdk",
+      "fileId": "1OE9r6Mzj-Zf_YmoBlF_j5E1-PEszixzoZ4d0Z2Zm3Gs",
+      "type": "training-material",
+      "detailedDescription": "The '8/3 Ally 2 Training Deckv2' is a comprehensive training material designed to equip sales teams with the necessary knowledge and skills to effectively utilize the Ally AI Sales Teammate II. This document outlines the general availability, commercialization strategies, and detailed functionalities of the Ally AI platform, emphasizing its capabilities in sales optimization through AI and automation. Key features include root cause analysis, embedded insights, and 1-click executive reports, which are crucial for making data-driven decisions in a fast-paced retail environment. The training deck also highlights the integration with Amazon Copilot and provides a structured approach to implementing the Ally AI Sales Teammate II, ensuring users can achieve results within 30 days.",
+      "specificKeywords": [
+        "Ally AI",
+        "Sales Teammate II",
+        "Seismic Product Hub",
+        "CommerceIQ AI Storyline",
+        "root cause analysis",
+        "embedded insights",
+        "1-click executive reports",
+        "gap to plan recommendations",
+        "Amazon Copilot",
+        "General Availability",
+        "Commercialization",
+        "Command Center",
+        "iROAS",
+        "RMM",
+        "DSO"
+      ],
+      "searchableTerms": [
+        "ally ai training deck",
+        "sales teammate ii features",
+        "commerceiq ally ai",
+        "root cause analysis ally",
+        "amazon copilot integration"
+      ],
+      "keyFeatures": [
+        "root cause analysis",
+        "embedded insights",
+        "1-click executive reports",
+        "gap to plan recommendations",
+        "Amazon Copilot integration"
+      ],
+      "metrics": [
+        "400 1P PRODUCTS/DAY",
+        "25 decisions per minute",
+        "30 VARIABLES",
+        "3 TIMES/DAY"
+      ],
+      "products": [
+        "Ally AI Sales Teammate II"
+      ],
+      "competitors": [],
+      "category": "training",
+      "targetAudience": "Sales teams, Retail managers, E-commerce strategists",
+      "doesSupport": [
+        "Sales optimization",
+        "Data-driven decision making",
+        "Root cause analysis",
+        "Sales forecasting",
+        "Integration with Amazon systems"
+      ],
+      "doesNotSupport": []
+    },
+    {
+      "name": "ExpertIQ Training Deck Internal",
+      "url": "https://docs.google.com/presentation/d/1x0EnJT04my13Ug6EaB6tZsoTAgm-B2RSZ8bAbCANuGo/edit?usp=drivesdk",
+      "fileId": null,
+      "type": "training-material",
+      "detailedDescription": "The ExpertIQ Training Deck Internal is a comprehensive internal training document designed to familiarize sales and customer success teams with the ExpertIQ product suite. It provides detailed insights into the product's capabilities, including tactical upsells and strategic value capture through ExpertIQ Insights & Advisory. Key features include AllyAI 1-click reports and deeper advisory insights, with a focus on enabling service stickiness and maximizing client investment through a structured discovery and briefing process. The document also outlines the sales process, collateral usage, and customer onboarding strategies, emphasizing the importance of understanding client objectives and aligning them with business needs.",
+      "specificKeywords": [
+        "ExpertIQ",
+        "DSO Unbranded Case Studies",
+        "AMC Unbranded Examples",
+        "Customer-facing Menu",
+        "AllyAI",
+        "1-click reports",
+        "ExpertIQ Datasheet",
+        "External Menu",
+        "FAQ",
+        "Menu & Rate Card",
+        "Professional Services Insights",
+        "Analytics briefing process",
+        "TriageBriefing Credit Allocation",
+        "CommerceIQ",
+        "NPD review",
+        "tentpole events",
+        "competitor benchmarking",
+        "Salesforce"
+      ],
+      "searchableTerms": [
+        "ExpertIQ training deck",
+        "ExpertIQ sales process",
+        "AllyAI reports",
+        "ExpertIQ onboarding",
+        "ExpertIQ advisory services"
+      ],
+      "keyFeatures": [
+        "AllyAI 1-click reports",
+        "ExpertIQ Insights & Advisory",
+        "DSO Unbranded Case Studies",
+        "AMC Unbranded Examples",
+        "Professional Services Insights"
+      ],
+      "metrics": [],
+      "products": [
+        "ExpertIQ",
+        "AllyAI"
+      ],
+      "competitors": [],
+      "category": "sales-enablement",
+      "targetAudience": "Sales teams, Customer Success teams",
+      "doesSupport": [
+        "Service stickiness",
+        "Strategic value capture",
+        "Tactical upsells",
+        "Client investment maximization",
+        "Discovery and briefing process"
+      ],
+      "doesNotSupport": []
+    },
+    {
+      "name": "DRAFT CommerceIQ Sales Agent - Product Box January 26 Internal",
+      "url": "https://docs.google.com/document/d/1WU6dSPrlYF8wGmmKgZVRUxBIq33PhbZL8gMOmyp777Q/edit?usp=drivesdk",
+      "fileId": null,
+      "type": "product-box",
+      "detailedDescription": "The CommerceIQ Sales Agent - Product Box is an internal draft document effective January 2026, designed to provide a comprehensive service description for a tool that enhances strategic, tailored, and measurable outcomes. It leverages deep insights and data across various countries and retailers to create compelling, customer-branded PowerPoint presentations with clear, measurable Recommended Actions aimed at improving CARS metrics (Content, Availability, Ratings & Reviews, Share of Search). The document includes Retailer Access Instructions for logging into customer accounts and navigating through the platform. It emphasizes the importance of checking for the latest version as the information is subject to periodic revisions.",
+      "specificKeywords": [
+        "CommerceIQ Sales Agent",
+        "Product Box",
+        "CARS metrics",
+        "Content",
+        "Availability",
+        "Ratings & Reviews",
+        "Share of Search",
+        "customer-branded PPTs",
+        "Recommended Actions",
+        "Retailer Access Instructions",
+        "customer.commerceiq.ai",
+        "internal use",
+        "strategic outcomes",
+        "measured outcomes",
+        "deep insight",
+        "data-driven"
+      ],
+      "searchableTerms": [
+        "commerceiq sales agent product box",
+        "sales agent product box january 2026",
+        "commerceiq internal product box",
+        "product box CARS metrics",
+        "commerceiq retailer access"
+      ],
+      "keyFeatures": [
+        "customer-branded PPTs",
+        "Recommended Actions",
+        "Retailer Access Instructions",
+        "deep insight",
+        "data-driven presentations"
+      ],
+      "metrics": [
+        "CARS (Content, Availability, Ratings & Reviews, Share of Search)"
+      ],
+      "products": [
+        "CommerceIQ Sales Agent"
+      ],
+      "competitors": [],
+      "category": "sales-enablement",
+      "targetAudience": "Sales teams, Analysts, Commercial teams",
+      "doesSupport": [
+        "Strategic outcomes",
+        "Tailored presentations",
+        "Measurable actions",
+        "CARS metrics improvement"
+      ],
+      "doesNotSupport": []
+    },
+    {
+      "name": "Ally I Teammate Training",
+      "url": "https://docs.google.com/presentation/d/1nYPCt3ZJLtDZDm-y27jykNt0-2guUdURHk4iGgaYMno/edit?usp=drivesdk",
+      "fileId": "1nYPCt3ZJLtDZDm-y27jykNt0-2guUdURHk4iGgaYMno",
+      "type": "training-material",
+      "detailedDescription": "The 'Ally I Teammate Training' document is a comprehensive guide designed to equip sales teammates with the necessary tools and strategies for effective customer engagement and product renewal processes. It includes detailed sections on the Ally Upgrade Program for July 2025, renewal pricing strategies for the second half of 2025, and a centralized resource hub called the Ally Product Hub in Seismic. This hub provides access to internal trainings, messaging frameworks, and external communication materials like 1-pagers. The document emphasizes the importance of strategic renewal strategies and offers a structured approach to accessing and utilizing product information effectively.",
+      "specificKeywords": [
+        "Ally Upgrade Program July ‘25",
+        "CY 2025 H2 renewal pricing",
+        "Customer Tracker",
+        "New Pricing Calc",
+        "Renewal Strategy for Teammates I & II",
+        "CommerceIQ",
+        "Ally Product Hub",
+        "Seismic",
+        "General Information",
+        "Internal Trainings",
+        "Messaging",
+        "Pitch Decks",
+        "External 1-pagers",
+        "Ally Teammate"
+      ],
+      "searchableTerms": [
+        "ally teammate training",
+        "ally product hub seismic",
+        "commerceiq renewal strategy",
+        "ally upgrade program 2025",
+        "teammate pricing calc"
+      ],
+      "keyFeatures": [
+        "Ally Upgrade Program",
+        "CY 2025 H2 renewal pricing",
+        "Customer Tracker",
+        "New Pricing Calc",
+        "Ally Product Hub"
+      ],
+      "metrics": [],
+      "products": [
+        "Ally Teammate"
+      ],
+      "competitors": [],
+      "category": "training",
+      "targetAudience": "Sales Teammates I & II",
+      "doesSupport": [
+        "Customer engagement",
+        "Product renewal processes",
+        "Access to product information",
+        "Internal training",
+        "External communication"
+      ],
+      "doesNotSupport": []
+    },
+    {
+      "name": "Content Agent_Product Box_WIP",
+      "url": "https://docs.google.com/document/d/1s55HQJaigw9GL4JpWNj97RqIsO4SEgybOJC9y5F2Cv0/edit?usp=drivesdk",
+      "fileId": "1s55HQJaigw9GL4JpWNj97RqIsO4SEgybOJC9y5F2Cv0",
+      "type": "product-box",
+      "detailedDescription": "The Content Agent_Product Box is an internal, work-in-progress document designed to enhance product visibility in conversational shopping environments by optimizing Product Detail Page (PDP) content for AI-driven platforms like Amazon Rufus and Walmart Sparky. It provides a self-service interface for training the content agent using natural language inputs, allowing for the integration of brand guidelines and historical data. Key features include Content Validation, which connects Digital Asset Management (DAM), Product Information Management (PIM), and PDPs to ensure content accuracy and completeness, and Content Compliance, which identifies discrepancies and flags incomplete fields. The document emphasizes the importance of maintaining current and accurate product information to improve AI-generated responses.",
+      "specificKeywords": [
+        "Content Agent_Product Box",
+        "PDP content",
+        "Amazon Rufus",
+        "Walmart Sparky",
+        "Agent Training",
+        "natural language input",
+        "Content Validation",
+        "Content Compliance",
+        "DAM",
+        "PIM",
+        "product content",
+        "conversational shopping",
+        "AI-generated responses",
+        "self-service interface",
+        "brand guidelines",
+        "internal use"
+      ],
+      "searchableTerms": [
+        "content agent product box",
+        "PDP content optimization",
+        "Amazon Rufus integration",
+        "Walmart Sparky features",
+        "content validation tools"
+      ],
+      "keyFeatures": [
+        "Content Validation",
+        "Content Compliance",
+        "Agent Training",
+        "self-service interface",
+        "natural language input"
+      ],
+      "metrics": [],
+      "products": [
+        "Content Agent_Product Box"
+      ],
+      "competitors": [
+        "Amazon Rufus",
+        "Walmart Sparky"
+      ],
+      "category": "product-info",
+      "targetAudience": "Content management teams, E-commerce strategists",
+      "doesSupport": [
+        "Improving visibility in conversational shopping",
+        "Aligning PDP content with AI platforms",
+        "Training content agents with brand guidelines"
+      ],
+      "doesNotSupport": []
+    },
+    {
+      "name": "Content Agent Training Deck",
+      "url": "https://docs.google.com/presentation/d/1JtVl-TJ1-2QUl0CLVzes_YZYDGZGd86AJlHVnPvhso0/edit?usp=drivesdk",
+      "fileId": "1JtVl-TJ1-2QUl0CLVzes_YZYDGZGd86AJlHVnPvhso0",
+      "type": "training-material",
+      "detailedDescription": "The Content Agent Training Deck is a comprehensive guide designed to educate users on the deployment and utilization of Retail AI Agents, specifically focusing on the Content Agent. It outlines the vision for automating retail workflows, addressing market challenges such as margin pressures and manual processes, and highlights the integration of AI to enhance compliance and content optimization. Key features include the ability to optimize Product Detail Page (PDP) indexing based on retailer guidelines and a self-service interface for training the content agent with brand-specific context. The document also details a customer go-to-market schedule with specific email campaigns and deployment timelines, aiming for 100% deployment among DSO & Copilot customers by Q1 2026.",
+      "specificKeywords": [
+        "Content Agent",
+        "Retail AI Agents",
+        "CommerceIQ",
+        "Copilot",
+        "RMM",
+        "DSA",
+        "Ally AI Teammates",
+        "Digital Shelf",
+        "Market Share",
+        "FDE + Services",
+        "China shipment delays",
+        "OOS issues",
+        "Glucosamine dog treats",
+        "high protein claims",
+        "Amazon",
+        "compliance score",
+        "GTM Schedule",
+        "CSDs",
+        "PDP indexing",
+        "1-click syndication"
+      ],
+      "searchableTerms": [
+        "content agent training deck",
+        "retail ai agent enablement",
+        "commerceiq content optimization",
+        "copilot deployment schedule",
+        "ai agent compliance testing"
+      ],
+      "keyFeatures": [
+        "Optimize PDP indexing",
+        "1-click syndication",
+        "Self-service interface",
+        "Retailer-specific content recommendations",
+        "AI agent compliance testing"
+      ],
+      "metrics": [
+        "80%",
+        "20%",
+        "40%",
+        "60%",
+        "100% deployment by Q1 2026"
+      ],
+      "products": [
+        "Content Agent",
+        "Sales Agent",
+        "Media Agent",
+        "Stock Agent"
+      ],
+      "competitors": [],
+      "category": "training",
+      "targetAudience": "Sales teams, Retail brand managers, AI deployment specialists",
+      "doesSupport": [
+        "Retail workflow automation",
+        "Content optimization",
+        "Compliance score improvement",
+        "AI agent testing"
+      ],
+      "doesNotSupport": []
+    },
+    {
+      "name": "AllyAI Media Teammate ",
+      "url": "https://docs.google.com/presentation/d/1_m50KB13PrTeJe0p6QYHT9zlRwcALL1DuuP1GLq_f2g/edit?usp=drivesdk",
+      "fileId": null,
+      "type": "product-documentation",
+      "detailedDescription": "The AllyAI Media Teammate document is a comprehensive product guide detailing an AI-driven tool designed to enhance media and sales operations for retailers. It highlights the CommerceIQ AI Model, which has undergone over 100k hours of training across 1400 retailers, focusing on root cause analysis and goal optimization for iROAS (incremental Return on Ad Spend). Key features include embedded insights, 1-click executive reports, and gap-to-plan recommendations, all aimed at providing actionable insights and streamlined reporting for sales and media teams. The document emphasizes the tool's ability to deliver tailored insights and recommendations, but does not mention support for non-retail sectors or non-AI-driven analytics.",
+      "specificKeywords": [
+        "CommerceIQ AI Model",
+        "100k+ hours of training",
+        "1400 retailers",
+        "root cause analysis",
+        "iROAS",
+        "embedded insights",
+        "1-click executive reports",
+        "gap to plan recommendations",
+        "AllyAI Media Teammate",
+        "AllyAI Sales Teammate",
+        "Goal Optimization",
+        "Teammates and Skills",
+        "Category Teammate",
+        "Media Teammate",
+        "Sales Teammate"
+      ],
+      "searchableTerms": [
+        "allyai media teammate",
+        "commerceiq ai model",
+        "iroas optimization",
+        "embedded insights reports",
+        "gap to plan recommendations"
+      ],
+      "keyFeatures": [
+        "CommerceIQ AI Model",
+        "embedded insights",
+        "1-click executive reports",
+        "gap to plan recommendations",
+        "Goal Optimization for iROAS"
+      ],
+      "metrics": [
+        "100k+ hours of training",
+        "1400 retailers",
+        "iROAS"
+      ],
+      "products": [
+        "AllyAI Media Teammate",
+        "AllyAI Sales Teammate"
+      ],
+      "competitors": [],
+      "category": "sales-enablement",
+      "targetAudience": "Retail sales and media teams",
+      "doesSupport": [
+        "AI-driven media and sales operations",
+        "root cause analysis",
+        "goal optimization for iROAS",
+        "embedded insights",
+        "executive reporting"
+      ],
+      "doesNotSupport": [
+        "Non-retail sectors",
+        "Non-AI-driven analytics"
+      ]
+    }
+  ]
+}

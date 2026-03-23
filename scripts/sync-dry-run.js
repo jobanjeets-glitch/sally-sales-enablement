@@ -60,6 +60,11 @@ class SyncDryRun {
                     // It's a folder
                     const folderPath = path ? `${path}/${item.name}` : item.name;
 
+                    if (/archive/i.test(item.name)) {
+                        console.log(`⏭️  Skipping archive folder: ${folderPath}`);
+                        continue;
+                    }
+
                     this.folderTree.set(item.id, {
                         id: item.id,
                         name: item.name,
@@ -167,7 +172,7 @@ class SyncDryRun {
 
         const shouldSkipFile = (file) => {
             const nameFilters = [
-                { pattern: /archived/i, reason: 'Contains "archived"' },
+                { pattern: /archive/i, reason: 'Contains "archive" or "archived"' },
                 { pattern: /\(old\)/i, reason: 'Contains "(old)"' },
                 { pattern: /deprecated/i, reason: 'Contains "deprecated"' },
                 { pattern: /^Copy of/i, reason: 'Copy of another file' },

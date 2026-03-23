@@ -16,30 +16,29 @@ async function exportCatalogToCSV() {
 
     // Prepare CSV rows
     const rows = [
-        // Header
+        // Header - exact column names requested
         [
             'Document Name',
             'URL',
-            'File ID',
+            'fileId',
             'Document Type',
-            'Document Identity',
-            'Purpose',
+            'documentPurpose',
+            'documentIdentity',
             'When to Use',
-            'Comprehensive Description',
-            'Main Topics',
-            'Specific Details',
-            'Key Takeaways',
+            'targetAudience',
+            'mainTopics',
+            'specificDetails',
+            'keyTakeaways',
             'Search Queries',
-            'Product Names',
-            'Competitor Names',
-            'Customer Names',
-            'Key Metrics',
-            'Key Features',
-            'Version',
-            'Effective Date',
-            'Status',
-            'Target Audience',
-            'Not to Confuse With'
+            'notToConfuseWith',
+            'productNames',
+            'competitorNames',
+            'customerNames',
+            'keyMetrics',
+            'keyFeatures',
+            'version',
+            'effectiveDate',
+            'status'
         ]
     ];
 
@@ -50,24 +49,23 @@ async function exportCatalogToCSV() {
             doc.url || '',
             doc.fileId || '',
             doc.documentType || '',
-            doc.documentIdentity || '',
             doc.documentPurpose || '',
+            doc.documentIdentity || '',
             doc.whenToUse || '',
-            doc.comprehensiveDescription || '',
-            doc.contentSummary?.mainTopics?.join(' | ') || '',
-            doc.contentSummary?.specificDetails?.join(' | ') || '',
-            doc.contentSummary?.keyTakeaways?.join(' | ') || '',
-            doc.searchQueries?.join(' | ') || '',
-            doc.productNames?.join(' | ') || '',
-            doc.competitorNames?.join(' | ') || '',
-            doc.customerNames?.join(' | ') || '',
-            doc.keyMetrics?.join(' | ') || '',
-            doc.keyFeatures?.join(' | ') || '',
+            doc.targetAudience || '',
+            doc.contentSummary?.mainTopics?.join('; ') || '',
+            doc.contentSummary?.specificDetails?.join('; ') || '',
+            doc.contentSummary?.keyTakeaways?.join('; ') || '',
+            doc.searchQueries?.join('; ') || '',
+            doc.notToConfuseWith?.join('; ') || '',
+            doc.productNames?.join('; ') || '',
+            doc.competitorNames?.join('; ') || '',
+            doc.customerNames?.join('; ') || '',
+            doc.keyMetrics?.join('; ') || '',
+            doc.keyFeatures?.join('; ') || '',
             doc.version || '',
             doc.effectiveDate || '',
-            doc.status || '',
-            doc.targetAudience || '',
-            doc.notToConfuseWith?.join(' | ') || ''
+            doc.status || ''
         ]);
     }
 

@@ -34,3 +34,9 @@ google-credentials.json
 # Test data
 test-data/
 *.tmp
+
+# Claude Code local settings (personal)
+.claude/
+
+# Feedback logs (contain real user queries — keep out of git)
+var/*.jsonl
