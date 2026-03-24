@@ -391,6 +391,39 @@ export class IntelligentSync {
         return results.matches.length;
     }
 
+    async updateSheetName(fileId, oldName, newName) {
+        const SHEET_ID = process.env.CATALOG_SHEET_ID || '1zwmfU-b2ADXWUYYAYdMEYSPHqetUfgSIsQEwnYnyeu4';
+        try {
+            const res = await this.sheets.spreadsheets.values.get({
+                spreadsheetId: SHEET_ID,
+                range: 'Sheet1!A:C'
+            });
+            const rows = res.data.values || [];
+            let rowIndex = -1;
+            for (let i = 1; i < rows.length; i++) {
+                const rowFileId = rows[i][2]?.trim();
+                const rowName = rows[i][0]?.trim().toLowerCase();
+                if ((fileId && rowFileId === fileId) || (oldName && rowName === oldName.toLowerCase())) {
+                    rowIndex = i;
+                    break;
+                }
+            }
+            if (rowIndex === -1) return false;
+
+            const sheetRow = rowIndex + 1;
+            await this.sheets.spreadsheets.values.update({
+                spreadsheetId: SHEET_ID,
+                range: `Sheet1!A${sheetRow}`,
+                valueInputOption: 'RAW',
+                requestBody: { values: [[newName]] }
+            });
+            return true;
+        } catch (err) {
+            console.log(`   ⚠️  Could not update sheet name: ${err.message}`);
+            return false;
+        }
+    }
+
     async updateCatalogName(fileId, oldName, newName) {
         const catalogPath = './query/document-catalog-identity-focused.json';
         try {
@@ -792,7 +825,8 @@ export class IntelligentSync {
                 console.log(`   "${oldName}"\n   → "${file.name}"`);
                 const updated = await this.renameFileInPinecone(file.id, oldName, file.name);
                 const catalogUpdated = await this.updateCatalogName(file.id, oldName, file.name);
-                console.log(`   ✅ Updated ${updated} vectors in Pinecone${catalogUpdated ? ' + catalog' : ''}`);
+                const sheetUpdated = await this.updateSheetName(file.id, oldName, file.name);
+                console.log(`   ✅ Updated ${updated} vectors in Pinecone${catalogUpdated ? ' + catalog' : ''}${sheetUpdated ? ' + sheet' : ''}`);
                 results.renamed++;
             }
             console.log('');
