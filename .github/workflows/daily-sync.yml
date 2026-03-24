@@ -255,6 +255,20 @@ jobs:
           echo "Enriching any new Needs-Review rows with Claude-generated metadata..."
           node scripts/enrich-catalog-metadata.js
 
+      - name: Commit updated catalog JSON
+        if: always()
+        run: |
+          git config user.name "Sally Sync Bot"
+          git config user.email "sally-sync@users.noreply.github.com"
+          if git diff --quiet query/document-catalog-identity-focused.json; then
+            echo "No catalog changes to commit"
+          else
+            git add query/document-catalog-identity-focused.json
+            git commit -m "chore: update catalog JSON with newly enriched documents [skip ci]"
+            git push
+            echo "✅ Catalog JSON committed and pushed"
+          fi
+
       - name: Notify on failure
         if: failure()
         run: |
