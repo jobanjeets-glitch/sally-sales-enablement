@@ -10819,18 +10819,89 @@
       "name": "Shelf Agent FAQs",
       "fileId": "1PgsVR3UQXhDEzO2_QKfcn7Fp6kDCHKjppjm0ld0QLEw",
       "url": "https://docs.google.com/document/d/1PgsVR3UQXhDEzO2_QKfcn7Fp6kDCHKjppjm0ld0QLEw/edit?usp=drivesdk",
-      "documentType": "enablement-guide",
-      "documentPurpose": "Answers frequently asked questions about the AllyAI Shelf Agent product",
+      "documentType": "product-hub",
+      "documentPurpose": "Helps sales reps accurately explain Shelf Agent's product dependencies, differentiate it from related products, and address common prospect and customer questions about purchasing requirements.",
       "status": "Active",
       "productNames": [
         "AllyAI Shelf Agent",
-        "DSO"
+        "AllyAI Content Agent",
+        "Digital Shelf Optimization (DSO)",
+        "Digital Shelf Analytics (DSA)",
+        "AllyAI"
       ],
       "searchQueries": [
         "Shelf Agent FAQ",
-        "Shelf Agent questions",
-        "DSO frequently asked questions",
-        "Shelf Agent how it works"
+        "Can I buy Shelf Agent without DSO",
+        "Shelf Agent vs Content Agent difference",
+        "DSO and Shelf Agent bundling requirements",
+        "Digital Shelf Optimization product scope",
+        "How many retailers does DSO support",
+        "AllyAI Shelf Agent dependencies",
+        "Single store vs multi store DSO analytics",
+        "DSO scorecard update frequency",
+        "Digital Shelf Optimization add-ons",
+        "DSO PIM connectivity content compliance",
+        "Shelf Agent purchasing requirements"
+      ],
+      "documentIdentity": "This is the Shelf Agent FAQs — a product-focused reference document that answers common questions about the AllyAI Shelf Agent and its relationship to Digital Shelf Optimization (DSO). It clarifies the dependency between Shelf Agent and DSO, differentiates Shelf Agent from Content Agent, and explains bundling and purchasing requirements. The document also includes a detailed appendix describing the Digital Shelf Optimization product, covering its data scope, analytics types, retailer coverage, scorecards, actionability features, AI capabilities, and add-ons. It is unique in that it serves as both a quick-reference FAQ and a technical deep-dive into the DSO data foundation that powers Shelf Agent.",
+      "whenToUse": "Use this document when a prospect asks whether Shelf Agent can be purchased standalone or without DSO. Reach for it when a customer is confused about the difference between Shelf Agent and Content Agent. It is also useful when a rep needs to explain the DSO data foundation and what is included in a DSO subscription, or when scoping a deal that involves any AllyAI Shelf Agent component.",
+      "targetAudience": "Account Executives, Sales Engineers, Customer Success, Solutions Consultants",
+      "contentSummary": {
+        "mainTopics": [
+          "Shelf Agent product requirements and dependencies on DSO",
+          "Difference between Shelf Agent and Content Agent",
+          "DSO and Shelf Agent bundling and purchasing rules",
+          "Digital Shelf Optimization product scope and data collection",
+          "Single-Store vs. Multi-Store analytics",
+          "Retailer coverage and supported features",
+          "Scorecards and reporting cadence",
+          "Digital Shelf Actionability and PIM connectivity",
+          "AI and Business Intelligence capabilities in DSO",
+          "DSO add-ons and category coverage methodology"
+        ],
+        "specificDetails": [
+          "Shelf Agent requires active Digital Shelf Optimization (DSO) data to function",
+          "Customers cannot purchase Shelf Agent without DSO",
+          "Customers cannot purchase DSO without Shelf Agent — DSO subscriptions include foundational capabilities to enable Shelf Agent",
+          "DSO collects data from over 1,450 retailer websites",
+          "DSO data points are gathered on a daily basis at SKU level granularity",
+          "Multi-Store data is gathered once a week for branded SKUs, with frequency up to 2x/week for certain retailers",
+          "For a limited number of stores per retailer, crawl frequency can be increased to 1x/day",
+          "Scorecards are updated daily and data is locked in on a monthly basis",
+          "DSO category scans cover up to 50 pages per node for nodes with large numbers of pages",
+          "Shelf Agent analyzes DSO data and recommends changes; Content Agent executes content updates and syndicates fixes"
+        ],
+        "keyTakeaways": [
+          "Shelf Agent and DSO are tightly bundled — neither can be purchased without the other",
+          "Shelf Agent recommends what to change on the digital shelf, while Content Agent executes those changes",
+          "DSO provides the data foundation for Shelf Agent, covering 1,450+ retailers with daily data collection",
+          "DSO supports both Single-Store and Multi-Store analytics with varying feature availability by retailer",
+          "DSO includes scorecards, AI-driven insights, PIM connectivity, and customizable add-ons"
+        ]
+      },
+      "notToConfuseWith": "This document may be confused with the Content Agent FAQs or DSA (Digital Shelf Analytics) product documentation. Shelf Agent and Content Agent are related but distinct AllyAI products — Shelf Agent recommends changes while Content Agent executes them. DSO (Digital Shelf Optimization) is the data layer that powers Shelf Agent and is distinct from standalone DSA reporting.",
+      "competitorNames": [],
+      "customerNames": [],
+      "keyMetrics": [
+        "1,450+ retailer websites covered by DSO",
+        "Daily data collection cadence for DSO SKU-level data points",
+        "Weekly data collection for Multi-Store branded SKUs",
+        "Up to 2x/week crawl frequency for certain retailers",
+        "Up to 1x/day crawl frequency for limited stores per retailer",
+        "Daily scorecard updates with monthly data lock-in",
+        "Up to 50 pages scanned per category node"
+      ],
+      "keyFeatures": [
+        "Shelf Agent prioritized action recommendations based on DSO data",
+        "Content Agent content execution and syndication",
+        "Single-Store and Multi-Store digital shelf analytics",
+        "Daily SKU-level data collection across 1,450+ retailers",
+        "Scorecards for tracking digital shelf performance",
+        "PIM connectivity for content compliance and improvement",
+        "AI Retail Context Engine for root cause analysis",
+        "Custom Reporting Solution for business intelligence",
+        "Category and search term scans for product discovery",
+        "DSO add-ons for product customization"
       ]
     },
     {
@@ -10838,129 +10909,656 @@
       "fileId": "1bryMz9pjcv08IJVSRBInUNp-zVgdRZ3a9t5YGdXlzj0",
       "url": "https://docs.google.com/document/d/1bryMz9pjcv08IJVSRBInUNp-zVgdRZ3a9t5YGdXlzj0/edit?usp=drivesdk",
       "documentType": "enablement-guide",
-      "documentPurpose": "Answers frequently asked questions about the AllyAI Media Agent and services",
+      "documentPurpose": "Equips sales reps and SEs with authoritative answers to common and technical customer questions about Media Agent, RMM, AI Goal Optimizer, and CIQ's incrementality approach.",
       "status": "Active",
       "productNames": [
-        "AllyAI Media Agent"
+        "AllyAI",
+        "Media Agent",
+        "RMM",
+        "MI",
+        "ESM",
+        "OCC",
+        "DSA"
       ],
       "searchQueries": [
-        "Media Agent FAQ",
-        "Media Agent questions",
-        "how does Media Agent work",
-        "Media Agent services FAQ"
-      ]
+        "Media Agent packaging how to get",
+        "AI Goal Optimizer inputs signals",
+        "incrementality model how does CIQ calculate iROAS",
+        "CIQ vs Pacvue incrementality real-time",
+        "CIQ vs Skai keyword level incrementality",
+        "Amazon Walmart Target ad spend under management",
+        "keyword scraping frequency priority keywords",
+        "RMM retailer geo support Amazon UK Walmart Canada",
+        "digital shelf signals in media bidding",
+        "how long to wait before flagging AI campaign underperformance",
+        "neural network incrementality fraction explained",
+        "Goal Optimizer rules-based automation without Media Agent"
+      ],
+      "documentIdentity": "This is the 'FAQ: AllyAI Media Agent & Services' — a comprehensive internal FAQ document covering AllyAI Media Agent, Retail Media Management (RMM) foundational features, AI Goal Optimizer, and the Incrementality Model. It consolidates answers from multiple internal sessions including a 5/29 AI Goal Optimizer meeting and a 6/10 Ghirardelli/Russell Stover deep-dive call, providing detailed technical and competitive Q&A for sales and product discussions. The document covers packaging, ad spend benchmarks, scraping cadence, competitive differentiation against Pacvue and Skai, and the mechanics of CIQ's neural-network-based incrementality model. It is unique in that it captures real customer questions alongside authoritative internal answers, including proprietary model details, roadmap items, and known product limitations.",
+      "whenToUse": "Use this document when a prospect or customer asks detailed technical questions about how CIQ's AI Goal Optimizer or incrementality model works. Reach for it when handling competitive comparisons against Pacvue or Skai on media optimization or incrementality. It is also useful when customers ask about ad spend coverage, keyword scraping cadence, or retailer/geo support for RMM. Pull this document when preparing for a second call or deep-dive session with technically sophisticated buyers such as data scientists or media analytics leads.",
+      "targetAudience": "Account Executives, Sales Engineers, Customer Success, Solutions Consultants",
+      "contentSummary": {
+        "mainTopics": [
+          "Media Agent packaging and availability",
+          "AI Goal Optimizer mechanics and inputs",
+          "Incrementality model (neural network, incremental fraction, iROAS)",
+          "Competitive differentiation vs. Pacvue and Skai",
+          "Ad spend under management by retailer (Amazon, Walmart, Target)",
+          "Keyword scraping cadence and priority keyword handling",
+          "Retailer and geo support for RMM",
+          "Digital shelf signals in media optimization",
+          "Known product limitations and roadmap items",
+          "Market Insights and competitor brand benchmarking"
+        ],
+        "specificDetails": [
+          "Amazon ad spend tracked: ~$600M/year",
+          "Walmart ad spend tracked: ~$70M/year",
+          "Target ad spend tracked: ~$14M/year",
+          "50 priority keywords scraped 6 times per day",
+          "All keywords scraped daily; single scrape between 6am–9am PST for NA",
+          "AI Goal Optimizer uses 50+ data signals for bid and budget optimization",
+          "Incrementality model uses advanced neural network (not regression-based)",
+          "Incremental Fraction is computed daily and is unique to each search term",
+          "AI campaign performance: wait 10–15 days after budget is set to evaluate impact",
+          "Media Agent included in RMM packages; future add-on in Agent packaging model"
+        ],
+        "keyTakeaways": [
+          "CIQ's incrementality model is real-time and keyword-level, unlike competitors (Pacvue, Skai) which rely on MMM models with 2+ week lag",
+          "The AI Goal Optimizer uses 50+ signals including digital shelf data (BuyBox, price, availability) making it more holistic than pure ad-performance optimizers",
+          "Media Agent is currently bundled in RMM packages but will become a standalone add-on in the AllyAI agent packaging model",
+          "CIQ uses a neural network (not regression) for incrementality, providing granular campaign- and keyword-level incremental fraction values updated daily",
+          "Several self-serve capabilities (custom shelves, keyword additions) are not yet available and require support tickets — a known competitive gap vs. Pacvue"
+        ]
+      },
+      "notToConfuseWith": "Do not confuse with the RMM product one-pager or Media Agent launch deck, which are external-facing and do not contain the same level of technical Q&A, competitive detail, or model explainability content.",
+      "competitorNames": [
+        "Pacvue",
+        "Skai",
+        "Incremental",
+        "Data Dive",
+        "Profitero",
+        "NielsenIQ",
+        "Criteo"
+      ],
+      "customerNames": [
+        "Ghirardelli",
+        "Russell Stover",
+        "Mars",
+        "KC (Kimberly-Clark)",
+        "C&D (Church & Dwight)"
+      ],
+      "keyMetrics": [
+        "$600M/year Amazon ad spend tracked",
+        "$70M/year Walmart ad spend tracked",
+        "$14M/year Target ad spend tracked",
+        "50+ data signals in AI Goal Optimizer",
+        "6 scrapes/day for 50 priority keywords",
+        "95% of spend covered by tracked keywords",
+        "10–15 days to evaluate AI campaign impact",
+        "5 days to resolve underspend allocation",
+        "2 competitor brands pinneable in Market Insights and Advanced Reporting",
+        "iROAS = Incremental Fraction × ROAS"
+      ],
+      "keyFeatures": [
+        "Real-time keyword-level incrementality optimization",
+        "Neural network-based incremental fraction model (daily computation per search term)",
+        "AI Goal Optimizer with 50+ signals including digital shelf data",
+        "Rules-based automation as alternative to Media Agent for specific keyword control",
+        "Priority keyword scraping (6x/day for top 50 keywords)",
+        "BuyBox, price, availability, and promotions integrated into bid optimization",
+        "Amazon Ads / AMC certification",
+        "Support for Amazon (all geos) and Walmart US via Media Teammate II",
+        "iROAS, SOV, and ROAS as selectable optimization goals",
+        "Continuous A/B testing for model validation"
+      ],
+      "effectiveDate": "2025-05-29"
     },
     {
       "name": "FAQs: AllyAI Sales Agent & Services",
       "fileId": "13C7z31U1SSQ1sFoFwdO2JAQLornDwJ2tQocvyDKH-tU",
       "url": "https://docs.google.com/document/d/13C7z31U1SSQ1sFoFwdO2JAQLornDwJ2tQocvyDKH-tU/edit?usp=drivesdk",
-      "documentType": "enablement-guide",
-      "documentPurpose": "Answers frequently asked questions about the AllyAI Sales Agent product and services",
+      "documentType": "other",
+      "documentPurpose": "Equip sales reps with ready-made answers to the most common questions and objections prospects raise about AllyAI Sales Agent, from availability and pricing to security and differentiation.",
       "status": "Active",
       "productNames": [
-        "AllyAI Sales Agent",
-        "Ally"
+        "AllyAI",
+        "Sales Agent",
+        "Content Agent",
+        "Ask Ally",
+        "Sales Diagnostics",
+        "PRA"
       ],
       "searchQueries": [
-        "Sales Agent FAQ",
-        "Sales Agent questions",
-        "AllyAI Sales Agent frequently asked questions",
-        "Sales Agent how it works",
-        "Sales Agent services FAQ"
+        "Sales Agent supported retailers regions",
+        "Ask Ally vs Sales Diagnostics difference",
+        "AllyAI Sales Agent pricing Early Access",
+        "Does Sales Agent replace BI tool",
+        "Sales Agent security SOC 2 compliance",
+        "PRA Profit Recovery regional availability",
+        "AllyAI Sales Agent Amazon countries",
+        "Sales Agent dispute resolution automation",
+        "AllyAI FAQ objection handling",
+        "Content Agent free Early Access",
+        "Sales Diagnostics deep reasoning Q1",
+        "AllyAI chargeback shortage regional restrictions"
+      ],
+      "documentIdentity": "This is the 'FAQs: AllyAI Sales Agent & Services' — a structured FAQ document addressing the most common questions prospects and customers ask about the AllyAI Sales Agent offering. It covers regional and retailer availability, the distinction between Ask Ally and Sales Diagnostics, pricing for the Early Access program, competitive differentiation from traditional BI and analytics tools, and platform security standards. The document is unique in that it consolidates technical, commercial, and security objection-handling content into a single concise reference, making it especially useful during or after discovery and demo calls.",
+      "whenToUse": "Reach for this document when a prospect or customer asks about which regions or retailers Sales Agent supports, or wants to understand how it differs from their existing BI tools. Use it during or after a demo when pricing, data security, or the Ask Ally vs. Sales Diagnostics distinction comes up. It is also useful when a customer questions whether Sales Agent would replace their current analytics stack.",
+      "targetAudience": "Account Executives, Sales Engineers, Customer Success, Solutions Consultants",
+      "contentSummary": {
+        "mainTopics": [
+          "AllyAI Sales Agent regional and retailer availability",
+          "Ask Ally vs. Sales Diagnostics differentiation",
+          "Early Access program pricing",
+          "Differentiation from traditional sales analytics and BI tools",
+          "Data security and compliance",
+          "Profit Recovery (PRA) regional support",
+          "Autonomous AI-driven root cause analysis",
+          "Operational automations (dispute resolution, buybox defense)",
+          "Role-based access and SSO",
+          "Sales Agent as a complement to existing analytics stack"
+        ],
+        "specificDetails": [
+          "Sales Agent is available on Amazon across US, Canada, EU5, and Australia",
+          "PRA is supported in US, EU9, Brazil, Mexico, and Australia",
+          "Chargeback and shortage features have regional restrictions in Netherlands and Poland",
+          "Sales Diagnostics uses 'Deep Reasoning' and is available end of Q1",
+          "Early Access program provides free use of Content Agent for the life of the customer's contract",
+          "Platform maintains SOC 2 Type II compliance",
+          "Platform supports SSO, role-based access, and audit logging",
+          "All data is encrypted in transit and at rest",
+          "Sales Agent automates corrective actions including dispute resolution and buybox defense",
+          "Sales Diagnostics autonomously navigates datasets to prioritize highest-impact SKUs"
+        ],
+        "keyTakeaways": [
+          "Sales Agent goes beyond reporting by diagnosing root causes, recommending actions, and automating corrections — differentiating it from traditional BI tools",
+          "Ask Ally provides instant conversational answers about what happened, while Sales Diagnostics (coming end of Q1) explains why and prescribes specific fixes",
+          "The Early Access program offers free Content Agent access for the life of the contract, lowering the barrier to adoption",
+          "Sales Agent is available on Amazon across multiple regions, but specific capabilities like PRA vary by market",
+          "The platform meets enterprise security standards with SOC 2 Type II, SSO, role-based access, and full encryption"
+        ]
+      },
+      "notToConfuseWith": "This FAQ should not be confused with the AllyAI product hub, battle cards, or first-call decks, which provide broader product positioning and pitch narratives rather than structured Q&A objection handling.",
+      "competitorNames": [],
+      "customerNames": [],
+      "keyMetrics": [],
+      "keyFeatures": [
+        "Ask Ally conversational analyst for instant executive summaries",
+        "Sales Diagnostics deep-research skill with Deep Reasoning (end of Q1)",
+        "Autonomous root cause analysis and gap-to-plan recommendations",
+        "Dispute resolution automation",
+        "Buybox defense automation",
+        "Profit Recovery (PRA) automation",
+        "SOC 2 Type II compliance",
+        "SSO and role-based access control",
+        "Audit logging",
+        "Data encryption in transit and at rest"
       ]
     },
     {
       "name": "CIQ Platform Third Party Access Agreement",
       "fileId": "1Hnc_yja2Rm14oQnC2xR9FK9PxVsCwQvN",
       "url": "https://docs.google.com/document/d/1Hnc_yja2Rm14oQnC2xR9FK9PxVsCwQvN/edit?usp=drivesdk",
-      "documentType": "enablement-guide",
-      "documentPurpose": "Legal agreement governing third-party access to the CIQ platform",
+      "documentType": "legal-contract",
+      "documentPurpose": "This document is used to formally authorize and legally bind a third-party partner or agency to access a customer's CommerceIQ platform instance under defined terms and restrictions.",
       "status": "Active",
       "productNames": [
-        "CommerceIQ"
+        "CommerceIQ Platform"
       ],
       "searchQueries": [
         "third party access agreement",
-        "platform access agreement",
-        "CIQ contract",
-        "third party agreement"
+        "agency access to CommerceIQ platform",
+        "consultant platform access contract",
+        "partner access customer account",
+        "third party data access terms",
+        "authorized user credentials agreement",
+        "platform access legal contract",
+        "advisory firm CommerceIQ access",
+        "third party confidentiality agreement CIQ",
+        "CommerceIQ platform terms and conditions",
+        "grant platform access to agency",
+        "third party indemnification CommerceIQ"
+      ],
+      "documentIdentity": "This is the CIQ Platform Third Party Access Agreement — a binding legal contract between CommerceIQ (Boomerang Commerce, Inc. dba CommerceIQ) and an external third-party entity (such as a consulting firm or agency) that requires access to the CommerceIQ platform on behalf of a mutual customer. It governs the terms under which the accessing party may use a customer's instance within the CommerceIQ platform solely to provide advisory services to that customer. The document includes provisions for license scope, authorized user management, platform restrictions, confidentiality, indemnification, limitations of liability, data protection, compliance auditing, and termination. It is uniquely structured for third-party (non-customer, non-CIQ) entities who need read access to a customer's CommerceIQ account, distinguishing it from standard customer agreements.",
+      "whenToUse": "A rep should use this document when a customer requests that a third-party consultant, agency, or advisory firm be granted access to their CommerceIQ platform account. It is also relevant when a partner or integrator needs to be onboarded to view customer data within the platform on the customer's behalf. This agreement should be executed before any third-party access credentials are provisioned.",
+      "targetAudience": "Account Executives, Customer Success, Legal, Sales Operations",
+      "contentSummary": {
+        "mainTopics": [
+          "Third-party platform access licensing",
+          "Authorized user management and credentials",
+          "Platform use restrictions and permitted purposes",
+          "Confidentiality and data protection obligations",
+          "Indemnification and liability limitations",
+          "Compliance auditing rights",
+          "Term and termination conditions",
+          "Governing law and jurisdiction (California)",
+          "Feedback and usage data rights",
+          "Agreement modification procedures"
+        ],
+        "specificDetails": [
+          "License is limited, revocable, non-exclusive, non-transferable, and non-sublicensable",
+          "Access is solely permitted for providing advisory services to the customer",
+          "Liability cap is $1,000 USD in aggregate",
+          "Claims must be brought within 2 years of the triggering event",
+          "CommerceIQ may audit third-party platform usage for 1 year post-termination",
+          "Governing law is the State of California, County of Santa Clara",
+          "CommerceIQ address for notices: 2100 Geng Rd. Suite 210, Palo Alto, CA 94303",
+          "Third-party must attribute CommerceIQ when presenting platform information to the customer",
+          "CommerceIQ can suspend access at any time for any reason with commercially reasonable notice",
+          "All Customer Account Information must be destroyed upon termination"
+        ],
+        "keyTakeaways": [
+          "This agreement must be signed before any third-party is granted access to a customer's CommerceIQ platform instance",
+          "The third party's access is strictly limited to advisory services for the named customer and does not constitute a separate platform license",
+          "CommerceIQ retains broad rights to suspend, revoke, or terminate access unilaterally at any time",
+          "The third party bears significant legal responsibility including indemnification obligations and data security requirements",
+          "CommerceIQ's liability to the third party is capped at $1,000 and excludes all consequential damages"
+        ]
+      },
+      "notToConfuseWith": "This document should not be confused with the standard CommerceIQ Master Subscription Agreement (MSA) or customer order forms, which govern the primary customer relationship. It is also distinct from internal employee access policies or API developer agreements.",
+      "competitorNames": [],
+      "customerNames": [],
+      "keyMetrics": [
+        "$1,000 aggregate liability cap",
+        "2-year claim filing deadline",
+        "1-year post-termination audit right"
+      ],
+      "keyFeatures": [
+        "Limited, revocable platform access license for third parties",
+        "Authorized user provisioning and credential management",
+        "Platform use and restriction policies",
+        "Confidentiality and data protection obligations",
+        "Indemnification by the accessing party",
+        "CommerceIQ audit rights post-termination",
+        "Unilateral suspension and termination rights for CommerceIQ",
+        "Usage data and feedback rights retained by CommerceIQ"
       ]
     },
     {
       "name": "CIQ Support Maintenance Packages (Standard and Enterprise)",
       "fileId": "1N104zHKOyxJY8514tLasaPRwyoENHoeM",
       "url": "https://docs.google.com/document/d/1N104zHKOyxJY8514tLasaPRwyoENHoeM/edit?usp=drivesdk",
-      "documentType": "enablement-guide",
-      "documentPurpose": "Describes the Standard and Enterprise support and maintenance package tiers for CIQ customers",
+      "documentType": "legal-contract",
+      "documentPurpose": "Helps sales reps and customer success managers explain, compare, and position CommerceIQ's support packages to prospects and existing customers during renewal or upsell conversations.",
       "status": "Active",
       "productNames": [
-        "CommerceIQ"
+        "DSA"
       ],
       "searchQueries": [
-        "support packages",
-        "maintenance packages",
-        "enterprise support",
-        "standard support",
-        "CIQ support tiers",
-        "support SLA"
+        "support package tiers",
+        "Enterprise vs Standard support SLA",
+        "incident response time P0 P1 P2",
+        "TAM named contact support",
+        "support SLA commitments",
+        "service request completion time",
+        "DSO data maintenance cadence",
+        "support upgrade pricing",
+        "ticket response times",
+        "priority levels P0 P1 P2 P3 definitions",
+        "support maintenance pricing 50k",
+        "CIQ support business hours holidays"
+      ],
+      "documentIdentity": "This is the CIQ Support Maintenance Packages document — a formal service-level specification outlining the two available post-sale support tiers offered by CommerceIQ: Standard (included at no additional cost) and Enterprise (priced at the higher of 10% of contract value or $50,000 annually). It details incident response and resolution SLA commitments, service request completion windows, named technical account management, data maintenance cadences for DSO, and product feedback access for each tier. The document also defines the four priority levels (P0–P3) with their associated severity types, issue descriptions, first response times, and target resolution times. It is unique in that it serves as the contractual reference for what customers can expect from CommerceIQ's support organization and what differentiates the paid Enterprise tier from the baseline Standard package.",
+      "whenToUse": "Use this document when a prospect or customer asks what level of support is included with their subscription or what upgrading to Enterprise support would provide. Reach for it during renewal discussions where a customer has experienced support friction and needs to understand SLA commitments. It is also useful when a customer escalates concerns about response times and you need to reference contractual obligations or justify an upsell to Enterprise support.",
+      "targetAudience": "Account Executives, Customer Success Managers, Sales Engineers, Renewal Managers",
+      "contentSummary": {
+        "mainTopics": [
+          "Standard vs. Enterprise support tier comparison",
+          "Incident SLA response and resolution times by priority",
+          "Service request target completion windows",
+          "Named TAM/CSS point of contact (Enterprise only)",
+          "Data maintenance cadences for DSO",
+          "Knowledge base and self-service access",
+          "Ticket reporting and analytics dashboard",
+          "Product feedback and feature request voting",
+          "Priority level definitions (P0–P3)",
+          "Business hours and holiday SLA exclusions"
+        ],
+        "specificDetails": [
+          "Enterprise support is priced at the higher of 10% of contract value or $50,000 annually",
+          "Standard tier adheres to SLAs for P0-P3 First Response Time 70% of the time; Enterprise at 95%",
+          "Enterprise tier adheres to P0-P2 Targeted Resolution Time SLAs 50% of the time; Standard has no resolution SLA",
+          "Service request completion is 4 weeks for Standard and 2 weeks for Enterprise",
+          "Enterprise includes a named TAM/CSS point of contact with fortnightly check-ins",
+          "P0/ASAP incidents require a 4 business hour first response and 1 business day target resolution",
+          "P1/Critical incidents require 1 business day first response and 5 business days target resolution",
+          "P2/Major incidents require 3 business day first response and 15 business days target resolution",
+          "P3/Minor incidents require 5 business day first response with best-effort resolution",
+          "DSO data maintenance (PIM matching and catalog audit) is quarterly for Standard and fortnightly for Enterprise"
+        ],
+        "keyTakeaways": [
+          "Enterprise support meaningfully increases SLA adherence rates and cuts service request completion time in half compared to Standard",
+          "Only Enterprise customers receive a named TAM/CSS contact with proactive fortnightly engagement",
+          "P0 incidents are the only priority level that obligates CIQ to work outside standard business hours (M-F 9am–5pm Pacific)",
+          "SLA timing excludes 'waiting time' where a ticket is sitting with the customer, protecting CIQ's adherence metrics",
+          "Data maintenance for DSO is significantly more frequent under Enterprise (fortnightly vs. quarterly)"
+        ]
+      },
+      "notToConfuseWith": "This document should not be confused with the main Technical Support Agreement or MSA/Order Form, which govern broader contractual terms. It also differs from onboarding documentation, which handles setup timelines separately as noted in the document.",
+      "competitorNames": [],
+      "customerNames": [],
+      "keyMetrics": [
+        "10% of contract value or $50,000 (Enterprise support pricing)",
+        "70% SLA adherence for P0-P3 First Response (Standard)",
+        "95% SLA adherence for P0-P3 First Response (Enterprise)",
+        "50% SLA adherence for P0-P2 Resolution Time (Enterprise)",
+        "4 weeks service request completion (Standard)",
+        "2 weeks service request completion (Enterprise)",
+        "P0 first response: 4 business hours",
+        "P0 target resolution: 1 business day",
+        "P1 first response: 1 business day",
+        "P1 target resolution: 5 business days",
+        "P2 first response: 3 business days",
+        "P2 target resolution: 15 business days",
+        "P3 first response: 5 business days",
+        "Fortnightly TAM check-ins (Enterprise)",
+        "Quarterly data maintenance for Standard DSO",
+        "Fortnightly data maintenance for Enterprise DSO"
+      ],
+      "keyFeatures": [
+        "Analytics dashboard for live ticket reporting",
+        "Raw ticket data download",
+        "Access to learning guides and FAQs",
+        "Named TAM/CSS point of contact (Enterprise)",
+        "Fortnightly proactive ticket management and technical advice (Enterprise)",
+        "Online product feature request creation",
+        "Product request voting",
+        "PIM matching status and maintenance (DSO)",
+        "Catalog audit status and maintenance (DSO)",
+        "Tiered SLA commitments for P0–P3 incidents",
+        "Service request target completion windows"
       ]
     },
     {
       "name": "CIQ Subscription Master Service Agreement (standard MSA)",
       "fileId": "1G2MUHoPVMo3tJXliK9k6ykslIA_XOA4w",
       "url": "https://docs.google.com/document/d/1G2MUHoPVMo3tJXliK9k6ykslIA_XOA4w/edit?usp=drivesdk",
-      "documentType": "enablement-guide",
-      "documentPurpose": "Master service agreement governing CIQ subscriptions and customer contracts",
+      "documentType": "legal-contract",
+      "documentPurpose": "This document serves as the authoritative legal and contractual reference for sales reps, legal teams, and customers formalizing a commercial relationship with CommerceIQ, defining the rights, restrictions, and obligations of both parties throughout the subscription lifecycle.",
       "status": "Active",
       "productNames": [
-        "CommerceIQ"
+        "CIQ Service"
       ],
       "searchQueries": [
-        "MSA",
-        "master service agreement",
-        "subscription agreement",
-        "standard contract",
-        "CIQ MSA",
-        "service agreement"
+        "master service agreement CommerceIQ",
+        "CIQ subscription contract terms",
+        "CommerceIQ MSA legal",
+        "data ownership and IP rights CIQ",
+        "termination and renewal terms CommerceIQ",
+        "liability cap CommerceIQ contract",
+        "confidentiality obligations CIQ agreement",
+        "indemnification terms CommerceIQ",
+        "payment terms and fees CIQ subscription",
+        "auto-renewal notice period CIQ",
+        "CommerceIQ customer data rights",
+        "governing law jurisdiction CommerceIQ"
+      ],
+      "documentIdentity": "This is the CommerceIQ Subscription Master Service Agreement (MSA) — the foundational legal contract governing the relationship between Boomerang Commerce, Inc. d/b/a CommerceIQ and its customers for subscription-based access to the CIQ platform. It is a comprehensive, multi-section agreement covering service terms, usage restrictions, intellectual property rights, confidentiality obligations, fees and payment terms, warranties, indemnification, and limitations of liability. The document is structured around a core agreement body that is activated by individual Service Orders, which specify the particular services, fees, and subscription terms for each customer engagement. It is unique in that it governs all CIQ Services — including the CIQ Service platform, Technical Support, and Professional Services — under a single master framework, with linked SLA and Technical Support terms hosted at commerceiq.ai/legal.",
+      "whenToUse": "Reach for this document during the contract negotiation and deal-closing phase when a prospect or customer needs to review, redline, or sign the master agreement before or alongside a Service Order. It is also relevant when a customer raises questions about data ownership, confidentiality, IP rights, liability caps, or termination rights. Use it when legal or procurement teams are involved and need to assess contractual risk and compliance obligations. It may also be referenced post-signature when disputes arise or when renewing or amending an existing subscription.",
+      "targetAudience": "Account Executives, Legal Counsel, Deal Desk, Sales Operations, Customer Success, Finance",
+      "contentSummary": {
+        "mainTopics": [
+          "Subscription service grant and license terms",
+          "Usage restrictions and customer responsibilities",
+          "Intellectual property and proprietary rights",
+          "Confidentiality obligations",
+          "Fees, payment terms, and taxes",
+          "Subscription term, renewal, and termination",
+          "Warranties and disclaimers",
+          "Indemnification obligations (CIQ and Customer)",
+          "Limitation of liability",
+          "General provisions including governing law, assignment, and force majeure"
+        ],
+        "specificDetails": [
+          "CIQ is legally Boomerang Commerce, Inc., d/b/a CommerceIQ, headquartered at 2100 Geng Road, Suite 210, Palo Alto, CA 94303",
+          "Agreement auto-renews annually unless either party provides 30 days written notice of non-renewal",
+          "Termination for material breach requires 30 days notice with a cure period",
+          "Aggregate liability cap is limited to fees paid/payable in the 12 months preceding the incident",
+          "IP infringement liability cap is separately capped at $1,000,000",
+          "Fees are non-cancellable, non-refundable, and non-recoupable except as expressly provided",
+          "Direct purchases from CIQ are billed annually in advance, payable within 30 days of invoice",
+          "Late payment interest accrues at 1.5% per month or highest rate allowed by law",
+          "CIQ owns all Usage Data derived from platform operation; third-party sharing must be de-identified and aggregated",
+          "Governing law is State of California, with exclusive jurisdiction in Santa Clara County courts",
+          "SLA terms are hosted at https://www.commerceiq.ai/legal/agreements/sla",
+          "Technical Support terms are hosted at https://www.commerceiq.ai/legal/agreements/tsa"
+        ],
+        "keyTakeaways": [
+          "The MSA is the master legal framework; all commercial specifics (pricing, term, services) are defined in individual Service Orders executed under it",
+          "CIQ retains all IP rights to its platform, models, and technology; customers own their own Customer Data but grant CIQ a license to use it for service delivery and improvement",
+          "Liability is broadly capped at 12 months of fees paid, with a separate $1M cap for IP infringement claims, and mutual exclusion of consequential damages",
+          "The agreement auto-renews annually and fees are generally non-refundable, making early termination provisions and cure periods critical to understand before signing",
+          "CIQ has the right to modify agreement terms with notice; continued use of the service constitutes acceptance of modifications"
+        ]
+      },
+      "notToConfuseWith": "This MSA should not be confused with individual Service Orders (which are separate commercial documents specifying product, price, and term), the SLA (Service Level Agreement hosted at commerceiq.ai/legal/agreements/sla), or the Technical Support Agreement (TSA). It is also distinct from any order forms, SOWs, or addenda that supplement but do not replace the MSA.",
+      "competitorNames": [],
+      "customerNames": [],
+      "keyMetrics": [
+        "12-month lookback period for aggregate liability cap",
+        "$1,000,000 cap on IP infringement liability",
+        "30-day invoice payment terms",
+        "1.5% per month late payment interest rate",
+        "30-day cure period for material breach before termination",
+        "30-day notice period required for non-renewal",
+        "1-year automatic renewal period"
+      ],
+      "keyFeatures": [
+        "Non-exclusive, non-transferable subscription license to CIQ Service",
+        "Service Levels and Technical Support included under the agreement",
+        "Professional Services governed under same MSA via Service Orders",
+        "Customer Data ownership retained by customer with limited license grant to CIQ",
+        "CIQ ownership of Usage Data with de-identification requirement for third-party sharing",
+        "Feedback license grant to CIQ (perpetual, irrevocable)",
+        "Mutual confidentiality obligations",
+        "Bilateral indemnification for IP infringement and customer data claims",
+        "Force majeure protections for both parties",
+        "Reseller purchasing pathway supported"
       ]
     },
     {
       "name": "Product Box: AllyAI Media Agent & Services",
       "fileId": "1aki5EOsdd192s0sG4iDB5ugyZP1ES9e4",
       "url": "https://docs.google.com/document/d/1aki5EOsdd192s0sG4iDB5ugyZP1ES9e4/edit?usp=drivesdk",
-      "documentType": "enablement-guide",
-      "documentPurpose": "Product positioning, value proposition, and messaging for AllyAI Media Agent and managed services",
+      "documentType": "product-hub",
+      "documentPurpose": "Equip sales reps with a complete feature-by-feature reference for positioning, scoping, and pricing AllyAI Media Agent & Services against legacy retail media agencies and competing platforms.",
       "status": "Active",
       "productNames": [
         "AllyAI Media Agent",
-        "RMM",
-        "Ally"
+        "Retail Media Management (RMM)",
+        "AI Goal Optimizer",
+        "AllyAI Media Teammate",
+        "Ask AllyAI",
+        "AllyAI Takeaways",
+        "Campaign Optimizer",
+        "Budget Optimizer",
+        "Hourly Bidder",
+        "AMC Reports",
+        "AMC+ Insights",
+        "Market Insights",
+        "Programmatic Data Sharing"
       ],
       "searchQueries": [
-        "Media Agent product box",
-        "Media Agent positioning",
-        "Media Agent value proposition",
-        "Media Agent services overview",
-        "AllyAI Media Agent overview"
-      ]
+        "AllyAI Media Agent pricing",
+        "replace retail media agency with AI",
+        "bid optimization automation Amazon Walmart",
+        "media managed service incrementality iROAS",
+        "RMM Core Plus Performance package comparison",
+        "how much does Media Agent cost percent of spend",
+        "budget pacing optimization neural network",
+        "AllyAI automated reporting QBR PowerPoint",
+        "retail media managed service CommerceIQ",
+        "Media Agent vs agency 6-8 percent fee",
+        "AMC reports AMC+ insights features",
+        "AI Goal Optimizer hourly bidder budget optimizer"
+      ],
+      "documentIdentity": "This is the AllyAI Media Agent & Services Product Box — a comprehensive internal reference document describing the full feature set, availability, pricing, and managed service structure of CommerceIQ's AllyAI Media Agent offering. It covers agent skills (bid optimization, budget pacing), AllyAI platform capabilities (Ask AllyAI, Takeaways, Automated Reporting), and the human-led managed services layer that together replace the traditional retail media agency model. The document also includes a detailed appendix covering the foundational Retail Media Management (RMM) product features across three packaging tiers (Core, Plus, Performance), including campaign management, AI Goal Optimizer, incrementality, AMC reports, and more. It is intended for internal use only and serves as the single authoritative source for understanding what MediaAgent includes, how it is priced, and how it differs from self-serve RMM packages.",
+      "whenToUse": "Use this document when a prospect or customer is currently using a retail media agency and you need to articulate the AI + human expert replacement value proposition. Reach for it when a customer asks specifically about bid optimization, budget pacing automation, or managed service capabilities on Amazon or Walmart. It is also the right resource when structuring a pricing conversation, as it contains the full media spend-based pricing table. Reps should also consult it when a customer asks how Media Agent differs from the self-serve RMM Core, Plus, or Performance packages.",
+      "targetAudience": "Account Executives, Sales Engineers, Customer Success, Solutions Consultants",
+      "contentSummary": {
+        "mainTopics": [
+          "AllyAI Media Agent overview and problem/solution framing",
+          "Agent skills: bid optimization and budget pacing",
+          "AllyAI platform skills: Ask AllyAI, Takeaways, Automated Reporting",
+          "Managed services layer: reporting, insights, campaign management, consulting",
+          "Media Agent pricing table and comparison to agency fees",
+          "RMM Core package features",
+          "RMM Plus package features",
+          "RMM Performance package features",
+          "Incrementality and iROAS measurement",
+          "Retailer and region availability"
+        ],
+        "specificDetails": [
+          "Media Agent priced at 4.5–6% of media spend vs. agency standard of 6–8% (~25% savings)",
+          "DSP spend pricing: 6–8% of DSP spend",
+          "Pricing tiers range from 6.2% (under $1M spend) down to 4.6% ($50M–$100M spend)",
+          "Software-to-services ratio is 50-50 for H1 2026",
+          "Neural network model uses 50+ digital signals for bid and budget optimization",
+          "Media Agent processes 85 decisions per minute",
+          "Q1 2025 case study of 10 companies: 55% increase in iROAS, 75% growth in sales, 12.8% lower CPC",
+          "Currently available in North America only on Amazon and Walmart (Target/Instacart coming soon)",
+          "Must be an existing Retail Media Management Managed Service (RMM) customer to qualify",
+          "Core package tracks SoV of 200 keywords/day; Plus tracks 500 (up to 2,500 add-on); Performance tracks up to 2,500 with intra-day (6x/day) for top 50"
+        ],
+        "keyTakeaways": [
+          "AllyAI Media Agent & Services is a full agency replacement combining AI-powered automation with dedicated human expertise at a lower cost than traditional agencies",
+          "The offering is priced as a single line item (platform + agent + human services) at 4.5–6% of media spend, undercutting agency rates by ~25%",
+          "Media Agent is built on top of the RMM platform and requires an existing RMM Managed Service contract; it is not a standalone self-serve product",
+          "Proven Q1 2025 results across 10 customers show 55% iROAS improvement, 75% sales growth, and 12.8% CPC reduction",
+          "The foundational RMM appendix details three packaging tiers (Core, Plus, Performance) with increasing features around incrementality, AMC insights, AllyAI teammates, and data sharing"
+        ]
+      },
+      "notToConfuseWith": "Do not confuse with the standalone RMM Product Box (appendix content) or other AllyAI agent product boxes (Sales Agent, Shelf Agent, Content Agent), which cover different agentic capabilities outside of retail media management.",
+      "competitorNames": [
+        "Pacvue",
+        "Skai",
+        "Flywheel",
+        "The Trade Desk",
+        "Criteo",
+        "Citrus"
+      ],
+      "customerNames": [],
+      "keyMetrics": [
+        "55% increase in iROAS (Q1 2025 case study)",
+        "75% growth in sales (Q1 2025 case study)",
+        "12.8% lower CPC (Q1 2025 case study)",
+        "85 decisions per minute",
+        "50+ digital signals in neural network model",
+        "4.5–6% of media spend pricing",
+        "6–8% of DSP spend pricing",
+        "~25% savings vs. traditional agency",
+        "50-50 software-to-services ratio H1 2026",
+        "Up to 2,500 keywords tracked (Performance tier)",
+        "Intra-day SoV tracking 6x/day for up to 50 keywords (Performance tier)"
+      ],
+      "keyFeatures": [
+        "Bid optimization agent skill (Amazon and Walmart search ads)",
+        "Budget pacing and optimization agent skill",
+        "Ask AllyAI conversational interface for campaign data",
+        "AllyAI Takeaways automated insight summaries",
+        "1-click automated QBR PowerPoint generation",
+        "Incrementality (iROAS) measurement and optimization",
+        "AMC Reports and AMC+ Insights (full-funnel Amazon)",
+        "Rules-based automation (IFTTT-style bid/budget rules)",
+        "Cross-retailer reporting dashboard",
+        "Programmatic data sharing via Databricks connectors",
+        "Share of Voice (SoV) tracking by keyword",
+        "DSP campaign management (Amazon)"
+      ],
+      "version": "V3.1.2025",
+      "effectiveDate": "2026-02-10"
     },
     {
       "name": "CommerceIQ Sales Agent Messaging Framework",
       "fileId": "1UvrqNqH79UC77DtfpV4FveNEfQEStcyt",
       "url": "https://docs.google.com/document/d/1UvrqNqH79UC77DtfpV4FveNEfQEStcyt/edit?usp=drivesdk",
-      "documentType": "enablement-guide",
-      "documentPurpose": "Messaging framework, talk tracks, and positioning language for selling the AllyAI Sales Agent",
+      "documentType": "product-hub",
+      "documentPurpose": "Equips sales reps with approved messaging, positioning language, and proof points to confidently pitch and qualify opportunities for CommerceIQ Sales Agent.",
       "status": "Active",
       "productNames": [
-        "AllyAI Sales Agent",
-        "Ally"
+        "Sales Agent",
+        "AllyAI",
+        "Ally",
+        "AC"
       ],
       "searchQueries": [
-        "Sales Agent messaging framework",
-        "Sales Agent talk tracks",
-        "Sales Agent positioning",
+        "Sales Agent messaging",
         "how to pitch Sales Agent",
-        "Sales Agent messaging"
+        "ecommerce reporting automation",
+        "AI deck generation ecommerce",
+        "gap to plan AI recommendations",
+        "Ask Ally features",
+        "Sales Agent proof points",
+        "beverage brand case study Sales Agent",
+        "CAARS performance framework",
+        "insight pack automation retail",
+        "Sales Agent vs manual reporting",
+        "AllyAI Sales Agent positioning"
+      ],
+      "documentIdentity": "This is the CommerceIQ Sales Agent Messaging Framework — a comprehensive messaging and positioning guide for the Sales Agent product within the AllyAI agentic suite. It contains the official product name, value proposition, elevator pitch, long and short descriptions, tone of voice guidelines, target persona details, pain points, outcome pillars, product feature benefits and details, customer requirements, and proof points. The document is structured to give sales and marketing teams a single source of truth for how to talk about Sales Agent across all customer-facing touchpoints. What makes it unique is its end-to-end coverage of both strategic messaging (positioning, persona, pitch) and tactical enablement (specific features, proof points, and conversion requirements), all tied together with a real customer success story from a global beverage brand.",
+      "whenToUse": "Use this document when preparing for a first or second call with an ecommerce manager or senior ecommerce leader who is struggling with manual reporting or sales performance visibility. Reach for it when crafting email outreach, call scripts, or slide narratives specifically around Sales Agent. It is also the go-to reference when a rep needs to articulate differentiated value versus generic BI or reporting tools, or when building a personalized pitch that ties Sales Agent to a prospect's gap-to-plan or insights delivery challenges.",
+      "targetAudience": "Account Executives, Sales Development Representatives, Solutions Engineers, Product Marketing, Customer Success",
+      "contentSummary": {
+        "mainTopics": [
+          "Sales Agent product positioning and value proposition",
+          "Target persona: Senior Ecommerce Manager",
+          "AI-powered reporting and deck automation",
+          "Gap to plan identification and root cause analysis",
+          "CAARS performance framework (Content, Assortment, Availability, Ratings & Reviews, Share of Search)",
+          "Ask Ally / AI recommendations functionality",
+          "Global retailer and market coverage",
+          "Customer proof points and ROI",
+          "Pain points in manual ecommerce reporting",
+          "Product feature details and roadmap"
+        ],
+        "specificDetails": [
+          "Sales Agent generates branded PowerPoints in 1-click",
+          "Retailer-specific insight packs available across 110+ countries",
+          "Global beverage brand achieved 9x growth in insights deliverables",
+          "Delivery time reduced by 70% for the global beverage brand",
+          "Digital shelf score improved by 14 points",
+          "34% conversion lift at one retailer",
+          "Manual insight pack creation previously took 4-6 weeks",
+          "Before: 54 insight packs monthly for 29 markets and 26 US retailers; After: hundreds of insight packs with SKU-level depth",
+          "Agentic Gap to Plan with Chat functionality launching Q1 2026",
+          "Requires Amazon Copilot (AC) product for sales data connection"
+        ],
+        "keyTakeaways": [
+          "Sales Agent is an AI teammate that eliminates manual reporting and delivers presentation-ready insights in seconds, enabling ecommerce managers to focus on strategy instead of deck-building.",
+          "The product requires Amazon Copilot as a prerequisite for sales data connectivity, making it a natural expansion or bundle conversation with existing AC customers.",
+          "Proven ROI is central to conversion — the global beverage brand proof point (9x insights, 70% faster delivery, 14-point score improvement, 34% conversion lift) is the primary anchor for value discussions.",
+          "Sales Agent addresses both insight generation and sales performance management through its CAARS framework and Gap to Plan capabilities.",
+          "The core persona is a data-overwhelmed Senior Ecommerce Manager who needs executive-ready outputs fast — messaging should always connect to speed, clarity, and hitting the sales plan."
+        ]
+      },
+      "notToConfuseWith": "This document may be confused with the broader AllyAI product hub or other AllyAI agent messaging frameworks (Shelf Agent, Content Agent, Media Agent). It is specifically scoped to the Sales Agent and its reporting, gap-to-plan, and Ask Ally capabilities — not shelf content optimization or media management.",
+      "competitorNames": [],
+      "customerNames": [
+        "Global Beverage Brand"
+      ],
+      "keyMetrics": [
+        "9x growth in insights deliverables",
+        "70% reduction in delivery time",
+        "14% increase in digital shelf score",
+        "34% conversion lift at one retailer",
+        "110+ countries supported",
+        "54 insight packs monthly (before)",
+        "Hundreds of insight packs monthly (after)",
+        "29 markets covered",
+        "26 US retailers covered",
+        "4-6 weeks manual insight pack creation time (before)"
+      ],
+      "keyFeatures": [
+        "Ask Ally – natural language querying of any report with business-ready answers",
+        "1-click PowerPoint deck generation with custom branding",
+        "Weekly/monthly/quarterly automated sales reporting",
+        "Gap to Plan measurement with real-time pacing visibility",
+        "AI-powered recommendations (pricing, content, promotions)",
+        "Root cause analysis and performance diagnostics",
+        "Retailer-specific insight packs across 110+ countries",
+        "SKU-level and keyword-level performance pinpointing",
+        "Condense, Elaborate, Add Highlights & Lowlights output customization",
+        "Agentic Gap to Plan with Chat (launching Q1 2026)"
       ]
     },
     {
@@ -10968,12 +11566,11 @@
       "fileId": "1V07htziv5S_HCcqkQiJO_vELv99-2e7HY_gNTS_ydXg",
       "url": "https://docs.google.com/presentation/d/1V07htziv5S_HCcqkQiJO_vELv99-2e7HY_gNTS_ydXg/edit?usp=drivesdk",
       "documentType": "battle-card",
-      "documentPurpose": "Legacy competitive comparison document positioning CIQ against Profitero",
+      "documentPurpose": "Equips sales reps with targeted competitive positioning and differentiation points to win deals against Profitero in digital shelf and omnichannel conversations.",
       "status": "Active",
       "productNames": [
         "DSA",
-        "DSO",
-        "MS"
+        "OCC"
       ],
       "competitorNames": [
         "Profitero"
@@ -10981,8 +11578,57 @@
       "searchQueries": [
         "Profitero comparison",
         "vs Profitero",
-        "Profitero competitive",
-        "CIQ vs Profitero"
+        "beat Profitero",
+        "digital shelf analytics competitor",
+        "why choose CIQ over Profitero",
+        "Profitero alternative",
+        "omnichannel digital shelf battle card",
+        "actionable insights vs Profitero",
+        "Amazon digital shelf comparison",
+        "competitive displacement Profitero",
+        "digital shelf NPS",
+        "Profitero win strategy"
+      ],
+      "documentIdentity": "This is the Profitero Comparison — a competitive battle card designed to help CommerceIQ sales reps articulate why prospects and customers should choose CommerceIQ over Profitero for digital shelf and omnichannel capabilities. The document positions CommerceIQ's Digital Shelf Optimization as action-oriented, emphasizing that every insight is designed to drive tangible outcomes rather than passive reporting. It highlights CommerceIQ's strong Net Promoter Score recognition, its ability to capture and connect more data for a fuller picture, and its automation capabilities on the Amazon platform. The document appears to include a comparison table (noted by the retailer platform capabilities disclaimer) that contrasts CIQ and Profitero across key feature dimensions.",
+      "whenToUse": "Use this document when a prospect or existing customer mentions they are evaluating or currently using Profitero for digital shelf analytics or omnichannel insights. Reach for it during competitive displacement conversations or when a rep needs to proactively differentiate CommerceIQ's action-driven approach versus Profitero's more passive analytics model. It is also useful when responding to RFPs or competitive objections where Profitero is named as an incumbent or alternative.",
+      "targetAudience": "Account Executives, Sales Engineers, Sales Development Representatives, Customer Success",
+      "contentSummary": {
+        "mainTopics": [
+          "Competitive differentiation vs. Profitero",
+          "Digital Shelf Optimization",
+          "Omnichannel capabilities",
+          "Actionable insights vs. passive analytics",
+          "Amazon platform automation",
+          "Net Promoter Score and customer satisfaction",
+          "Data capture and connectivity",
+          "Retailer platform feature comparison"
+        ],
+        "specificDetails": [
+          "CommerceIQ's digital shelf team has received world-class Net Promoter Scores year after year",
+          "Actionability is positioned as the North Star of CIQ's digital shelf offering",
+          "CIQ captures and connects more data than Profitero to provide a fuller picture",
+          "CIQ automates relentless tasks on the Amazon platform",
+          "Feature comparison may vary by retailer platform capabilities",
+          "Document frames the competitive narrative as 'Winning Omnichannel with CommerceIQ'",
+          "Positioning is built around insight-to-action speed advantage over Profitero"
+        ],
+        "keyTakeaways": [
+          "CommerceIQ's Digital Shelf Optimization is built to drive action, not just surface insights — every data point is designed to be actionable.",
+          "CommerceIQ has earned world-class Net Promoter Scores for its digital shelf offering, signaling strong customer satisfaction and trust.",
+          "CIQ's broader data capture and connectivity gives customers a more complete omnichannel picture than Profitero.",
+          "CIQ automates repetitive Amazon platform tasks, freeing teams to focus on strategy rather than execution."
+        ]
+      },
+      "notToConfuseWith": "Do not confuse with other CIQ competitive battle cards (e.g., vs. Stackline, vs. Salsify, or vs. Jungle Scout) or with the Digital Shelf Analytics product hub, which covers CIQ DSA capabilities without a competitive lens.",
+      "customerNames": [],
+      "keyMetrics": [
+        "World-class Net Promoter Score (multi-year recognition)"
+      ],
+      "keyFeatures": [
+        "Actionable digital shelf insights",
+        "Omnichannel data capture and connectivity",
+        "Amazon platform task automation",
+        "Retailer platform feature comparison (varies by retailer)"
       ]
     },
     {

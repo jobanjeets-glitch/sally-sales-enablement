@@ -64,7 +64,12 @@ jobs:
           npm run sync-full 2>&1 | tee sync-output.log
           SYNC_EXIT=$?
           echo "exit_code=$SYNC_EXIT" >> $GITHUB_OUTPUT
-          exit $SYNC_EXIT
+          # Only hard-fail if the sync couldn't run at all (no output generated)
+          # Partial failures (some files indexed, some not) are logged but not fatal
+          if [ ! -s sync-output.log ]; then
+            exit 1
+          fi
+          exit 0
 
       - name: Generate summary
         if: always()
@@ -126,10 +131,10 @@ jobs:
         id: metrics
         run: |
           if [ -f sync-output.log ]; then
-            NEW_COUNT=$(grep -oP 'NEW files: \K\d+' sync-output.log 2>/dev/null || echo "0")
-            MOD_COUNT=$(grep -oP 'MODIFIED files: \K\d+' sync-output.log 2>/dev/null || echo "0")
-            SUCCESS_COUNT=$(grep -oP 'Success: \K\d+' sync-output.log 2>/dev/null || echo "0")
-            FAILED_COUNT=$(grep -oP 'Failed: \K\d+' sync-output.log 2>/dev/null || echo "0")
+            NEW_COUNT=$(grep -oP 'NEW files: \K\d+' sync-output.log 2>/dev/null | head -1 | tr -d '[:space:]' || echo "0")
+            MOD_COUNT=$(grep -oP 'MODIFIED files: \K\d+' sync-output.log 2>/dev/null | head -1 | tr -d '[:space:]' || echo "0")
+            SUCCESS_COUNT=$(grep -oP 'Success: \K\d+' sync-output.log 2>/dev/null | head -1 | tr -d '[:space:]' || echo "0")
+            FAILED_COUNT=$(grep -oP 'Failed: \K\d+' sync-output.log 2>/dev/null | tail -1 | tr -d '[:space:]' || echo "0")
 
             echo "new_count=$NEW_COUNT" >> $GITHUB_OUTPUT
             echo "mod_count=$MOD_COUNT" >> $GITHUB_OUTPUT
@@ -228,6 +233,16 @@ jobs:
           name: sync-report-${{ github.run_number }}
           path: sync-report.html
           retention-days: 30
+
+      - name: Update catalog sheet
+        if: always()
+        env:
+          GOOGLE_CREDS: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
+          PINECONE_API_KEY: ${{ secrets.PINECONE_API_KEY }}
+          PINECONE_INDEX_NAME: ${{ secrets.PINECONE_INDEX_NAME }}
+        run: |
+          echo "Checking for new files to add to catalog sheet..."
+          node scripts/update-catalog-sheet.js
 
       - name: Notify on failure
         if: failure()

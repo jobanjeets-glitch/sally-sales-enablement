@@ -33,7 +33,12 @@
     "sync-test": "node scripts/sync-dry-run-detailed.js",
     "sync-full": "node scripts/sync-pinecone-drive.js",
     "add-sync-date": "node scripts/add-sync-date-metadata.js",
-    "index-single": "node scripts/index-single-file.js"
+    "index-single": "node scripts/index-single-file.js",
+    "update-catalog": "node scripts/update-catalog-sheet.js",
+    "update-catalog-dry": "node scripts/update-catalog-sheet.js --dry-run",
+    "fix-names": "node scripts/fix-names-and-details.js",
+    "fix-names-dry": "node scripts/fix-names-and-details.js --dry-run",
+    "enrich-catalog": "node scripts/enrich-catalog-metadata.js"
   },
   "dependencies": {
     "@anthropic-ai/claude-agent-sdk": "latest",

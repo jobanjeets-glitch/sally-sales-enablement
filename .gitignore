@@ -40,3 +40,21 @@ test-data/
 
 # Feedback logs (contain real user queries — keep out of git)
 var/*.jsonl
+
+# macOS temp files (PDF OCR processing)
+var/folders/
+
+# OCR training data (large binary)
+eng.traineddata
+
+# Generated reports and exports (can be regenerated)
+reports/
+query/*.csv
+
+# Pinecone/Drive export snapshots (generated, not source)
+query/document-catalog-enhanced.json
+query/document-catalog.json
+query/files-to-index.json
+query/found-file-ids.json
+query/pinecone-drive-comparison.json
+query/shortcut-analysis.json
