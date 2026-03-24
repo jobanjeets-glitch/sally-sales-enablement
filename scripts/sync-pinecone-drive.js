@@ -4,6 +4,7 @@ import { google } from 'googleapis';
 import { Pinecone } from '@pinecone-database/pinecone';
 import OpenAI from 'openai';
 import pdfParse from 'pdf-parse';
+import mammoth from 'mammoth';
 import { v4 as uuidv4 } from 'uuid';
 import dotenv from 'dotenv';
 import { createWorker } from 'tesseract.js';
@@ -150,10 +151,6 @@ export class IntelligentSync {
                 return 'Individual case study (master library only)';
             }
 
-            if (file.name === 'Profitero Comparison') {
-                return 'Legacy file (superseded by Profitero Competitive Battle Card)';
-            }
-
             return null;
         };
 
@@ -161,7 +158,8 @@ export class IntelligentSync {
             'application/vnd.google-apps.document',
             'application/vnd.google-apps.presentation',
             'application/vnd.google-apps.spreadsheet',
-            'application/pdf'
+            'application/pdf',
+            'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
         ]);
 
         const keep = [];
@@ -454,6 +452,16 @@ export class IntelligentSync {
         }
     }
 
+    async extractDocx(fileId) {
+        const response = await this.drive.files.get(
+            { fileId, alt: 'media', supportsAllDrives: true },
+            { responseType: 'arraybuffer' }
+        );
+        const buffer = Buffer.from(response.data);
+        const result = await mammoth.extractRawText({ buffer });
+        return result.value;
+    }
+
     extractTextFromDocContent(content) {
         if (!content) return '';
 
@@ -599,6 +607,8 @@ export class IntelligentSync {
                 text = await this.extractGoogleSheets(file.id);
             } else if (file.mimeType === 'application/pdf') {
                 text = await this.extractPDF(file.id);
+            } else if (file.mimeType === 'application/vnd.openxmlformats-officedocument.wordprocessingml.document') {
+                text = await this.extractDocx(file.id);
             } else {
                 throw new Error(`Unsupported file type: ${file.mimeType}`);
             }
