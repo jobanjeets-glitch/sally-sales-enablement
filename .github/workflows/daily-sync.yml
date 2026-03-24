@@ -244,6 +244,17 @@ jobs:
           echo "Checking for new files to add to catalog sheet..."
           node scripts/update-catalog-sheet.js
 
+      - name: Enrich new catalog rows
+        if: always()
+        env:
+          GOOGLE_CREDS: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
+          PINECONE_API_KEY: ${{ secrets.PINECONE_API_KEY }}
+          PINECONE_INDEX_NAME: ${{ secrets.PINECONE_INDEX_NAME }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          echo "Enriching any new Needs-Review rows with Claude-generated metadata..."
+          node scripts/enrich-catalog-metadata.js
+
       - name: Notify on failure
         if: failure()
         run: |
