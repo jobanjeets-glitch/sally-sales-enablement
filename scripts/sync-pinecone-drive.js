@@ -424,6 +424,39 @@ export class IntelligentSync {
         }
     }
 
+    async markSheetRowNeedsReview(fileId, name) {
+        const SHEET_ID = process.env.CATALOG_SHEET_ID || '1zwmfU-b2ADXWUYYAYdMEYSPHqetUfgSIsQEwnYnyeu4';
+        try {
+            const res = await this.sheets.spreadsheets.values.get({
+                spreadsheetId: SHEET_ID,
+                range: 'Sheet1!A:C'
+            });
+            const rows = res.data.values || [];
+            let rowIndex = -1;
+            for (let i = 1; i < rows.length; i++) {
+                const rowFileId = rows[i][2]?.trim();
+                const rowName = rows[i][0]?.trim().toLowerCase();
+                if ((fileId && rowFileId === fileId) || (name && rowName === name.toLowerCase())) {
+                    rowIndex = i;
+                    break;
+                }
+            }
+            if (rowIndex === -1) return false;
+
+            const sheetRow = rowIndex + 1;
+            await this.sheets.spreadsheets.values.update({
+                spreadsheetId: SHEET_ID,
+                range: `Sheet1!U${sheetRow}`,
+                valueInputOption: 'RAW',
+                requestBody: { values: [['Needs Review']] }
+            });
+            return true;
+        } catch (err) {
+            console.log(`   ⚠️  Could not mark sheet row for review: ${err.message}`);
+            return false;
+        }
+    }
+
     async updateCatalogName(fileId, oldName, newName) {
         const catalogPath = './query/document-catalog-identity-focused.json';
         try {
@@ -867,6 +900,8 @@ export class IntelligentSync {
                 const result = await this.indexFile(file);
                 if (result.success) {
                     results.modifiedReIndexed++;
+                    await this.markSheetRowNeedsReview(file.id, file.name);
+                    console.log(`   📊 Marked sheet row for re-enrichment`);
                 } else {
                     results.modifiedFailed++;
                 }
