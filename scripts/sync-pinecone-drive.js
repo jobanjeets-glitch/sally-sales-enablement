@@ -63,6 +63,10 @@ export class IntelligentSync {
                     this.folderTree.set(item.id, { id: item.id, name: item.name, path: folderPath });
                     await scanFolder(item.id, folderPath);
                 } else {
+                    if (/archive/i.test(item.name)) {
+                        console.log(`⏭️  Skipping archived file: ${item.name}`);
+                        continue;
+                    }
                     const filePath = path || 'Root';
                     allFiles.push({ ...item, path: filePath, folderId: folderId });
                 }
