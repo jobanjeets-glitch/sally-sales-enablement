@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-22T11:53:07.464Z",
-  "totalDocuments": 105,
+  "lastUpdated": "2026-03-25",
+  "totalDocuments": 112,
   "documents": [
     {
       "name": "AllyAI Agent Product Hub",
@@ -432,7 +432,7 @@
       "folderUrl": "https://drive.google.com/drive/folders/1ZYqH3UZOVexZTva7ds0HbQYw3KYM8a5z"
     },
     {
-      "name": "Content Agent Objections ",
+      "name": "Content Agent Objections",
       "url": "https://docs.google.com/document/d/1KCpsRO1l4LQ9XvoqV7FBNHjRR0jwO4i30xzvA5zYt9k/edit?usp=drivesdk",
       "fileId": "1KCpsRO1l4LQ9XvoqV7FBNHjRR0jwO4i30xzvA5zYt9k",
       "documentIdentity": "This is the Content Agent Objections document – a centralized internal enablement guide capturing common customer objections about CommerceIQ’s Content Agent product, along with approved responses and positioning guidance to help sales, solutions, and product marketing teams address concerns during prospect and customer conversations.",
@@ -615,9 +615,9 @@
       "folderUrl": "https://drive.google.com/drive/folders/1ZYqH3UZOVexZTva7ds0HbQYw3KYM8a5z"
     },
     {
-      "name": "Case Study Slide Library - Copilot, DSO, RMM, Ally",
-      "url": "https://docs.google.com/presentation/d/1AKgrmgU_a3wvFJPsMfhjshmIIDURdtxEnfnRuyOSYOE/edit?usp=drivesdk",
-      "documentIdentity": "This is the Case Study Slide Library - Copilot, DSO, RMM, Ally - a centralized sales enablement library of customer-ready case study slides, proof points, training recordings, messaging frameworks, product boxes, and demo assets supporting AllyAI Agents (Sales, Shelf, Content, Media), Digital Shelf Optimization (DSO), Retail Media Management (RMM), and Retailer Copilots across Amazon, Walmart, and global retailers.",
+      "name": "Case Study Slide Library",
+      "url": "https://docs.google.com/presentation/d/1KDQs5i2xO17oixE1SZIR5hGqQN6ZvmjdA7s7eahXXIs/edit?usp=drivesdk",
+      "documentIdentity": "This is the Case Study Slide Library - a centralized sales enablement library of customer-ready case study slides, proof points, training recordings, messaging frameworks, product boxes, and demo assets supporting AllyAI Agents (Sales, Shelf, Content, Media), Digital Shelf Optimization (DSO), Retail Media Management (RMM), and Retailer Copilots across Amazon, Walmart, and global retailers.",
       "documentType": "case-study-library",
       "comprehensiveDescription": "This is the Case Study Slide Library - Copilot, DSO, RMM, Ally - a comprehensive case study and sales asset repository used to support first calls, second calls, demos, certifications, and leave-behind materials. A 'Case Study Slide Library' is a centralized collection of modular slides, proof points, customer stories, and supporting collateral that sales and marketing teams can pull from to build customized decks. This document serves as the backbone for customer storytelling across AllyAI’s Sales Agent, Shelf Agent, Content Agent, and Media Agent, as well as Digital Shelf Analytics (DSO), Retail Media Management (RMM), and Retailer Copilots (AVC).\n\nInside, the library includes structured sections for Internal Trainings (SKO recordings, certification links, pricing materials), agent-specific assets (Product Boxes, Messaging Frameworks, Datasheets, Demo Links, Demo Scripts), and retailer-specific slides (Amazon, Walmart, Instacart, Target). It references major enablement materials such as the AllyAI Sales Agent 2nd Call Deck, Content Agent 2nd Call Slides, Media Agent & Services template gallery, CommerceIQ Sales Agent Messaging Framework, Media Agent Messaging Framework, and Content Agent Datasheet. It also includes training artifacts like the 2/13 First Call & Content Agent Certification & Training Recording, 2/23 eTail Customer Meeting Agent Pitch (Customer Presentation V3), and 2/2–2/5 SKO 2026 training sessions (with video links, passwords, and audio transcripts).\n\nThe document captures quantified proof points and performance metrics used in sales storytelling. Examples include: AI Media Agent delivering 4,000+ daily optimizations vs <100 manually; AI Sales Agent resolving 4,500+ annual tickets vs 520 manually; AI Shelf Agent generating 355 insight packs in 3 minutes vs 54 in 30 days; and a time-to-value stat of \"35 minutes to <1 minute\" (Newell/Coke example). It highlights a 98% recovery rate on invalid co-op deductions, 458 annualized FTE hours saved, and case examples like a $100M+ Amazon revenue pet food brand resolving suppressed listings same-day, and a CPG manufacturer identifying an acquisition target using Market Share data. It also includes messaging frameworks such as the \"Junior analysts\" metaphor for AI agents and the \"AI Agents + Experts = 10 to 100x Performance\" positioning.\n\nAdditional sections outline consulting and managed services capabilities: campaign management, action optimization & review, content benchmarking, tentpole/event strategy, reporting & analysis, content syndication, SEO and AEO optimization (including AEO Optimization BETA), budget pacing, bid optimization, automated reporting (AskAllyAI, Brand Insights, Retailer Insights, Country Insights), and Retailer Copilots (AVC). Geographic coverage is detailed (Amazon in US, Canada, Mexico, UK, Germany, France, Spain, Italy, Australia, Netherlands, Poland; DSO active in 110 countries). A \"What’s Coming\" roadmap includes Ask AllyAI (Q1), Ask AllyAI Diagnostics (Q1), GEO Optimization (Q2), AEO for Walmart + others (Q2), and expanded retailer coverage.\n\nUse this document when someone asks for customer case studies for Sales, Shelf, Content, or Media Agents; proof points for AI-driven optimization; time-to-value statistics; Amazon suppressed listing recovery examples; co-op deduction recovery stories; or global retailer/geo coverage details. It is also the source for building leave-behind case study PDFs and customizing second-call decks with vertical-specific examples.\n\nNot to be confused with individual Product Boxes (which define a single product’s positioning, features, and pricing), Second Call Decks (which are structured presentations for a specific meeting stage), or Datasheets (which are concise one-page summaries). This library aggregates all of those assets and connects them to real customer stories and quantified outcomes.\n\nVersion information is not explicitly stated. References include SKO 2026 materials and Q1/Q2 roadmap items, indicating this is an active, evolving enablement repository (Work In Progress).",
       "contentSummary": {
@@ -685,7 +685,7 @@
       ],
       "version": null,
       "effectiveDate": null,
-      "status": "Work In Progress",
+      "status": "Active",
       "productNames": [
         "AllyAI Sales Agent",
         "AllyAI Shelf Agent",
@@ -732,7 +732,8 @@
       "targetAudience": "Sales, Marketing, Customer Success, and Product teams building customer-facing presentations and proof-point narratives",
       "folderId": "1AOObKZ_ZtXEQFnTBqt5GcI-AEXCcsdZb",
       "folderName": "Case Studies",
-      "folderUrl": "https://drive.google.com/drive/folders/1AOObKZ_ZtXEQFnTBqt5GcI-AEXCcsdZb"
+      "folderUrl": "https://drive.google.com/drive/folders/1AOObKZ_ZtXEQFnTBqt5GcI-AEXCcsdZb",
+      "fileId": "1KDQs5i2xO17oixE1SZIR5hGqQN6ZvmjdA7s7eahXXIs"
     },
     {
       "name": "Agent Pitch - Customer PresentationV3",
@@ -1074,237 +1075,6 @@
       "folderUrl": "https://drive.google.com/drive/folders/1EM2OjjBFjfhAHW9VblYHXCuals4nuc2Q"
     },
     {
-      "name": "8/3 Ally 2 Training Deckv2",
-      "url": "https://docs.google.com/presentation/d/1OE9r6Mzj-Zf_YmoBlF_j5E1-PEszixzoZ4d0Z2Zm3Gs/edit?usp=drivesdk",
-      "fileId": "1OE9r6Mzj-Zf_YmoBlF_j5E1-PEszixzoZ4d0Z2Zm3Gs",
-      "documentIdentity": "This is the 8/3 Ally 2 Training Deckv2 - an internal sales enablement and General Availability (GA) training presentation covering the commercialization, positioning, packaging, pilot motion, and value proposition of AllyAI Sales Teammate II (Gap-to-Plan, Root Cause Analysis, and Recommendations) within the CommerceIQ Amazon Copilot strategy. It includes case studies (e.g., +20% YoY growth, +101% pacing-to-plan improvement, $1.3M PO recovery, 40% organic rank lift), pricing/packaging guidance (CORE, PLUS, PERFORMANCE, add-ons), pilot requirements, implementation timelines (30-day results), and AE selling motion guidance.",
-      "documentType": "training-deck",
-      "comprehensiveDescription": "This is the 8/3 Ally 2 Training Deckv2 - an internal training deck designed to enable CommerceIQ sales teams on the General Availability (GA) launch of AllyAI Sales Teammate II. A training deck is an internal enablement presentation used to educate AEs, solution consultants, and leadership on product positioning, packaging, value drivers, implementation, and selling motion. This deck specifically prepares the field to commercialize AllyAI Sales Teammate II as part of the broader Amazon Copilot strategy and Performance package.\n\nThe deck covers the Amazon Copilot strategy and packaging tiers (CORE, PLUS, PERFORMANCE, SCALE), outlining anchor features such as ESM and PRA automations (CORE), Incrementality Reporting and Ally Sales Teammate I (PLUS), and Ally Sales Teammate II with Gap-to-Plan recommendations, Root Cause Analysis (RCA), and Intraday Ticketing (PERFORMANCE). It details pricing as a percentage of OPS, add-on eligibility, standalone options, and renewal strategies. It also clarifies what is included vs. not available across editions, and how to position Teammate I vs. Teammate II in proposal-stage conversations.\n\nA major section focuses on Jobs to Be Done: (1) Are we pacing to plan? (2) What’s driving underperformance? (3) Where are we missing plan by category/brand/SKU? (4) What are we doing about it? The deck walks through Gap-to-Plan Management, SKU-level modeling (under spend, optimized spend, over spend zones), Root Cause Analysis decision trees (traffic, conversion, inventory, SOV declines, lost Buy Box), and embedded insights with 1-click executive reports. It includes specific case examples: a Personal Care brand achieving +20% YoY growth and improving pacing from 88% to +101% after implementing media optimizations; a Household Appliance manufacturer recovering $1.3M in POs due to missing promos; a Consumer Goods manufacturer driving 40% lift in organic rank; and examples of -41% YoY declines tied to lost Buy Box and glance view drops.\n\nThe deck also outlines the pilot and implementation process for Ally Sales Teammate II: required access (Amazon Vendor Central, Amazon Marketing Console, SKU-level sales plan by month), no requirement to be an RMM/DSO customer, immediate availability of Gap-to-Plan and RCA insights, and typical results within 30 days. It details success criteria for pilots (VP+ alignment, weekly stakeholder meetings, measurable outcomes, commitment to implement recommendations), contract structure (2+12), and higher conversion with time-bound rollovers. It further includes commercialization plans (customer comms timeline, AI roadshow, Groceryshop session, product video, AI impact report updates) and internal enablement milestones (updated pitch, demo, certification, Seismic Product Hub).\n\nUse this document when someone asks: “What is AllyAI Sales Teammate II?”, “How do we sell Gap-to-Plan and RCA?”, “What’s included in Performance vs PLUS?”, “How does the Ally pilot work?”, “What are the ROI proof points?”, or “How do we position Teammate I vs II?”\n\nNot to confuse with: a customer-facing AllyAI pitch deck (external sales presentation), a one-page datasheet (feature summary only), or a product box (formal product definition and positioning artifact). This deck is specifically internal, focused on enablement, commercialization, and selling motion for GA.\n\nVersion: v2. Dated 8/3 (August 3). Status: General Availability training material for AllyAI Sales Teammate II.",
-      "contentSummary": {
-        "mainTopics": [
-          "AllyAI Sales Teammate II General Availability (GA)",
-          "Amazon Copilot strategy and packaging (CORE, PLUS, PERFORMANCE)",
-          "Gap-to-Plan Management and SKU-level modeling",
-          "Root Cause Analysis (RCA) frameworks and decision trees",
-          "Pilot process, implementation requirements, and time to value",
-          "Pricing, add-ons, and renewal strategy",
-          "Case studies and ROI proof points",
-          "AE selling motion and commercialization plan"
-        ],
-        "specificDetails": [
-          "Personal Care brand achieved +20% YoY growth",
-          "Pacing improved from 88% to +101% after implementation",
-          "$1.3M increase in POs due to missing promos identified",
-          "40% lift in Organic Rank for a Consumer Goods manufacturer",
-          "-41% YoY sales decline tied to lost Buy Box and glance view drop",
-          "3.5% reduction in Total Advertising Cost of Sale (TACoS)",
-          "Pricing structured as % of OPS",
-          "Performance package includes Ally Sales Teammate II and Intraday Ticketing",
-          "PLUS includes Incrementality Reporting and Ally Sales Teammate I (PPTs)",
-          "Immediate availability of Gap-to-Plan and RCA insights",
-          "Typical results seen within 30 days",
-          "Pilot contract structure: 2 + 12",
-          "Requires Amazon Vendor Central and Amazon Marketing Console access",
-          "Jobs to Be Done: pacing, drivers, SKU gaps, actions",
-          "Embedded insights and 1-click executive reports"
-        ],
-        "keyTakeaways": [
-          "AllyAI Sales Teammate II enables proactive Gap-to-Plan tracking and root cause-driven action.",
-          "Clear ROI proof points support Performance package upsell.",
-          "Successful pilots require VP+ alignment, measurable outcomes, and weekly execution cadence.",
-          "Teammate I vs II positioning is critical during packaging and proposal discussions.",
-          "AI-driven sales optimization unifies sales, shelf, and media data into a command center."
-        ]
-      },
-      "documentPurpose": "Enable sales team to commercialize and sell AllyAI Sales Teammate II at GA",
-      "whenToUse": "Use for internal training on AllyAI Sales Teammate II, preparing for Performance package pitches, structuring pilots, explaining Gap-to-Plan/RCA capabilities, and aligning on pricing and packaging strategy.",
-      "searchQueries": [
-        "AllyAI Sales Teammate II GA deck",
-        "8/3 Ally 2 Training Deck v2",
-        "Gap to Plan CommerceIQ",
-        "Root Cause Analysis sales deck",
-        "Ally pilot process requirements",
-        "Performance package vs PLUS CommerceIQ",
-        "AllyAI pricing as percent of OPS",
-        "Ally Sales Teammate I vs II difference",
-        "CommerceIQ $1.3M PO case study",
-        "Personal Care +20% YoY Ally case",
-        "40% organic rank lift CommerceIQ",
-        "How to sell AllyAI internally",
-        "Amazon Copilot strategy sales enablement",
-        "Intraday ticketing AllyAI",
-        "SKU level modeling under spend zone"
-      ],
-      "notToConfuseWith": [
-        "AllyAI customer-facing pitch deck – external presentation for prospects",
-        "AllyAI product datasheet – high-level feature summary without selling motion",
-        "RMM or Retail Media Management deck – focused specifically on advertising activation",
-        "Digital Shelf deck – focused on content, availability, and shelf metrics only"
-      ],
-      "version": "v2",
-      "effectiveDate": "August 3",
-      "status": "Active",
-      "productNames": [
-        "AllyAI Sales Teammate I",
-        "AllyAI Sales Teammate II",
-        "Amazon Copilot",
-        "ESM",
-        "PRA",
-        "Incrementality Reporting",
-        "Intraday Ticketing",
-        "Market Insights",
-        "Performance Package"
-      ],
-      "competitorNames": [],
-      "customerNames": [
-        "Personal Care Brand",
-        "Household Appliance Manufacturer",
-        "Worldwide Toy Manufacturer",
-        "Consumer Goods manufacturer",
-        "Worldwide beverage company"
-      ],
-      "keyMetrics": [
-        "+20% YoY growth",
-        "+101% pacing to plan after implementation",
-        "88% pacing before",
-        "$1.3M increase in POs",
-        "40% lift in organic rank",
-        "-41% YoY sales decline example",
-        "3.5% reduction in TACoS",
-        "Results within 30 days",
-        "2 + 12 contract structure"
-      ],
-      "keyFeatures": [
-        "Gap-to-Plan recommendations",
-        "Root Cause Analysis (RCA)",
-        "SKU-level modeling",
-        "Embedded insights",
-        "1-click executive reports",
-        "Intraday ticketing",
-        "Incrementality reporting",
-        "Market Insights (200 KWs)",
-        "AMS Integration",
-        "Chrome Plug-in",
-        "Data Lake Integration",
-        "Single Sign-on"
-      ],
-      "targetAudience": "CommerceIQ Account Executives, Solution Consultants, Sales Leadership, and Revenue Enablement teams",
-      "folderId": "1hWz8N5umrAc4MqnWH3t3qr9wepe3loLu",
-      "folderName": "Internal - Ally",
-      "folderUrl": "https://drive.google.com/drive/folders/1hWz8N5umrAc4MqnWH3t3qr9wepe3loLu"
-    },
-    {
-      "name": "Ally Training Deck 5/9",
-      "url": "https://docs.google.com/presentation/d/1ZxSGExOKRkpMJhynxUeecVBHtJ4aGIMBih6ZX75ZmA4/edit?usp=drivesdk",
-      "fileId": "1ZxSGExOKRkpMJhynxUeecVBHtJ4aGIMBih6ZX75ZmA4",
-      "documentIdentity": "This is the Ally Training Deck 5/9 - a comprehensive internal sales enablement presentation introducing AllyAI as “the industry’s first suite of role-specific AI teammates,” covering Sales, Media, and Category AI teammates, their jobs-to-be-done (JTBD), root cause analysis capabilities, gap-to-plan identification, 1-click executive reporting, AI-driven bid and budget optimization, and quantified performance results (e.g., -85% YoY sales decline example, $691K media gap closure opportunity, $2.47M quarterly miss projection, -$19.29K brand gap, $137K OOS risk, Q1 2025 efficiency gains across 10 brands).",
-      "documentType": "training-deck",
-      "comprehensiveDescription": "This is the Ally Training Deck 5/9 - an internal training-deck designed to enable sales, marketing, and account teams to position, demo, and sell AllyAI, CommerceIQ’s AI-powered suite of role-specific teammates. A training deck is used for internal education and go-to-market alignment, equipping teams with messaging, proof points, JTBD frameworks, rollout timelines, and example insights so they can confidently pitch and operationalize the product. This deck is specifically focused on articulating the AllyAI vision, use cases, quantified impact, and how it unifies data across sales, retail media, content, and operations.\n\nThe deck opens with the core positioning: “The industry’s first suite of role-specific AI teammates.” It frames the problem of data overload, siloed systems, manual reporting, and gut-based decision-making. It uses concrete performance scenarios such as a SKU with an -85% YoY sales decline, lost Buy Box impacting conversions, and declining glance views. It demonstrates how Ally uncovers insights in seconds using SKU-level intelligence, identifies a $691K gap closure opportunity via media reallocation, flags missing keywords like “Sensory Bin” for Kinetic Sand (AI-driven content optimization), and predicts out-of-stock risk (e.g., Monster Jam SKU under pacing by $137K and projected to go OOS). It also shows a “Quarter To Go” example projecting a $2.47M miss driven by specific categories (Games $1.1M, Wheels/Action $937K, Preschool $787K) and highlights brand-level underperformance (Brand A missing -$19.29K MTD, Organic SOV decline -6.8%, Brand A -5.38%).\n\nA major section outlines the three AllyAI Teammates: Sales Teammate (Gap to Plan, Automated Root Cause Analysis, SKU deep dives, Gap Closure recommendations, 1-click PowerPoint/Excel reporting), Media Teammate (goal optimization for iROAS, exclusive brand-specific bid and budget models trained daily, efficient bid frontier across hundreds of keywords, CPC and budget efficiency signals), and Category Teammate (embedded insights and executive reporting). The deck details AI Digital Shelf Insights use cases such as generating monthly search reports across big box retailers, weekly availability reports across 70 retail partners, executive QBR decks, category input metric reports, and identifying which retailer or SKU drove SOV decline. It includes performance proof points from “Results from 10 Brands in Q1 2025,” citing overall efficiency gains, scalable growth under budget constraints, strong iROAS improvement, lower CPC with increased impressions and clicks, and scalable efficiency despite inventory pressure.\n\nThe deck also reinforces CommerceIQ’s broader thesis that Sales Optimization requires unified data and AI automation, referencing 2021 and 2025 marketecture evolution, and highlighting future execution via interconnected platform (Build, Buy, Partner). It includes rollout timelines (AllyAI Media Teammate GA), pitch materials inventory (1st/2nd call decks, datasheets, sell-in decks, RFP materials), and a customer quote from a Sr. Director of Ecomm & Digital Shelf stating CIQ is \"18 months ahead of the competition.\" Messaging emphasizes reducing manual reporting time by 50%, aligning teams across silos, and accelerating decision-making with embedded insights and 1-click executive reports.\n\nUse this document when someone asks: “What is AllyAI?”, “How does the Sales Teammate identify gap to plan?”, “How does Ally do root cause analysis?”, “What proof points do we have for AI bid optimization?”, “What does the Media Teammate do for iROAS?”, “How do we position Ally vs manual reporting?”, or “What examples can I use in a QBR pitch?” It is especially useful for internal onboarding, pre-call preparation, and aligning cross-functional teams on the Ally value story.\n\nNot to confuse with: Ally First Call Deck (external, high-level prospect pitch), Ally Second Call Deck (deeper customer-facing feature walkthrough), Ally Datasheet (concise product summary), or specific Product Boxes (formal product definition including packaging and pricing). This deck is broader and more narrative-driven, combining vision, examples, JTBD, and performance proof points for internal enablement.\n\nVersion: 5 of 9 in the Ally training series. No explicit effective date listed. Status appears Active for ongoing go-to-market enablement.",
-      "contentSummary": {
-        "mainTopics": [
-          "AllyAI positioning as role-specific AI teammates",
-          "Sales Teammate JTBD (Gap to Plan, RCA, 1-click reporting)",
-          "Media Teammate bid & budget optimization (iROAS)",
-          "Category & Digital Shelf insights",
-          "Root Cause Analysis decision tree",
-          "Gap Closure and media reallocation",
-          "Content optimization via AI keyword identification",
-          "Out-of-stock risk prediction & availability monitoring",
-          "Executive reporting automation",
-          "Unified data & AI automation thesis"
-        ],
-        "specificDetails": [
-          "Sales down -85% YoY example",
-          "$691K media gap closure opportunity",
-          "Monster Jam SKU under pacing by $137K",
-          "Quarter miss projection of $2.47M",
-          "Games category shortfall $1.1M",
-          "Wheels/Action shortfall $937K",
-          "Preschool shortfall $787K",
-          "Brand A missing -$19.29K MTD",
-          "Organic SOV decline -6.8%",
-          "Brand A SOV decline -5.38%",
-          "Q1 2025 results from 10 brands",
-          "Reduce manual reporting time by 50%",
-          "70 retail partners in availability reporting example",
-          "AI-identified missing keyword: “Sensory Bin”",
-          "CIQ positioned 18 months ahead of competition (customer quote)"
-        ],
-        "keyTakeaways": [
-          "AllyAI unifies siloed commerce data into actionable, role-specific insights.",
-          "AI-driven root cause analysis and gap-to-plan insights enable faster performance recovery.",
-          "Media optimization models improve iROAS while lowering CPC and increasing efficiency.",
-          "1-click reporting dramatically reduces manual reporting workload.",
-          "Predictive insights (availability, pacing, SOV) enable proactive decision-making."
-        ]
-      },
-      "documentPurpose": "Enable internal teams to position, sell, and operationalize AllyAI teammates",
-      "whenToUse": "Use for internal sales training, onboarding new reps, prepping for Ally prospect calls, aligning cross-functional teams on Ally value proposition, and gathering quantified proof points for pitches.",
-      "searchQueries": [
-        "AllyAI Sales Teammate JTBD",
-        "Ally gap to plan example",
-        "Ally root cause analysis decision tree",
-        "AllyAI media optimization iROAS model",
-        "Ally Q1 2025 results 10 brands",
-        "Ally reduce reporting time 50%",
-        "Ally $2.47M quarter miss example",
-        "Ally $691K media reallocation case",
-        "Ally out of stock prediction example",
-        "Ally digital shelf insights reporting",
-        "Ally SKU deep dive example",
-        "Ally share of voice decline analysis",
-        "Ally 1-click executive reports",
-        "Ally training deck internal",
-        "Ally role-specific AI teammates overview"
-      ],
-      "notToConfuseWith": [
-        "Ally First Call Deck – external introductory sales presentation",
-        "Ally Second Call Deck – detailed customer-facing product deep dive",
-        "Ally Datasheet – concise feature and benefit summary",
-        "Ally Product Box – formal product definition including packaging and pricing"
-      ],
-      "version": "5/9",
-      "effectiveDate": null,
-      "status": "Active",
-      "productNames": [
-        "AllyAI",
-        "AllyAI Sales Teammate",
-        "AllyAI Media Teammate",
-        "AllyAI Category Teammate",
-        "CommerceIQ"
-      ],
-      "competitorNames": [],
-      "customerNames": [],
-      "keyMetrics": [
-        "Sales down -85% YoY",
-        "$691K media gap closure",
-        "$137K OOS pacing gap",
-        "$2.47M quarterly miss projection",
-        "$1.1M Games shortfall",
-        "$937K Wheels/Action shortfall",
-        "$787K Preschool shortfall",
-        "-$19.29K Brand A MTD gap",
-        "-6.8% Organic SOV decline",
-        "50% reduction in reporting time"
-      ],
-      "keyFeatures": [
-        "1-click PowerPoint and Excel reporting",
-        "Automated Root Cause Analysis",
-        "Gap to Plan identification",
-        "SKU deep dive analysis",
-        "Goal optimization for iROAS",
-        "Daily-trained bid and budget models",
-        "Efficient Bid Frontier",
-        "Embedded insights",
-        "Availability risk prediction",
-        "Content keyword gap detection"
-      ],
-      "targetAudience": "Internal sales, account management, retail media, category analytics, and sales leadership teams",
-      "folderId": "1hWz8N5umrAc4MqnWH3t3qr9wepe3loLu",
-      "folderName": "Internal - Ally",
-      "folderUrl": "https://drive.google.com/drive/folders/1hWz8N5umrAc4MqnWH3t3qr9wepe3loLu"
-    },
-    {
       "name": "CommerceIQ-AI Retail-Survey- Report-2026.pdf",
       "url": "https://drive.google.com/file/d/1Bo9_-x9N3eCU9FahS4E3NfSFyJyh6gPw/view?usp=drivesdk",
       "fileId": "1Bo9_-x9N3eCU9FahS4E3NfSFyJyh6gPw",
@@ -1412,121 +1182,6 @@
       "folderId": "1JXi8jyUQL6iPziuP2_Ce6dVse-ZnurZw",
       "folderName": "Industry Reports",
       "folderUrl": "https://drive.google.com/drive/folders/1JXi8jyUQL6iPziuP2_Ce6dVse-ZnurZw"
-    },
-    {
-      "name": "AllyAI Sales Teammate",
-      "url": "https://docs.google.com/presentation/d/1CxJFq3Y56UDNfCaQqaQAzflnyJ_UB86HGGE5BKxmFYc/edit?usp=drivesdk",
-      "fileId": "1CxJFq3Y56UDNfCaQqaQAzflnyJ_UB86HGGE5BKxmFYc",
-      "documentIdentity": "This is the AllyAI Sales Teammate - a comprehensive sales enablement presentation detailing the AI-powered sales performance management solution that provides gap-to-plan forecasting, root cause analysis, and actionable recommendations to help retail and ecommerce teams hit their sales targets. It includes product positioning, feature breakdowns, AI capabilities, customer testimonials, quantified performance results (e.g., +101% pacing to plan improvement, 3.5% TACoS reduction, +20% YoY growth), and use cases across CPG, beverage, personal care, toy, and appliance brands.",
-      "documentType": "first-call-deck",
-      "comprehensiveDescription": "This is the AllyAI Sales Teammate first call deck – a high-level sales presentation used to introduce the AllyAI Sales Teammate solution to prospective customers. A first call deck is designed for initial discovery or early-stage sales conversations, focusing on the customer problem, product value proposition, high-level capabilities, proof points, and differentiation. This document positions AllyAI Sales Teammate as an AI-powered, proactive sales execution tool embedded in CommerceIQ’s Command Center.\n\nThe deck opens by outlining the core challenges facing retail sales teams: disjointed systems, data silos preventing a clear performance view, data overload that obscures insights, and difficulty determining what’s driving sales across SKUs, categories, and retailers. It introduces AllyAI Sales Teammate as a turnkey solution (with Amazon Copilot integration) that unifies data and leverages AI to move teams from reactive fire drills to proactive sales execution. The central promise is \"Recommendations to hit your sales plan in Command Center,\" focused on gap-to-plan management.\n\nCore capabilities covered include: Projected Pacing to Plan (weekly quarterly pacing forecasts), Gap to Plan Management (identify where plan is missed by category/brand/SKU), Root Cause Analysis (decision tree identifying traffic, conversion, inventory, Share of Voice drivers), SKU-level insights (e.g., lost Buy Box, drop in glance views, -41% YoY sales impact), and AI Recommendations (media budget reallocation, search theme identification, content improvements, OOS risk alerts). The AI is powered by the CommerceIQ model trained on 100k+ hours across 1,400 retailers. The deck highlights cross-functional coordination with AllyAI Media Teammate (optimizing 1000s of keyword bids using 50+ signals) and AllyAI Category Teammate.\n\nQuantified results and proof points are embedded throughout: a worldwide beverage company improved pacing from 88% missing plan before to +101% pacing after; a brand reduced Total Advertising Cost of Sale (TACoS) by 3.5% while increasing Total Sales through SKU-level media reallocation; a Personal Care brand achieved +20% YoY growth; and customer quotes from a Head of Ecommerce, Director of Sales (Household Appliance Manufacturer), Director of Analytics (Worldwide Toy Manufacturer), and Director of Omnichannel reinforce daily usage and competitive differentiation. The deck also emphasizes embedded insights, 1-click executive reports, and AI-driven search optimization recommendations to close plan gaps.\n\nUse this document when someone asks: “What is AllyAI Sales Teammate?”, “How does AllyAI help us hit sales plan?”, “Do you have a gap-to-plan AI solution?”, “How do you root cause missed sales targets?”, or “Show me customer results for AllyAI Sales Teammate.” It is ideal for initial executive, sales, ecommerce, or omnichannel stakeholder meetings.\n\nNot to be confused with: AllyAI Media Teammate materials (which focus specifically on bid optimization and media execution), AllyAI Category Teammate documentation (category management focus), deep-dive technical architecture docs, or pricing-specific proposals. This deck is positioning- and value-focused rather than implementation- or pricing-heavy.\n\nVersion and date are not explicitly stated in the document. Status appears Active as a core product positioning deck.",
-      "contentSummary": {
-        "mainTopics": [
-          "Retail sales team challenges (data silos, data overload, lack of insight)",
-          "Gap-to-plan forecasting and quarterly pacing",
-          "Root cause analysis across traffic, conversion, inventory, Share of Voice",
-          "AI-driven recommendations (media, search, content, budget reallocation)",
-          "SKU-level performance insights",
-          "Media optimization and TACoS improvement",
-          "Out-of-stock (OOS) risk identification",
-          "Embedded insights and 1-click executive reports",
-          "Customer case studies and testimonials",
-          "Integration within CommerceIQ Command Center"
-        ],
-        "specificDetails": [
-          "88% missing plan BEFORE vs +101% pacing to plan AFTER",
-          "3.5% reduction in Total Advertising Cost of Sale (TACoS) while increasing Total Sales",
-          "+20% YoY growth for Personal Care Brand",
-          "-41% YoY sales decline example tied to lost Buy Box and drop in glance views",
-          "100k+ hours of AI training data",
-          "1400 retailers in CommerceIQ AI model training set",
-          "Optimizes 1000s of keyword bids using 50+ signals (Media Teammate reference)",
-          "AI identifies missing search themes per SKU contributing to plan gap",
-          "Root cause decision tree highlighting Share of Voice decline",
-          "Decline driven by organic and paid SOV; example driven by brand C rank loss on 'term 1'",
-          "Identify SKUs to add, remove, or maintain media budget",
-          "OOS risk alerts before they impact plan",
-          "Embedded insights and 1-click executive reports",
-          "Amazon Copilot turnkey integration",
-          "Customer quotes from beverage, toy, appliance, and omnichannel leaders"
-        ],
-        "keyTakeaways": [
-          "AllyAI Sales Teammate proactively identifies and closes sales plan gaps with AI-driven recommendations.",
-          "The solution combines forecasting, root cause analysis, and prescriptive actions in one Command Center.",
-          "Quantified results show measurable impact on pacing, TACoS, and YoY sales growth.",
-          "Designed for daily use by sales, ecommerce, and analytics leaders to replace reactive fire drills."
-        ]
-      },
-      "documentPurpose": "Introduce and position AllyAI Sales Teammate as an AI-driven gap-to-plan and sales execution solution.",
-      "whenToUse": "Use during first-call or early-stage sales conversations to explain AllyAI Sales Teammate capabilities, share proof points, and align on sales plan challenges.",
-      "searchQueries": [
-        "AllyAI Sales Teammate overview deck",
-        "How does AllyAI help hit sales plan?",
-        "Gap to plan AI solution",
-        "Sales pacing to plan forecasting tool",
-        "Root cause analysis for ecommerce sales decline",
-        "AI recommendations to close sales gap",
-        "TACoS reduction case study AllyAI",
-        "Personal Care brand +20% YoY AllyAI",
-        "AllyAI Command Center recommendations",
-        "Identify OOS risk to sales plan",
-        "SKU level insights lost Buy Box impact",
-        "CommerceIQ AI 100k hours 1400 retailers",
-        "AllyAI vs reactive sales execution",
-        "Media budget reallocation AI recommendations",
-        "Embedded executive reporting ecommerce AI"
-      ],
-      "notToConfuseWith": [
-        "AllyAI Media Teammate deck – focused specifically on media bid optimization and advertising execution",
-        "AllyAI Category Teammate materials – focused on category management insights",
-        "Technical architecture documentation – covers backend AI and system integrations",
-        "Pricing proposals or commercial agreements – detail cost structures and contract terms"
-      ],
-      "version": null,
-      "effectiveDate": null,
-      "status": "Active",
-      "productNames": [
-        "AllyAI Sales Teammate",
-        "AllyAI Media Teammate",
-        "AllyAI Category Teammate",
-        "CommerceIQ AI Model",
-        "Amazon Copilot"
-      ],
-      "competitorNames": [],
-      "customerNames": [
-        "Worldwide beverage company",
-        "Personal Care Brand",
-        "Household Appliance Manufacturer",
-        "Worldwide Toy Manufacturer",
-        "Consumer Goods manufacturer"
-      ],
-      "keyMetrics": [
-        "88% missing plan before",
-        "+101% pacing to plan after",
-        "3.5% reduction in Total Advertising Cost of Sale (TACoS)",
-        "+20% YoY growth",
-        "-41% YoY sales decline example",
-        "100k+ hours of AI training",
-        "1400 retailers in training data",
-        "50+ signals for bid optimization"
-      ],
-      "keyFeatures": [
-        "Projected Pacing to Plan",
-        "Gap to Plan Management",
-        "Root Cause Analysis decision tree",
-        "SKU Insights",
-        "AI Recommendations",
-        "Media Budget Reallocation",
-        "Search Optimization Recommendations",
-        "OOS Risk Identification",
-        "Embedded Insights",
-        "1-click Executive Reports",
-        "Command Center integration"
-      ],
-      "targetAudience": "Sales leaders, ecommerce directors, omnichannel leaders, retail analytics teams, and CPG brand executives responsible for hitting sales targets",
-      "folderId": "1BIu9JZrB8pyLwsxuCAsHfNOTZVDQrn1o",
-      "folderName": "Archive",
-      "folderUrl": "https://drive.google.com/drive/folders/1BIu9JZrB8pyLwsxuCAsHfNOTZVDQrn1o"
     },
     {
       "name": "AI Goal Optimizer - Internal Training Deck V2",
@@ -1642,209 +1297,6 @@
       "folderId": "1JiOt98QGr-dKRdEbXP-Km6D3mbs9MS8E",
       "folderName": "AiGO",
       "folderUrl": "https://drive.google.com/drive/folders/1JiOt98QGr-dKRdEbXP-Km6D3mbs9MS8E"
-    },
-    {
-      "name": "AllyAI Teammate I S&S Dashboard Example Generic ",
-      "url": "https://docs.google.com/presentation/d/1uhmhOXzmxE6Q9eznkbTMVnLo3bCnwZJWes8u_CAxC9A/edit?usp=drivesdk",
-      "fileId": "1uhmhOXzmxE6Q9eznkbTMVnLo3bCnwZJWes8u_CAxC9A",
-      "documentIdentity": "This is the AllyAI Teammate I S&S Dashboard Example Generic - a sample Subscription & Services (S&S) performance dashboard showcasing brand- and SKU-level subscription revenue, OPS loss due to out-of-stocks (OOS), period-over-period comparisons, and key KPIs such as sales $, unit volume (in K), percentage growth/decline, and price changes across multiple brands and SKUs.",
-      "documentType": "datasheet",
-      "comprehensiveDescription": "This is the AllyAI Teammate I S&S Dashboard Example Generic - a sample Subscription & Services (S&S) performance dashboard designed to demonstrate how AllyAI visualizes subscription revenue, OPS loss, and brand/SKU-level trends over time. A 'dashboard example datasheet' is a visual mockup used in sales conversations to show what the live product experience looks like, highlighting metrics, drill-down capabilities, and business impact. This document should be used when showcasing the S&S analytics interface and explaining how AllyAI Teammate I surfaces subscription insights.\n\nThe dashboard includes a period-over-period comparison view (Date 1 to Date 2 vs. the same dates last period) with metric filters to compare performance over time. It highlights a customer improvement in % OPS loss due to OOS, showing a change from +0.45% to -1.25%. Time-series snapshots (Time 1 through Time 5) illustrate trend tracking within a defined date range. The report emphasizes subscription performance at a high level before enabling drill-down.\n\nA major section titled 'Subscription Performance by Brand & SKU' (dated 12/3/25) presents revenue by brand, including figures such as $22.2M (+3%), $6M (+6.9%), $4M (+10%), $3M (+3%), $1.1M (-5%), $0.5M (-2.2%), and $0.7M (+5.4%). Unit volumes are shown in thousands (e.g., 150K +1%, 16K -4%, 6K +6%, 12.3K +1.1%, 7.5K -5.5%, 0.1K +8%). The dashboard also shows brand contribution percentages (e.g., 24% -4%, 15% +6%, 13.4% +8.1%, 12.2% +1.1%, 8.4% -3%, 1.1% -1%) and revenue shifts (e.g., $5M -1%, $1M +4%, $0.4M +1%, $0.11M -7%, $0.5M -15%, $0.9M +11%). It provides pricing examples by brand such as $26.50 +2.4%, $99.5 +8.1%, $90.46 -3%, $73.10 -9.8%, and $16.5 +11.1%. Users are prompted to 'Dive deeper into SKU-level data by clicking the brand arrow,' demonstrating interactive drill-down functionality.\n\nOverall, the example illustrates how AllyAI Teammate I consolidates subscription revenue, volume, pricing, share, and operational loss metrics into a single, filterable interface that allows sales teams and customers to quickly identify growth drivers, declining brands, OOS-related revenue leakage, and SKU-level opportunities.\n\nUse this document when someone asks: 'What does the S&S dashboard look like?', 'How does AllyAI track subscription performance by brand?', 'Can we see an example of OPS loss due to OOS reporting?', 'How do you compare current period vs last period?', or 'Do you provide SKU-level drill-down for subscription revenue?'\n\nNot to confuse with: a Sales Agent Product Box (which defines positioning, pricing, and packaging), a Second Call Deck (which provides a full narrative sales presentation), or a Case Study Library (which includes named customers and quantified business outcomes). This document is a visual example of the dashboard interface, not a pricing or positioning document.\n\nVersion is not specified. The dashboard example is dated 12/3/25 within the visual. Status appears to be Active as a generic demo asset.",
-      "contentSummary": {
-        "mainTopics": [
-          "Subscription & Services (S&S) performance overview",
-          "Period-over-period comparison (current vs last period)",
-          "% OPS loss due to OOS tracking",
-          "Brand-level subscription revenue performance",
-          "SKU-level drill-down functionality",
-          "Unit volume performance (in thousands)",
-          "Brand share and contribution percentages",
-          "Revenue change by brand",
-          "Price change by brand/SKU",
-          "Interactive metric filtering"
-        ],
-        "specificDetails": [
-          "OPS loss improvement from +0.45% to -1.25%",
-          "Revenue example: $22.2M +3%",
-          "Revenue example: $6M +6.9%",
-          "Revenue example: $4M +10%",
-          "Revenue example: $1.1M -5%",
-          "Unit volume example: 150K +1%",
-          "Unit volume example: 16K -4%",
-          "Unit volume example: 12.3K +1.1%",
-          "Brand share example: 24% -4%",
-          "Brand share example: 13.4% +8.1%",
-          "Revenue shift example: $0.5M -15%",
-          "Revenue shift example: $0.9M +11%",
-          "Price example: $99.5 +8.1%",
-          "Price example: $73.10 -9.8%",
-          "Dated dashboard view: 12/3/25"
-        ],
-        "keyTakeaways": [
-          "AllyAI Teammate I provides clear period-over-period subscription performance comparisons.",
-          "The dashboard identifies revenue impact from OOS-driven OPS loss.",
-          "Users can analyze performance at both brand and SKU levels.",
-          "Revenue, volume, share, and price metrics are consolidated in one interface.",
-          "Interactive filtering enables rapid identification of growth and decline drivers."
-        ]
-      },
-      "documentPurpose": "Demonstrate S&S dashboard capabilities and subscription analytics interface",
-      "whenToUse": "Use during product demos, second calls, or discovery sessions when showcasing subscription performance tracking, brand/SKU drill-down, or OOS-related revenue analysis.",
-      "searchQueries": [
-        "AllyAI S&S dashboard example",
-        "Teammate I subscription dashboard",
-        "OPS loss due to OOS reporting example",
-        "Subscription performance by brand and SKU",
-        "Period over period subscription comparison dashboard",
-        "AllyAI subscription revenue analytics",
-        "S&S dashboard 12/3/25 example",
-        "Brand level subscription revenue view",
-        "SKU drill down subscription analytics",
-        "Subscription volume in thousands dashboard",
-        "Price change tracking in subscription dashboard",
-        "Brand share percentage subscription report",
-        "Out of stock impact on subscription revenue",
-        "Generic S&S dashboard mockup",
-        "AllyAI Teammate I analytics interface example"
-      ],
-      "notToConfuseWith": [
-        "AllyAI Teammate I Product Box – defines positioning, value proposition, and pricing rather than showing dashboard visuals",
-        "AllyAI Second Call Deck – full sales narrative presentation including implementation and ROI",
-        "AllyAI Case Study Library – contains named customer success stories with quantified outcomes"
-      ],
-      "version": null,
-      "effectiveDate": "12/3/25",
-      "status": "Active",
-      "productNames": [
-        "AllyAI Teammate I"
-      ],
-      "competitorNames": [],
-      "customerNames": [],
-      "keyMetrics": [
-        "% OPS loss (+0.45% to -1.25%)",
-        "Subscription revenue (e.g., $22.2M +3%, $6M +6.9%)",
-        "Unit volume (e.g., 150K +1%, 16K -4%)",
-        "Brand share (e.g., 24% -4%, 13.4% +8.1%)",
-        "Price changes (e.g., $99.5 +8.1%, $73.10 -9.8%)"
-      ],
-      "keyFeatures": [
-        "Metric filter selection",
-        "Period-over-period comparison",
-        "Brand-level performance view",
-        "SKU-level drill-down via brand arrow",
-        "OPS loss due to OOS tracking",
-        "Revenue, volume, share, and price visualization"
-      ],
-      "targetAudience": "Sales executives, account executives, solutions consultants, and prospective retail or CPG clients evaluating subscription analytics capabilities",
-      "folderId": "1BIu9JZrB8pyLwsxuCAsHfNOTZVDQrn1o",
-      "folderName": "Archive",
-      "folderUrl": "https://drive.google.com/drive/folders/1BIu9JZrB8pyLwsxuCAsHfNOTZVDQrn1o"
-    },
-    {
-      "name": "Ally I Teammate Training",
-      "url": "https://docs.google.com/presentation/d/1nYPCt3ZJLtDZDm-y27jykNt0-2guUdURHk4iGgaYMno/edit?usp=drivesdk",
-      "fileId": "1nYPCt3ZJLtDZDm-y27jykNt0-2guUdURHk4iGgaYMno",
-      "documentIdentity": "This is the Ally I Teammate Training - a comprehensive internal product demo and sales enablement deck covering AllyAI Teammate I’s AI-powered reporting, 1-click executive report generation, real-time insights, use cases, adoption programs, renewal strategy, and positioning for customers like Coca-Cola and a National Apparel Brand.",
-      "documentType": "training-deck",
-      "comprehensiveDescription": "This is the Ally I Teammate Training - a detailed internal training and demo overview for CommerceIQ’s AllyAI Teammate I product. A training deck is an enablement document used to educate sales, category, media, and analytics teams on how to position, demo, and sell a product effectively. This deck is designed to prepare teams to articulate Ally’s value, run product demonstrations, handle common pain points, and support renewal and upgrade conversations.\n\nThe document walks through Ally’s core value proposition: reducing manual reporting time by 50% with 1-click executive reports, delivering real-time AI-driven insights, and connecting data across silos (sales, media, share of voice, digital shelf) to align teams. It includes structured demo flows showing how users can create custom insight decks in clicks using a guided report builder, add reporting widgets, select dimensions and metrics (Retailers, Geographies, Job Function, Product Categories), and generate PowerPoint presentations instantly. It highlights real-world examples such as measuring multi-location trends, analyzing week-over-week Share of Voice changes, identifying content completeness gaps, tracking product availability across 70 retail partners, and diagnosing retailer-driven price changes.\n\nSpecific use cases include generating quarterly executive business reviews, weekly team reports, monthly search performance updates, category input metric reports, and incrementality analyses for campaigns (e.g., Valentine’s Day performance). The deck references customer impact, including a National Apparel Brand Sr. Director of Ecommerce reporting 79% time savings—reducing a 3-day executive report process to 5 hours. It also includes a Walmart SKU Group availability example where Ally provided improvement recommendations after performance gains were identified. The training covers embedded insights, AI takeaways at the country level, one-click reporting for all geographies and retailers, and pain points such as data overload, disjointed systems, and slow manual analysis.\n\nThe document also includes sections on Ally Adoption Program (July ’25), Ally Upgrade Program (July ’25), CIQ H2 2025 renewal strategy, renewal pricing tracker, and ownership breakout—positioning the product within broader commercial strategy. It references internal resources like the Ally Product Hub in Seismic, outlines what to know, what to say, and what to share externally (1-pagers, messaging, pitch decks), and features named teammates (Category, Media, Sales) to guide role-specific demos.\n\nUse this document if someone asks: “How do I demo Ally Teammate I?”, “What are Ally’s core use cases?”, “How does Ally reduce reporting time?”, “What’s included in the Ally Adoption or Upgrade Program?”, “What’s the renewal strategy for Teammate I & II?”, or “How do I position Ally for executive reporting and digital shelf insights?”\n\nNot to be confused with: an Ally external one-pager (customer-facing high-level overview), a Product Box (formal definition of packaging, pricing, and SKU structure), a battle card (competitive positioning snapshot), or a pricing calculator (specific commercial modeling tool). This training deck is internal-facing and focused on enablement, demo flow, and messaging depth rather than standalone pricing documentation.\n\nVersion and effective date are not explicitly stated; references include July ’25 adoption and upgrade programs and CY 2025 H2 renewal pricing, indicating active mid-2025 commercial alignment. Status appears Active for ongoing enablement use.",
-      "contentSummary": {
-        "mainTopics": [
-          "AllyAI Teammate I product overview",
-          "1-click executive reporting and report builder demo flow",
-          "AI-driven insights and embedded recommendations",
-          "Use cases across sales, media, category, and analytics teams",
-          "Retailer and geography-level benchmarking",
-          "Adoption, upgrade, and renewal strategy (H2 2025)",
-          "Pain points and value proposition messaging",
-          "Customer examples and quantified impact",
-          "Internal enablement resources (Ally Product Hub in Seismic)",
-          "Role-based demo ownership (Category, Media, Sales Teammates)"
-        ],
-        "specificDetails": [
-          "Reduce manual reporting time by 50% with 1-click reports",
-          "79% time savings (3 days reduced to 5 hours) – National Apparel Brand",
-          "Country-level overall scores with AI takeaways",
-          "One-click PowerPoint presentation generation",
-          "Custom insight decks built via guided report builder",
-          "Reporting dimensions: Retailers, Geographies, Job Function, Product Categories",
-          "Weekly, monthly, and quarterly executive reporting use cases",
-          "Tracking availability across 70 retail partners",
-          "Share of Voice week-over-week change analysis",
-          "Content completeness gap identification",
-          "Retailer-driven price change analysis",
-          "Valentine’s Day campaign incrementality reporting",
-          "Walmart SKU Group availability improvement example",
-          "Ally Adoption Program July ’25",
-          "CIQ H2 2025 renewal pricing tracker and strategy"
-        ],
-        "keyTakeaways": [
-          "AllyAI Teammate I significantly reduces manual reporting effort through AI-powered 1-click reporting.",
-          "The product connects siloed sales, media, and digital shelf data into unified executive-ready insights.",
-          "It supports multiple roles (Sales, Media, Category, Analytics) with tailored use cases and demos.",
-          "Strong quantified ROI exists, including up to 79% reporting time savings.",
-          "Adoption and renewal strategy are tightly integrated into commercial planning for H2 2025."
-        ]
-      },
-      "documentPurpose": "Enable internal teams to demo, position, and drive adoption and renewal of AllyAI Teammate I.",
-      "whenToUse": "Use during internal sales training, demo preparation, QBR prep enablement, renewal strategy discussions, or when aligning on Ally messaging and use cases for customers like Coca-Cola.",
-      "searchQueries": [
-        "Ally Teammate I training deck",
-        "How to demo AllyAI",
-        "Ally 1-click executive reports",
-        "Ally reporting time savings 79%",
-        "Ally Adoption Program July 25",
-        "CIQ H2 2025 renewal strategy teammates",
-        "Ally use cases for Coca-Cola",
-        "Generate PowerPoint report with Ally",
-        "Ally real-time digital shelf insights",
-        "Ally SKU availability reporting example",
-        "Ally share of voice week over week analysis",
-        "Ally executive QBR report generation",
-        "Ally Product Hub Seismic",
-        "Teammate I vs Teammate II renewal",
-        "Ally AI embedded insights demo flow"
-      ],
-      "notToConfuseWith": [
-        "Ally External One-Pager – customer-facing high-level overview without deep demo or renewal strategy detail",
-        "Ally Product Box – formal packaging, SKU, and pricing definition document",
-        "Ally Battle Card – competitive comparison snapshot",
-        "RMM or other CommerceIQ product training decks – focused on retail media rather than AI reporting teammate"
-      ],
-      "version": null,
-      "effectiveDate": null,
-      "status": "Active",
-      "productNames": [
-        "AllyAI",
-        "AllyAI Teammate I",
-        "Ally Teammate I",
-        "Teammate II"
-      ],
-      "competitorNames": [],
-      "customerNames": [
-        "Coca-Cola",
-        "National Apparel Brand",
-        "Walmart"
-      ],
-      "keyMetrics": [
-        "50% reduction in manual reporting time",
-        "79% time savings",
-        "3 days reduced to 5 hours",
-        "70 retail partners tracked for availability"
-      ],
-      "keyFeatures": [
-        "1-click executive reports",
-        "Custom insight deck creation",
-        "Guided report builder",
-        "Embedded AI insights",
-        "Real-time performance drivers",
-        "PowerPoint auto-generation",
-        "Country-level benchmarking scores",
-        "Retailer/geography/job function/product category filters"
-      ],
-      "targetAudience": "Internal CommerceIQ sales, category, media, analytics, and enablement teams preparing to demo, position, and renew AllyAI Teammate I.",
-      "folderId": "1hWz8N5umrAc4MqnWH3t3qr9wepe3loLu",
-      "folderName": "Internal - Ally",
-      "folderUrl": "https://drive.google.com/drive/folders/1hWz8N5umrAc4MqnWH3t3qr9wepe3loLu"
     },
     {
       "name": "CIQ Mutual NDA - Sales/BD use.pdf",
@@ -2522,113 +1974,6 @@
       "folderId": "1TE36FL1cTlPw_3Wz5ECI2rPOXiwTXJ0c",
       "folderName": "Content Agent",
       "folderUrl": "https://drive.google.com/drive/folders/1TE36FL1cTlPw_3Wz5ECI2rPOXiwTXJ0c"
-    },
-    {
-      "name": "AllyAI Content Agent_archive",
-      "url": "https://docs.google.com/presentation/d/1Y_Uow7sGBwMLm3SA0ej2YLOUMQhjeRE-_6zSfkvwX4k/edit?usp=drivesdk",
-      "fileId": "1Y_Uow7sGBwMLm3SA0ej2YLOUMQhjeRE-_6zSfkvwX4k",
-      "documentIdentity": "This is the AllyAI Content Agent_archive - a comprehensive product sales presentation detailing the capabilities, value proposition, case studies, and workflow of the AllyAI Content Agent for achieving 100% PIM-PDP compliance, accelerating content updates to under 1 minute, and increasing PIM compliance by 10+ points in less than 2 weeks.",
-      "documentType": "second-call-deck",
-      "comprehensiveDescription": "This is the AllyAI Content Agent_archive - a detailed product sales deck focused on AllyAI’s Content Agent solution for PIM compliance, retail content validation, syndication, and optimization. As a second-call deck, it is designed for deeper product walkthroughs after initial discovery, showcasing proof points, workflows, quantified impact, and real-world customer examples. It is used to demonstrate how Content Agent solves multi-system content gaps and reduces the 30+ day feedback loop between PIM and retailer PDP updates.\n\nThe document outlines the market problem: brands struggle to identify when PIM is the source of content gaps, lack visibility into retail readiness, and operate in fragmented ecosystems (PIM, DAM, retailer portals). It highlights common challenges such as 30+ day feedback loops, 35-minute manual SKU updates, five or more systems involved in updates, and lack of clarity on which content is optimal. The deck presents a \"best case\" future state enabled by Content Agent, including real-time reporting on content scores, automated gap detection, local team enablement, and streamlined syndication.\n\nCore capabilities detailed include: automated PIM validation; identification of content mismatches between PIM and retailer PDPs; 1-click syndication to retail partners (where direct integration exists); automated detection of gaps across title, description, bullets, images, and video; retailer-specific content indexing optimization; AI-driven content recommendations infused with brand-specific context; and a self-service agent training interface using natural language inputs to embed brand guidelines and past learnings. The deck emphasizes the platform’s ability to \"Score, optimize, and publish content in seconds\" and to build and maintain \"gold standard PIM compliance.\"\n\nThe document includes quantified outcomes and case studies. A global consumer products company achieved 100% PIM compliance for 75 SKUs within 60 days and aligned 80 SKUs within 1 hour to reach 100% PIM-PDP compliance. The solution improved PIM compliance by +10 points in less than 2 weeks and reduced time to action on a single SKU to under 1 minute (versus 35-minute industry average). A Newell case example describes managing thousands of SKUs across 5 systems and 6,000+ SKUs on Amazon alone, with Content Agent enabling validation of PIM retail readiness and streamlined updates via a single platform.\n\nUse this document when someone asks for: a detailed walkthrough of AllyAI Content Agent, proof of 100% PIM compliance results, how to reduce SKU update time from 35 minutes to under 1 minute, how 1-click syndication works, retailer-specific indexing optimization, or a case study on Newell or a global CPG brand achieving full compliance in 60 days.\n\nNot to confuse with: a one-pager (which would summarize benefits in a single page), a pricing calculator (which would detail cost structure), or a high-level first-call overview deck. This archive version appears to be a more detailed, possibly legacy, product walkthrough presentation with screenshots, demo slides, and future roadmap references (2026 Focus).\n\nVersion information is not specified. The document is labeled as an archive, suggesting it is not the most current active sales deck but retained for reference.",
-      "contentSummary": {
-        "mainTopics": [
-          "PIM compliance challenges and market problem",
-          "Content Agent product overview and positioning",
-          "Automated content validation and gap detection",
-          "PIM-to-retailer syndication workflow",
-          "Retailer-specific PDP indexing optimization",
-          "AI-driven content recommendations",
-          "Agent training with brand context",
-          "Case studies and quantified business impact",
-          "Before vs After transformation (Newell example)",
-          "2026 platform upgrade focus"
-        ],
-        "specificDetails": [
-          "100% PIM compliance for 75 SKUs within 60 days",
-          "80 SKUs aligned within 1 hour to reach 100% PIM-PDP compliance",
-          "+10 points improvement in PIM compliance in < 2 weeks",
-          "<1 minute time to action per SKU (vs 35-minute industry average)",
-          "30+ day feedback loop in traditional workflows",
-          "5+ systems involved in manual content updates",
-          "6,000+ SKUs on Amazon (Newell example)",
-          "1-click syndication to retail partners",
-          "Automated detection of mismatches between PIM and retailer PDP",
-          "Optimization of titles, descriptions, bullets, images, and video",
-          "Retailer-specific indexing recommendations",
-          "Self-service natural language agent training interface",
-          "Digital Shelf Agency before/after comparison",
-          "Gold standard PIM compliance positioning",
-          "Reporting on content score and gap identification workflow"
-        ],
-        "keyTakeaways": [
-          "Content Agent enables brands to achieve 100% PIM-PDP compliance rapidly and at scale.",
-          "It reduces SKU update time from 35 minutes to under 1 minute through automation.",
-          "The platform closes fragmented multi-system workflows into a single validation and syndication engine.",
-          "Retailer-specific optimization and AI recommendations improve indexing and conversion.",
-          "Quantified case studies demonstrate measurable compliance gains within weeks."
-        ]
-      },
-      "documentPurpose": "To demonstrate the value, workflow, and quantified impact of AllyAI Content Agent for PIM compliance and retail content optimization.",
-      "whenToUse": "Use during second sales calls, product deep dives, demo sessions, or when a prospect requests proof of PIM compliance results, workflow automation details, or customer case studies showing measurable compliance improvements.",
-      "searchQueries": [
-        "AllyAI Content Agent deck",
-        "Content Agent PIM compliance presentation",
-        "100% PIM compliance case study",
-        "reduce SKU update time to 1 minute",
-        "PIM to PDP compliance solution",
-        "Newell PIM compliance example",
-        "1-click syndication to retailers",
-        "retailer content mismatch detection",
-        "improve PIM compliance 10 points in 2 weeks",
-        "Content Agent product walkthrough",
-        "retail readiness validation tool",
-        "AI content gap detection for PIM",
-        "optimize PDP indexing by retailer guidelines",
-        "CommerceIQ Content Agent archive",
-        "gold standard PIM compliance solution"
-      ],
-      "notToConfuseWith": [
-        "AllyAI Sales Agent deck – focuses on AI-generated sales presentations and CARS metrics rather than PIM compliance.",
-        "RMM (Retail Media Management) decks – focus on advertising and retail media optimization, not content compliance.",
-        "Content Agent one-pager – would provide a high-level summary without detailed case studies and workflow diagrams."
-      ],
-      "version": null,
-      "effectiveDate": null,
-      "status": "Archived",
-      "productNames": [
-        "AllyAI Content Agent",
-        "CommerceIQ FDE",
-        "AllyAI Retail AI Platform"
-      ],
-      "competitorNames": [],
-      "customerNames": [
-        "Newell",
-        "Global consumer products company"
-      ],
-      "keyMetrics": [
-        "100% PIM compliance",
-        "75 SKUs in 60 days",
-        "80 SKUs aligned in 1 hour",
-        "+10 points PIM compliance in < 2 weeks",
-        "<1 minute time to action",
-        "35-minute industry average update time",
-        "30+ day feedback loop",
-        "6,000+ SKUs on Amazon"
-      ],
-      "keyFeatures": [
-        "Automated PIM validation",
-        "Content gap identification",
-        "PIM-PDP mismatch detection",
-        "1-click retailer syndication",
-        "Retailer-specific indexing optimization",
-        "AI content recommendations",
-        "Brand-context agent training",
-        "Content score reporting dashboard"
-      ],
-      "targetAudience": "Sales executives, solutions consultants, and account executives presenting AllyAI Content Agent to enterprise CPG and retail brands.",
-      "folderId": "1Khe4b_WystWlr5Hc72KHlh-H9ThDWKRb",
-      "folderName": "Archive",
-      "folderUrl": "https://drive.google.com/drive/folders/1Khe4b_WystWlr5Hc72KHlh-H9ThDWKRb"
     },
     {
       "name": "CommerceIQ Agentic Platform Datasheet Draft Mar 25",
@@ -4275,7 +3620,7 @@
       "folderUrl": "https://drive.google.com/drive/folders/16bDH8Dapep_DYrOJ0YyGSMGNb8jGziYe"
     },
     {
-      "name": "Media Agent 1-Click Report MBR MoM Example Generic ",
+      "name": "Media Agent 1-Click Report MBR MoM Example Generic",
       "url": "https://docs.google.com/presentation/d/1rA9tZCkZpMBQ8onkwwQEIs3yliAMGMk9fvtptU1UpCs/edit?usp=drivesdk",
       "documentIdentity": "This is the Media Agent 1-Click Report MBR MoM Example Generic - a comprehensive internal sales enablement and certification training deck that consolidates AllyAI/CommerceIQ Agent resources, Sales Agent pitch guidance, demo structure, competitive FUD positioning (Stackline, Shalion), Digital Shelf Analytics comparisons, and certification requirements for delivering a Sales Agent pitch and demo.",
       "documentType": "enablement-guide",
@@ -4385,7 +3730,7 @@
       "folderUrl": "https://drive.google.com/drive/folders/1xI29L5LVoghgYLl8e4W1lyp3g4_0qzeB"
     },
     {
-      "name": "AllyAI Media Teammate I 1-Click Report MBR MoM Example Generic ",
+      "name": "AllyAI Media Teammate I 1-Click Report MBR MoM Example Generic",
       "url": "https://docs.google.com/presentation/d/1rA9tZCkZpMBQ8onkwwQEIs3yliAMGMk9fvtptU1UpCs/edit?usp=drivesdk",
       "documentIdentity": "This is the AllyAI Media Teammate I 1-Click Report MBR MoM Example Generic - a comprehensive sales enablement and certification training deck that consolidates AllyAI Agent resources (Sales Agent, Shelf Agent, Content Agent, Media Agent), pitch materials, demo guidance, competitive positioning (Stackline, Shalion, DSA), FUD talk tracks, digital shelf comparisons, automation metrics, and certification requirements into a single internal reference document.",
       "documentType": "training-deck",
@@ -5615,10 +4960,10 @@
       "folderUrl": "https://drive.google.com/drive/folders/16bDH8Dapep_DYrOJ0YyGSMGNb8jGziYe"
     },
     {
-      "name": "Ascential/Omnicom Competitive Battle Card (Updated May 2024)",
-      "url": "https://docs.google.com/presentation/d/13WUXmDPUpxXHK0CG-EWKukO3pShZXjGz30K9W7G9T6U/edit?usp=drivesdk",
-      "fileId": "13WUXmDPUpxXHK0CG-EWKukO3pShZXjGz30K9W7G9T6U",
-      "documentIdentity": "This is the Ascential/Omnicom Competitive Battle Card (Updated May 2024) – a comprehensive competitive enablement document detailing CommerceIQ’s positioning against Ascential/Omnicom (including Flywheel and Edge), covering Digital Shelf (LBA), Retail Media Management (CommerceIQ Flywheel), and Market Share capabilities, with feature-by-feature comparisons, FUD questions, onboarding timelines, budget optimization differences, retailer breadth, and sales rebuttals.",
+      "name": "Flywheel/Ascential/Omnicom Competitive Battle Card (Updated Mar 2026)",
+      "url": "https://docs.google.com/presentation/d/1lRqQSlKEPuQS9f-nSsrpCZs5K8kyhRc12LFHIi2Jd_M/edit?usp=drivesdk",
+      "fileId": "1lRqQSlKEPuQS9f-nSsrpCZs5K8kyhRc12LFHIi2Jd_M",
+      "documentIdentity": "This is the Flywheel/Ascential/Omnicom Competitive Battle Card (Updated Mar 2026) – a comprehensive competitive enablement document detailing CommerceIQ's positioning against Ascential/Omnicom (including Flywheel and Edge), covering Digital Shelf (LBA), Retail Media Management, and Market Share capabilities, with feature-by-feature comparisons, FUD questions, onboarding timelines, and sales rebuttals. Updated March 2026.",
       "documentType": "battle-card",
       "comprehensiveDescription": "This is the Ascential/Omnicom Competitive Battle Card (Updated May 2024) – a sales enablement battle card designed to help CommerceIQ reps compete against Ascential/Omnicom solutions (including Flywheel and Edge by Ascential). A battle card is a competitive-facing document used in live sales situations to arm account executives with positioning, differentiation points, FUD (Fear, Uncertainty, Doubt) questions, rebuttals, and feature comparisons. This document is specifically used when facing Omnicom-owned Flywheel, Edge’s LBA (Location-Based Analytics), or related Digital Shelf and Retail Media offerings.\n\nThe document covers detailed breakdowns of Edge’s LBA product, including the Overview tab (aggregated availability, distribution, and promotions across locations), Product tab (SKU-level views by retailer with filters for availability, in promotion, not in promotion, and average price), and Locations tab (sortable, searchable, filterable store-level data with chart views of availability over time). It highlights that LBA is based on store-level (not zipcode) data across 2,000 retailers where click-and-collect data exists, and notes limitations such as inability to decipher share of sales (using Share of Search as a proxy instead). It also calls out that certain scorecard metrics (Traffic, Conversion, Pricing, Availability) are owned-item only, with competitive data limited to Promotions and some Ratings & Reviews.\n\nOn the CommerceIQ side, the battle card emphasizes CommerceIQ Flywheel capabilities such as hourly bid adjustments, full-day campaign coverage (dayparting), budget pacing including mid-month budget changes, day-of-week optimization, and over-indexing during events like Prime Day. It contrasts this with competitors’ manual budget pacing and lack of hourly bidders. It highlights AI-Driven Demand Forecasting, granular data-driven optimization, real-time insights, automated campaign optimization, and a data transparency dashboard. It also outlines onboarding timelines (8–12 weeks for core onboarding; 2–4 weeks for Market Share when using Amazon catalog) and machine crawling that gathers product attributes without relying on Amazon’s categorization.\n\nThe Market Share (MS) section details MarketView (sales and share analysis vs competitors at categorical and subcategory levels), customizable reporting (with additional cost for customized taxonomy beyond Amazon’s default), a 6-section Scorecard explaining sales/share changes, and a cost-effective entry model offering the first 5–10 Amazon categories free as part of a bundled offer. It positions CommerceIQ on data accuracy, reliability, comprehensive competitive insights (pricing, content optimization, advertising tactics), and integrated ecosystem advantages. The document also emphasizes global scale (900+ retailers in 50+ countries), dedicated customer success, regional language support, and integrated platform flexibility.\n\nUse this document if someone asks: “How does CommerceIQ compare to Flywheel?”, “What are Edge LBA limitations?”, “How do we position against Omnicom?”, “Does Flywheel support hourly bidding?”, “How do we compete on Market Share analytics?”, or “What FUD questions should I ask against Ascential?” It is specifically designed for competitive deal strategy and objection handling in mid-to-late stage sales cycles.\n\nNot to confuse with a general RMM product deck (which explains CommerceIQ capabilities without competitive framing), a Market Share product one-pager (which focuses only on MS features), or a first-call overview deck (which provides high-level positioning without detailed competitor rebuttals). This document is explicitly competitive and tactical.\n\nVersion reflects an update from May 2024. Status assumed Active for competitive field use.",
       "contentSummary": {
@@ -5674,7 +5019,9 @@
         "CommerceIQ global retailer coverage",
         "FUD questions against Omnicom",
         "CommerceIQ MarketView vs competitor",
-        "Flywheel manual budget pacing limitation"
+        "Flywheel manual budget pacing limitation",
+        "Flywheel battle card March 2026",
+        "Ascential competitive update 2026"
       ],
       "notToConfuseWith": [
         "RMM Second Call Deck – detailed product walkthrough without competitive framing",
@@ -5683,7 +5030,7 @@
         "Generic Competitive Battle Cards (other competitors) – focused on Pacvue, Skai, etc., not Ascential/Omnicom"
       ],
       "version": null,
-      "effectiveDate": "May 2024",
+      "effectiveDate": "March 2026",
       "status": "Active",
       "productNames": [
         "CommerceIQ Flywheel",
@@ -6730,7 +6077,7 @@
       "folderUrl": "https://drive.google.com/drive/folders/1o19sxAD7K6Le2o08peo_eq8qXpY259fp"
     },
     {
-      "name": "Internal Competitive & Industry Experience SMEs ",
+      "name": "Internal Competitive & Industry Experience SMEs",
       "url": "https://docs.google.com/spreadsheets/d/1O-miPrCS1KF1uEbQ6JyBRfPZCSv26PMfiCK2n19Gyto/edit?usp=drivesdk",
       "documentIdentity": "This is the Internal Competitive & Industry Experience SMEs – a centralized internal enablement hub containing AllyAI Agent training materials, certification recordings, product boxes, messaging frameworks, competitive FUD questions, retailer coverage details, feature lists, and contact directories for Sales, Shelf, Content, and Media Agents across Amazon, Walmart, and global markets.",
       "documentType": "enablement-guide",
@@ -8112,7 +7459,7 @@
       "folderUrl": "https://drive.google.com/drive/folders/1lu0Riw9onIqALoGkLZEqVnsiKIrmKUeg"
     },
     {
-      "name": "RMM First Call Deck ",
+      "name": "RMM First Call Deck",
       "url": "https://docs.google.com/presentation/d/1Y_Rpyro9KsB0Av8fuoIMDearwUaFOz9FFYbz-8vbg-I/edit?usp=drivesdk",
       "documentIdentity": "This is the RMM First Call Deck - a comprehensive first-meeting sales presentation and enablement hub covering AllyAI’s Retail Media Management (RMM) and Agent ecosystem (Sales Agent, Shelf Agent, Content Agent, Media Agent), including training recordings, certification materials, messaging frameworks, product boxes, demo links, FUD talk tracks, competitive positioning vs Stackline and Shalion, retailer/geography coverage (Amazon, Walmart, 110 countries), automation metrics (3B+ automations, $200M+ deductions recovered), and cross-functional value for Brand, Sales, Shopper Marketing, Supply Chain, and Finance teams.",
       "documentType": "first-call-deck",
@@ -9204,7 +8551,7 @@
       "targetAudience": "Internal Sales, Marketing, Product, and Enablement teams supporting Media Agent go-to-market"
     },
     {
-      "name": "AllyAI Media Teammate ",
+      "name": "AllyAI Media Teammate",
       "url": "https://docs.google.com/presentation/d/1_m50KB13PrTeJe0p6QYHT9zlRwcALL1DuuP1GLq_f2g/edit?usp=drivesdk",
       "documentIdentity": "This is the AllyAI Media Teammate - a centralized internal enablement hub containing sales decks, product boxes, messaging frameworks, training recordings, demo links, FUD battle questions, retailer coverage details, feature lists, consulting services overview, and contact ownership for the AllyAI Media Agent (and related Agents: Sales, Shelf, Content). It consolidates presentation materials (2nd call decks), certification recordings (including the 2/13 First Call & Content Agent Certification), SKO 2026 training assets, retailer-specific materials for Amazon and Walmart, roadmap items (Ask AllyAI Q1, GEO Optimization Q2), and competitive positioning vs Stackline and Shalion.",
       "documentType": "enablement-guide",
@@ -10376,9 +9723,9 @@
       "folderUrl": "https://drive.google.com/drive/folders/1BIu9JZrB8pyLwsxuCAsHfNOTZVDQrn1o"
     },
     {
-      "name": "Content Agent FAQ",
-      "url": "https://docs.google.com/document/d/1k65CnPFcC4C4Xn4WupAX11scdADL1BYHQlA3t_RTpR4/edit?usp=drivesdk",
-      "fileId": "1k65CnPFcC4C4Xn4WupAX11scdADL1BYHQlA3t_RTpR4",
+      "name": "Content Agent FAQs",
+      "url": "https://docs.google.com/document/d/1OGhe5YNRDiNjTJs9ZM7Sx1rtrqaBHH6JiXTuu6n-JBY/edit?usp=drivesdk",
+      "fileId": "1OGhe5YNRDiNjTJs9ZM7Sx1rtrqaBHH6JiXTuu6n-JBY",
       "documentIdentity": "This is the Content Agent FAQ - an internal, confidential Q&A document covering implementation details, PIM integrations, retailer guideline optimization, pricing structure, Early Access terms, and the 90% PIM Compliance guarantee for the Content Agent product.",
       "documentType": "enablement-guide",
       "comprehensiveDescription": "This is the Content Agent FAQ - an internal enablement Q&A document designed to equip sales and customer-facing teams with clear answers to common questions about Content Agent’s integrations, compliance guarantees, retailer optimization logic, and Early Access pricing model. An FAQ enablement guide is used to standardize messaging, reduce ambiguity in customer conversations, and ensure consistent positioning during live sales calls, rollout planning, and objection handling.\n\nThe document covers detailed implementation questions, particularly around PIM (Product Information Management) integrations. It clarifies that brand context adjustments are currently at the account level, with profile-level controls in development. It outlines rollout strategy considerations for one-click PIM integrations, highlighting that Salsify integration code is already built and represents the “fastest path to implementation.” For non-Salsify PIMs, the team can complete integrations in approximately two weeks. For customers without a PIM, Procat is identified as the implementation path, and a future flow chart is referenced to simplify edge-case scenarios. A specific internal contact (Srujay Gautam) is named for PIM integration questions.\n\nThe FAQ also addresses product performance commitments and compliance guarantees. It references a 90% PIM Compliance guarantee and states that current implementations have improved outcomes by 10+ points to surpass 90% compliance, with mention of a Newell case study slide as proof. While pricing tied to the guarantee is still being developed, the messaging emphasizes high confidence in achieving results. This positions Content Agent as outcome-driven and low-risk.\n\nRetailer optimization and AI functionality are also clarified. The document confirms that Content Agent incorporates retailer-specific guidelines (e.g., Amazon and Walmart requirements such as character counts and brand-name-first conventions) and provides recommendations aligned to those specifications. It explains that the brand can tune output using natural language direction through a context engine and retains final approval authority over recommendations. It explicitly confirms that suggested or required retailer content will be incorporated as more retailer connections are added.\n\nPricing and packaging details are central to the document. The Early Access program offers existing customers free use of Content Agent for the life of their contract for one brand/category and one retailer. After 60 days post–go live, customers can receive pricing to expand to additional retailers. Expansion pricing beyond one brand or category is still being developed, with messaging emphasizing “no risk” during the trial period. The positioning reinforces that customers can improve compliance scores, test agentic AI in production, and retain existing solutions if they choose not to expand.\n\nUse this document when handling questions such as: “How does Content Agent integrate with Salsify?”, “What if the customer uses a different PIM?”, “What happens if we don’t hit 90% compliance?”, “How does retailer optimization work for Amazon vs Walmart?”, “What does Early Access include?”, or “Is there risk in trying Content Agent?” It is particularly useful in technical validation calls, procurement discussions, and rollout planning meetings.\n\nNot to confuse with a Content Agent Product Box (which would define overall positioning and value proposition), a First Call Deck (high-level overview), or a Case Study document (which would fully detail the Newell results). This FAQ is tactical and objection-focused rather than narrative or pitch-oriented.\n\nVersion and effective date are not specified. Marked INTERNAL USE ONLY. CONFIDENTIAL. Status appears Active but evolving, particularly around pricing model development.",
@@ -11467,6 +10814,327 @@
       "folderId": "1TE36FL1cTlPw_3Wz5ECI2rPOXiwTXJ0c",
       "folderName": "Content Agent",
       "folderUrl": "https://drive.google.com/drive/folders/1TE36FL1cTlPw_3Wz5ECI2rPOXiwTXJ0c"
+    },
+    {
+      "name": "Shelf Agent FAQs",
+      "fileId": "1PgsVR3UQXhDEzO2_QKfcn7Fp6kDCHKjppjm0ld0QLEw",
+      "url": "https://docs.google.com/document/d/1PgsVR3UQXhDEzO2_QKfcn7Fp6kDCHKjppjm0ld0QLEw/edit?usp=drivesdk",
+      "documentType": "enablement-guide",
+      "documentPurpose": "Answers frequently asked questions about the AllyAI Shelf Agent product",
+      "status": "Active",
+      "productNames": [
+        "AllyAI Shelf Agent",
+        "DSO"
+      ],
+      "searchQueries": [
+        "Shelf Agent FAQ",
+        "Shelf Agent questions",
+        "DSO frequently asked questions",
+        "Shelf Agent how it works"
+      ]
+    },
+    {
+      "name": "FAQ: AllyAI Media Agent & Services",
+      "fileId": "1bryMz9pjcv08IJVSRBInUNp-zVgdRZ3a9t5YGdXlzj0",
+      "url": "https://docs.google.com/document/d/1bryMz9pjcv08IJVSRBInUNp-zVgdRZ3a9t5YGdXlzj0/edit?usp=drivesdk",
+      "documentType": "enablement-guide",
+      "documentPurpose": "Answers frequently asked questions about the AllyAI Media Agent and services",
+      "status": "Active",
+      "productNames": [
+        "AllyAI Media Agent"
+      ],
+      "searchQueries": [
+        "Media Agent FAQ",
+        "Media Agent questions",
+        "how does Media Agent work",
+        "Media Agent services FAQ"
+      ]
+    },
+    {
+      "name": "FAQs: AllyAI Sales Agent & Services",
+      "fileId": "13C7z31U1SSQ1sFoFwdO2JAQLornDwJ2tQocvyDKH-tU",
+      "url": "https://docs.google.com/document/d/13C7z31U1SSQ1sFoFwdO2JAQLornDwJ2tQocvyDKH-tU/edit?usp=drivesdk",
+      "documentType": "enablement-guide",
+      "documentPurpose": "Answers frequently asked questions about the AllyAI Sales Agent product and services",
+      "status": "Active",
+      "productNames": [
+        "AllyAI Sales Agent",
+        "Ally"
+      ],
+      "searchQueries": [
+        "Sales Agent FAQ",
+        "Sales Agent questions",
+        "AllyAI Sales Agent frequently asked questions",
+        "Sales Agent how it works",
+        "Sales Agent services FAQ"
+      ]
+    },
+    {
+      "name": "CIQ Platform Third Party Access Agreement",
+      "fileId": "1Hnc_yja2Rm14oQnC2xR9FK9PxVsCwQvN",
+      "url": "https://docs.google.com/document/d/1Hnc_yja2Rm14oQnC2xR9FK9PxVsCwQvN/edit?usp=drivesdk",
+      "documentType": "enablement-guide",
+      "documentPurpose": "Legal agreement governing third-party access to the CIQ platform",
+      "status": "Active",
+      "productNames": [
+        "CommerceIQ"
+      ],
+      "searchQueries": [
+        "third party access agreement",
+        "platform access agreement",
+        "CIQ contract",
+        "third party agreement"
+      ]
+    },
+    {
+      "name": "CIQ Support Maintenance Packages (Standard and Enterprise)",
+      "fileId": "1N104zHKOyxJY8514tLasaPRwyoENHoeM",
+      "url": "https://docs.google.com/document/d/1N104zHKOyxJY8514tLasaPRwyoENHoeM/edit?usp=drivesdk",
+      "documentType": "enablement-guide",
+      "documentPurpose": "Describes the Standard and Enterprise support and maintenance package tiers for CIQ customers",
+      "status": "Active",
+      "productNames": [
+        "CommerceIQ"
+      ],
+      "searchQueries": [
+        "support packages",
+        "maintenance packages",
+        "enterprise support",
+        "standard support",
+        "CIQ support tiers",
+        "support SLA"
+      ]
+    },
+    {
+      "name": "CIQ Subscription Master Service Agreement (standard MSA)",
+      "fileId": "1G2MUHoPVMo3tJXliK9k6ykslIA_XOA4w",
+      "url": "https://docs.google.com/document/d/1G2MUHoPVMo3tJXliK9k6ykslIA_XOA4w/edit?usp=drivesdk",
+      "documentType": "enablement-guide",
+      "documentPurpose": "Master service agreement governing CIQ subscriptions and customer contracts",
+      "status": "Active",
+      "productNames": [
+        "CommerceIQ"
+      ],
+      "searchQueries": [
+        "MSA",
+        "master service agreement",
+        "subscription agreement",
+        "standard contract",
+        "CIQ MSA",
+        "service agreement"
+      ]
+    },
+    {
+      "name": "Product Box: AllyAI Media Agent & Services",
+      "fileId": "1aki5EOsdd192s0sG4iDB5ugyZP1ES9e4",
+      "url": "https://docs.google.com/document/d/1aki5EOsdd192s0sG4iDB5ugyZP1ES9e4/edit?usp=drivesdk",
+      "documentType": "enablement-guide",
+      "documentPurpose": "Product positioning, value proposition, and messaging for AllyAI Media Agent and managed services",
+      "status": "Active",
+      "productNames": [
+        "AllyAI Media Agent",
+        "RMM",
+        "Ally"
+      ],
+      "searchQueries": [
+        "Media Agent product box",
+        "Media Agent positioning",
+        "Media Agent value proposition",
+        "Media Agent services overview",
+        "AllyAI Media Agent overview"
+      ]
+    },
+    {
+      "name": "CommerceIQ Sales Agent Messaging Framework",
+      "fileId": "1UvrqNqH79UC77DtfpV4FveNEfQEStcyt",
+      "url": "https://docs.google.com/document/d/1UvrqNqH79UC77DtfpV4FveNEfQEStcyt/edit?usp=drivesdk",
+      "documentType": "enablement-guide",
+      "documentPurpose": "Messaging framework, talk tracks, and positioning language for selling the AllyAI Sales Agent",
+      "status": "Active",
+      "productNames": [
+        "AllyAI Sales Agent",
+        "Ally"
+      ],
+      "searchQueries": [
+        "Sales Agent messaging framework",
+        "Sales Agent talk tracks",
+        "Sales Agent positioning",
+        "how to pitch Sales Agent",
+        "Sales Agent messaging"
+      ]
+    },
+    {
+      "name": "Profitero Comparison",
+      "fileId": "1V07htziv5S_HCcqkQiJO_vELv99-2e7HY_gNTS_ydXg",
+      "url": "https://docs.google.com/presentation/d/1V07htziv5S_HCcqkQiJO_vELv99-2e7HY_gNTS_ydXg/edit?usp=drivesdk",
+      "documentType": "battle-card",
+      "documentPurpose": "Legacy competitive comparison document positioning CIQ against Profitero",
+      "status": "Active",
+      "productNames": [
+        "DSA",
+        "DSO",
+        "MS"
+      ],
+      "competitorNames": [
+        "Profitero"
+      ],
+      "searchQueries": [
+        "Profitero comparison",
+        "vs Profitero",
+        "Profitero competitive",
+        "CIQ vs Profitero"
+      ]
+    },
+    {
+      "name": "First Call Deck Agentic Retail - Prospects",
+      "url": "https://docs.google.com/presentation/d/1m-cQBdajfHFXB784UP200EwYaPqJcezG-BLNxVxha44/edit?usp=drivesdk",
+      "fileId": "1m-cQBdajfHFXB784UP200EwYaPqJcezG-BLNxVxha44",
+      "documentIdentity": "This is the First Call Deck for Agentic Retail Prospects — an introductory sales presentation used to open conversations with prospects about CommerceIQ's agentic retail AI platform (AllyAI), covering the value proposition, key capabilities, and differentiation for the first sales call.",
+      "documentType": "first-call-deck",
+      "documentPurpose": "Introduce CommerceIQ's agentic retail platform to new prospects in the first sales call.",
+      "whenToUse": "Use for first calls or initial discovery meetings with new prospects when introducing AllyAI agentic retail capabilities.",
+      "contentSummary": {
+        "mainTopics": [
+          "AllyAI agentic retail platform introduction",
+          "First call value proposition",
+          "Agentic retail AI capabilities",
+          "Prospect-facing positioning"
+        ],
+        "searchQueries": [
+          "Agentic Retail first call deck",
+          "AllyAI first call deck prospects",
+          "First call deck agentic retail",
+          "CommerceIQ agentic first call presentation",
+          "AllyAI prospect intro deck",
+          "Agentic retail intro for prospects"
+        ]
+      },
+      "productNames": [
+        "AllyAI",
+        "Ally"
+      ],
+      "searchQueries": [
+        "Agentic Retail first call deck",
+        "AllyAI first call deck prospects",
+        "First call deck agentic retail",
+        "CommerceIQ agentic first call presentation",
+        "AllyAI prospect intro deck"
+      ]
+    },
+    {
+      "name": "5. Shelf Agent_2nd Call Deck",
+      "url": "https://docs.google.com/presentation/d/1qlL61Gn5WdDfvyjdwVb3aWJUdEh_1YqMyUOTKDfe50g/edit?usp=drivesdk",
+      "fileId": "1qlL61Gn5WdDfvyjdwVb3aWJUdEh_1YqMyUOTKDfe50g",
+      "documentIdentity": "This is the Shelf Agent Second Call Deck — a detailed sales presentation for the second call stage, covering AllyAI Shelf Agent capabilities, deep-dive demo preparation, competitive differentiation, ROI proof points, and advanced digital shelf optimization features for qualified prospects.",
+      "documentType": "second-call-deck",
+      "documentPurpose": "Deliver a deep-dive presentation on AllyAI Shelf Agent capabilities during the second sales call with qualified prospects.",
+      "whenToUse": "Use for second calls or deep-dive demo sessions with qualified prospects interested in AllyAI Shelf Agent / digital shelf optimization.",
+      "contentSummary": {
+        "mainTopics": [
+          "AllyAI Shelf Agent deep dive",
+          "Digital shelf optimization capabilities",
+          "Second call ROI proof points",
+          "Shelf Agent feature walkthrough",
+          "Competitive differentiation"
+        ],
+        "searchQueries": [
+          "Shelf Agent second call deck",
+          "AllyAI Shelf Agent 2nd call",
+          "Shelf Agent deep dive presentation",
+          "Digital shelf optimization second call",
+          "Shelf Agent demo deck",
+          "DSO second call deck"
+        ]
+      },
+      "productNames": [
+        "AllyAI Shelf Agent",
+        "Ally",
+        "DSO"
+      ],
+      "searchQueries": [
+        "Shelf Agent second call deck",
+        "AllyAI Shelf Agent 2nd call",
+        "Shelf Agent deep dive presentation",
+        "Digital shelf optimization second call",
+        "Shelf Agent demo deck"
+      ]
+    },
+    {
+      "name": "AllyAI Sales Agent Datasheet March 2026.pdf",
+      "url": "https://drive.google.com/file/d/1aYvj66y-faOdJE1EOniUUJlOKM_kRAOa/view?usp=drivesdk",
+      "fileId": "1aYvj66y-faOdJE1EOniUUJlOKM_kRAOa",
+      "documentIdentity": "This is the AllyAI Sales Agent Datasheet (March 2026) — a concise external-facing one or two-page product datasheet summarizing AllyAI Sales Agent capabilities, key metrics, use cases, and value proposition for prospects and customers.",
+      "documentType": "enablement-guide",
+      "documentPurpose": "Provide a concise external-facing product summary of AllyAI Sales Agent for prospects, customers, and sales conversations.",
+      "whenToUse": "Use when prospects ask for a quick product overview of AllyAI Sales Agent, as a leave-behind after a call, or to share with stakeholders who need a concise summary.",
+      "contentSummary": {
+        "mainTopics": [
+          "AllyAI Sales Agent capabilities summary",
+          "Key metrics and proof points",
+          "Sales Agent use cases",
+          "Product value proposition",
+          "External-facing product overview"
+        ],
+        "searchQueries": [
+          "AllyAI Sales Agent datasheet",
+          "Sales Agent one pager",
+          "AllyAI Sales Agent product summary",
+          "Sales Agent capabilities overview",
+          "CommerceIQ Sales Agent datasheet March 2026",
+          "AllyAI Sales Agent leave behind"
+        ]
+      },
+      "productNames": [
+        "AllyAI Sales Agent",
+        "Ally"
+      ],
+      "searchQueries": [
+        "AllyAI Sales Agent datasheet",
+        "Sales Agent one pager",
+        "AllyAI Sales Agent product summary",
+        "Sales Agent capabilities overview",
+        "CommerceIQ Sales Agent datasheet March 2026"
+      ]
+    },
+    {
+      "name": "Data Impact Comparison",
+      "url": "https://docs.google.com/presentation/d/1VT92b_iG7yNa_CaAMG3NoDurIgGDLKFzRqxt2k2sI20/edit?usp=drivesdk",
+      "fileId": "1VT92b_iG7yNa_CaAMG3NoDurIgGDLKFzRqxt2k2sI20",
+      "documentIdentity": "This is the Data Impact Comparison — a competitive comparison document positioning CommerceIQ against Data Impact, covering feature differences, capability gaps, and competitive talking points for deals involving Data Impact as a competitor.",
+      "documentType": "battle-card",
+      "documentPurpose": "Support competitive deals against Data Impact by providing feature comparisons and differentiation talking points.",
+      "whenToUse": "Use when prospects mention Data Impact, during RFP responses involving Data Impact, or when handling objections in competitive deals against Data Impact.",
+      "contentSummary": {
+        "mainTopics": [
+          "CommerceIQ vs Data Impact feature comparison",
+          "Data Impact competitive positioning",
+          "Differentiation talking points",
+          "Competitive battle card"
+        ],
+        "searchQueries": [
+          "Data Impact comparison",
+          "CIQ vs Data Impact",
+          "Data Impact competitive battle card",
+          "CommerceIQ versus Data Impact",
+          "Data Impact feature comparison",
+          "Compete against Data Impact"
+        ]
+      },
+      "productNames": [
+        "CommerceIQ",
+        "DSA",
+        "MS"
+      ],
+      "competitorNames": [
+        "Data Impact"
+      ],
+      "searchQueries": [
+        "Data Impact comparison",
+        "CIQ vs Data Impact",
+        "Data Impact competitive battle card",
+        "CommerceIQ versus Data Impact",
+        "Data Impact feature comparison"
+      ]
     }
   ]
 }

@@ -270,6 +270,7 @@ export class IntelligentSync {
         const modifiedFiles = [];
         const unchangedFiles = [];
         const staleFiles = [];
+        const renamedFiles = [];
 
         // Use the latest sync date from Pinecone, or default to 30 days ago if none exists
         const cutoffDate = latestSyncDate
@@ -338,6 +339,13 @@ export class IntelligentSync {
                     signals,
                     pineconeData
                 });
+            } else if (signals.nameChanged) {
+                // Same file ID, same content, but renamed in Drive
+                renamedFiles.push({
+                    file,
+                    oldName: pineconeData['File.name'],
+                    pineconeData
+                });
             } else {
                 unchangedFiles.push({
                     file,
@@ -354,7 +362,47 @@ export class IntelligentSync {
             }
         }
 
-        return { newFiles, modifiedFiles, unchangedFiles, staleFiles };
+        return { newFiles, modifiedFiles, unchangedFiles, staleFiles, renamedFiles };
+    }
+
+    async renameFileInPinecone(fileId, oldName, newName) {
+        // Fetch all vectors for this fileId
+        const results = await this.index.query({
+            vector: new Array(3072).fill(0),
+            topK: 300,
+            includeMetadata: false,
+            filter: { 'File.id': { $eq: fileId } }
+        });
+
+        if (results.matches.length === 0) return 0;
+
+        // Update File.name metadata on each vector
+        for (const match of results.matches) {
+            await this.index.update({
+                id: match.id,
+                metadata: { 'File.name': newName }
+            });
+        }
+
+        return results.matches.length;
+    }
+
+    async updateCatalogName(fileId, oldName, newName) {
+        const catalogPath = './query/document-catalog-identity-focused.json';
+        try {
+            const { readFileSync, writeFileSync, existsSync } = await import('fs');
+            if (!existsSync(catalogPath)) return false;
+
+            const catalog = JSON.parse(readFileSync(catalogPath, 'utf8'));
+            const entry = catalog.documents.find(d => d.fileId === fileId || d.name === oldName);
+            if (!entry) return false;
+
+            entry.name = newName;
+            writeFileSync(catalogPath, JSON.stringify(catalog, null, 2));
+            return true;
+        } catch {
+            return false;
+        }
     }
 
     // === INDEXING METHODS ===
@@ -663,15 +711,16 @@ export class IntelligentSync {
         const deduplicated = this.detectDuplicates(filtered);
         console.log(`✓ Deduplicated to ${deduplicated.length} files`);
 
-        const { newFiles, modifiedFiles, staleFiles } = this.classifyChanges(deduplicated, pineconeState);
+        const { newFiles, modifiedFiles, staleFiles, renamedFiles } = this.classifyChanges(deduplicated, pineconeState);
 
         console.log('\n═══════════════════════════════════════════════════════════');
         console.log(`📊 Analysis Results:`);
         console.log(`   Last sync: ${pineconeState.latestSyncDate || 'Never (30-day lookback)'}`);
         console.log(`   NEW files: ${newFiles.length}`);
         console.log(`   MODIFIED files: ${modifiedFiles.length}`);
+        console.log(`   RENAMED files: ${renamedFiles.length}`);
         console.log(`   STALE files (archived/deleted): ${staleFiles.length}`);
-        console.log(`   TOTAL to process: ${newFiles.length + modifiedFiles.length + staleFiles.length}`);
+        console.log(`   TOTAL to process: ${newFiles.length + modifiedFiles.length + renamedFiles.length + staleFiles.length}`);
         console.log('═══════════════════════════════════════════════════════════\n');
 
         const results = {
@@ -679,12 +728,26 @@ export class IntelligentSync {
             newFailed: 0,
             modifiedReIndexed: 0,
             modifiedFailed: 0,
-            staleRemoved: 0
+            staleRemoved: 0,
+            renamed: 0
         };
+
+        // Handle RENAMED files (metadata-only update, no re-indexing needed)
+        if (renamedFiles.length > 0) {
+            console.log('✏️  Phase 2: Updating RENAMED Files\n');
+            for (const { file, oldName } of renamedFiles) {
+                console.log(`   "${oldName}"\n   → "${file.name}"`);
+                const updated = await this.renameFileInPinecone(file.id, oldName, file.name);
+                const catalogUpdated = await this.updateCatalogName(file.id, oldName, file.name);
+                console.log(`   ✅ Updated ${updated} vectors in Pinecone${catalogUpdated ? ' + catalog' : ''}`);
+                results.renamed++;
+            }
+            console.log('');
+        }
 
         // Index NEW files
         if (newFiles.length > 0) {
-            console.log('🆕 Phase 2: Indexing NEW Files\n');
+            console.log('🆕 Phase 3: Indexing NEW Files\n');
 
             for (let i = 0; i < newFiles.length; i++) {
                 const file = newFiles[i];
@@ -701,7 +764,7 @@ export class IntelligentSync {
 
         // Re-index MODIFIED files
         if (modifiedFiles.length > 0) {
-            console.log('\n🔄 Phase 3: Re-indexing MODIFIED Files\n');
+            console.log('\n🔄 Phase 4: Re-indexing MODIFIED Files\n');
 
             for (let i = 0; i < modifiedFiles.length; i++) {
                 const { file, pineconeData } = modifiedFiles[i];
@@ -748,10 +811,13 @@ export class IntelligentSync {
         console.log(`\nMODIFIED files:`);
         console.log(`   ✅ Re-indexed: ${results.modifiedReIndexed}`);
         console.log(`   ❌ Failed: ${results.modifiedFailed}`);
+        console.log(`\nRENAMED files:`);
+        console.log(`   ✏️  Updated: ${results.renamed}`);
         console.log(`\nSTALE files (archived/deleted):`);
         console.log(`   🗑️  Removed: ${results.staleRemoved}`);
         console.log(`\nTOTAL:`);
         console.log(`   ✅ Success: ${results.newIndexed + results.modifiedReIndexed}`);
+        console.log(`   ✏️  Renamed: ${results.renamed}`);
         console.log(`   🗑️  Cleaned up: ${results.staleRemoved}`);
         console.log(`   ❌ Failed: ${results.newFailed + results.modifiedFailed}`);
         console.log('═══════════════════════════════════════════════════════════\n');
