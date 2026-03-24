@@ -27,7 +27,7 @@ export class IntelligentSync {
                 'https://www.googleapis.com/auth/drive.readonly',
                 'https://www.googleapis.com/auth/documents.readonly',
                 'https://www.googleapis.com/auth/presentations.readonly',
-                'https://www.googleapis.com/auth/spreadsheets.readonly'
+                'https://www.googleapis.com/auth/spreadsheets'
             ]
         });
 
@@ -644,6 +644,55 @@ export class IntelligentSync {
         return vectorIds.length;
     }
 
+    async deleteSheetRow(fileId, name) {
+        const SHEET_ID = process.env.CATALOG_SHEET_ID || '1zwmfU-b2ADXWUYYAYdMEYSPHqetUfgSIsQEwnYnyeu4';
+        try {
+            // Read columns A:C to find the row
+            const res = await this.sheets.spreadsheets.values.get({
+                spreadsheetId: SHEET_ID,
+                range: 'Sheet1!A:C'
+            });
+            const rows = res.data.values || [];
+            let rowIndex = -1;
+            for (let i = 1; i < rows.length; i++) {
+                const rowFileId = rows[i][2]?.trim();
+                const rowName = rows[i][0]?.trim().toLowerCase();
+                if ((fileId && rowFileId === fileId) || (name && rowName === name.toLowerCase())) {
+                    rowIndex = i;
+                    break;
+                }
+            }
+            if (rowIndex === -1) return false;
+
+            // Get the sheet's numeric gid
+            const meta = await this.sheets.spreadsheets.get({
+                spreadsheetId: SHEET_ID,
+                fields: 'sheets.properties'
+            });
+            const sheetGid = meta.data.sheets[0].properties.sheetId;
+
+            await this.sheets.spreadsheets.batchUpdate({
+                spreadsheetId: SHEET_ID,
+                requestBody: {
+                    requests: [{
+                        deleteDimension: {
+                            range: {
+                                sheetId: sheetGid,
+                                dimension: 'ROWS',
+                                startIndex: rowIndex,
+                                endIndex: rowIndex + 1
+                            }
+                        }
+                    }]
+                }
+            });
+            return true;
+        } catch (err) {
+            console.log(`   ⚠️  Could not delete sheet row: ${err.message}`);
+            return false;
+        }
+    }
+
     async indexFile(file) {
         console.log(`\n📄 Indexing: ${file.name}`);
 
@@ -802,6 +851,12 @@ export class IntelligentSync {
 
                 const deleted = await this.deleteFileVectors(fileId);
                 console.log(`   🗑️  Deleted ${deleted} vectors`);
+
+                const sheetDeleted = await this.deleteSheetRow(fileId, name);
+                if (sheetDeleted) {
+                    console.log(`   📊 Removed from catalog sheet`);
+                }
+
                 results.staleRemoved++;
             }
         }
