@@ -5,12 +5,12 @@
  *
  * Returns: 'document' | 'information' | 'synthesis'
  */
-import Anthropic from '@anthropic-ai/sdk';
+import OpenAI from 'openai';
 import dotenv from 'dotenv';
 
 dotenv.config();
 
-const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
 // Signals that a user wants a specific file/deck/link
 const DOC_SIGNALS = [
@@ -21,7 +21,7 @@ const DOC_SIGNALS = [
     'battle card', 'battlecard',
     'product hub',
     'case study slide', 'cssl',
-    'list all', 'list the', 'what decks', 'what documents', 'do we have a',
+    'list all', 'list the', 'what decks', 'what documents', 'do we have a', 'do we have',
     'share the', 'share a',
     'link to', 'link for',
     'pitch deck', 'sales deck',
@@ -71,30 +71,33 @@ function classifyByRules(question) {
 /**
  * Haiku fallback for queries the rules can't confidently classify.
  */
-async function classifyWithHaiku(question) {
+async function classifyWithLLM(question) {
     try {
-        const response = await anthropic.messages.create({
-            model: 'claude-haiku-4-5',
+        const response = await openai.chat.completions.create({
+            model: 'gpt-4o-mini',
             max_tokens: 10,
             messages: [{
                 role: 'user',
-                content: `Classify this sales assistant query into exactly one word:
-- "document" = user wants a specific file, deck, battle card, or link
-- "information" = user wants facts, features, comparisons, or explanations
-- "synthesis" = user wants you to create, draft, or compose something new
+                content: `Classify this sales assistant query into exactly one word.
+
+- "document" = user clearly wants a specific file, deck, battle card, or link
+- "information" = user clearly wants facts, features, comparisons, or explanations
+- "synthesis" = user wants to create/draft something NEW, OR the query is ambiguous and could fit multiple categories
+
+When in doubt, reply "synthesis" — it has access to all tools and can handle anything.
 
 Query: "${question}"
 
 Reply with only the single category word.`,
             }],
         });
-        const text = response.content[0].text.trim().toLowerCase();
+        const text = response.choices[0].message.content.trim().toLowerCase();
         if (text.startsWith('document')) return 'document';
         if (text.startsWith('synthesis')) return 'synthesis';
         return 'information';
     } catch (err) {
-        console.warn('[Router] Haiku fallback failed, defaulting to information:', err.message);
-        return 'information';
+        console.warn('[Router] LLM fallback failed, defaulting to synthesis:', err.message);
+        return 'synthesis';
     }
 }
 
@@ -110,7 +113,7 @@ export async function classifyIntent(question) {
         return ruleResult;
     }
 
-    const haikuResult = await classifyWithHaiku(question);
-    console.log(`   🔀 Route: ${haikuResult} (haiku)`);
-    return haikuResult;
+    const llmResult = await classifyWithLLM(question);
+    console.log(`   🔀 Route: ${llmResult} (gpt-4o-mini)`);
+    return llmResult;
 }
